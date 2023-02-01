@@ -1,0 +1,39 @@
+.footer__social-media{
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+}
+
+.footer__social-media li {
+  float: left;
+}
+
+.footer__social-logo-wrapper{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin-left: 0px;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: #557580;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  
+  
+}
+
+.footer__social-logo-wrapper:hover {
+  background-color: #6a94a2;
+}
+
+.footer__social-logo-wrapper a{
+  background-color: transparent;
+
+}
+
+.footer__social-logo-wrapper i{
+  background-color: transparent;
+  color: white;
+}

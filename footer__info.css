@@ -1,0 +1,12 @@
+.footer__info{
+  width: 100%;
+}
+
+.footer__info-row {
+  overflow: auto;
+}
+
+.footer__col-1 {
+  width: 48%;
+  float: left;
+}
