@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+.navbar {
+    display:flex;
+    align-items: center;
+    padding: 0 20px ;
+}
+.menu-group {
+    
+    width: auto;
+    height: 60px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #0f55a6;
+}
+.navbar{
+    list-style: none;
+}
+.nav-button {
+    position: relative;
+    display: block;
+    height: 60px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 55px ;
+    color: #ffffff;
+    background-color: #0f55a6;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+}
+
+ul {
+    margin: 0 7%;
+}
