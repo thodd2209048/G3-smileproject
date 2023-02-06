@@ -1,6 +1,7 @@
 
 /* DROPDOWN MENU */
 .dropdown-menu {
+    width: 300px;
     display: none;
     position: absolute;
     background-color: #e2e2e2;
@@ -11,10 +12,10 @@
 
 .dropdown-menu a {
     color: #0f55a6;
-    padding: 15px 55px ;
+    padding: 10px 15px ;
     text-decoration: none;
     display: block;
-    width: auto;
+
 }
 
 

@@ -3,10 +3,12 @@
 }
 
 .footer__info-row {
+  display: flex;
   overflow: auto;
 }
 
 .footer__col-1 {
-  width: 48%;
+  padding: 0 20px;
   float: left;
+  flex: 1;
 }
