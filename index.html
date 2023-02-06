@@ -1,212 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
-    />
-    <script src="https://kit.fontawesome.com/1fb8bb996b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="HomePage.css">
-    <link rel="stylesheet" href="header-menu-dropdown.css" />
-    <link rel="stylesheet" href="header-logo.css" />
-    <link rel="stylesheet" href="header-menu.css" />
-    <link rel="stylesheet" href="header-menu-responsive.css" />
-    <link rel="stylesheet" href="header-menu-button-hover-active.css" />
-    <link rel="stylesheet" href="header-logo-hover-active.css" />
-    <link rel="stylesheet" href="./footer.css" />
-    <link rel="stylesheet" href="./footer__info.css" />
-    <link rel="stylesheet" href="./footer__col-1-subcribe-title.css" />
-    <link rel="stylesheet" href="./footer__col-1-social-media.css" />
-    <link rel="stylesheet" href="./footer__col-2-3.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="container">
 
-        <div class="logo-search">
-          <div class="logo">
-            <img src="./public/images/32SMILES2.svg" alt="Logo" />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/1fb8bb996b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="HomePage.css">
+  <link rel="stylesheet" href="header-menu-dropdown.css" />
+  <link rel="stylesheet" href="header-logo.css" />
+  <link rel="stylesheet" href="header-menu.css" />
+  <link rel="stylesheet" href="header-menu-responsive.css" />
+  <link rel="stylesheet" href="header-menu-button-hover-active.css" />
+  <link rel="stylesheet" href="header-logo-hover-active.css" />
+  <link rel="stylesheet" href="./footer.css" />
+  <link rel="stylesheet" href="./footer__info.css" />
+  <link rel="stylesheet" href="./footer__col-1-subcribe-title.css" />
+  <link rel="stylesheet" href="./footer__col-1-social-media.css" />
+  <link rel="stylesheet" href="./footer__col-2-3.css" />
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="top-news.css">
+  <title>Document</title>
+</head>
 
-          <div class="search-group">
-            <span class="search-group-icon" id="basic-addon1">
-              <i class="fas fa-search"></i>
-            </span>
+<body>
+  <header class="container">
 
-            <input
-              type="text"
-              class="search-control"
-              placeholder="Search in 32SMILES"
-              aria-label="Search"
-              aria-describedby="basic-addon1"
-            />
-          </div>
-          <select class="language">
-            <!-- <option value="#">Select Language</option> -->
-            <option value="#">English</option>
-            <option value="#">中文</option>
-            <option value="#">français</option>
-            <option value="#">العَرَبِيَّة</option>
-            <option value="#">español</option>
+    <div class="logo-search">
+      <div class="logo">
+        <img src="./public/images/32SMILES2.svg" alt="Logo" />
+      </div>
 
-            <option value="#">हिन्दी</option>
-            <option value="#">русский язык</option>
-            <option value="#">বাংলা</option>
-            <option value="#">português</option>
-          </select>
-        </div>
+      <div class="search-group">
+        <span class="search-group-icon" id="basic-addon1">
+          <i class="fas fa-search"></i>
+        </span>
 
-          <ul class="navbar">
-            <li class="nav-item dropdown">
-              <button class="nav-button">Home</button>
-            </li>
-            <!-- <li><a href="#">About Us</a>
+        <input type="text" class="search-control" placeholder="Search in 32SMILES" aria-label="Search"
+          aria-describedby="basic-addon1" />
+      </div>
+      <select class="language">
+        <!-- <option value="#">Select Language</option> -->
+        <option value="#">English</option>
+        <option value="#">中文</option>
+        <option value="#">français</option>
+        <option value="#">العَرَبِيَّة</option>
+        <option value="#">español</option>
+
+        <option value="#">हिन्दी</option>
+        <option value="#">русский язык</option>
+        <option value="#">বাংলা</option>
+        <option value="#">português</option>
+      </select>
+    </div>
+
+    <ul class="navbar">
+      <li class="nav-item dropdown">
+        <button class="nav-button">Home</button>
+      </li>
+      <!-- <li><a href="#">About Us</a>
                 <ul>
                   <li><a href="#">Our History</a></li>
                   <li><a href="#">Our Team</a></li>
                   <li><a href="#">Our Mission</a></li>
                 </ul>
               </li> -->
-            <li class="nav-item dropdown">
-              <button
-                class="nav-button dropdown-toggle"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <span>Professional Education</span>
-              </button>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a href="#" class="dropdown-item">Overview</a>
-                <a href="#" class="dropdown-item">Webminar</a>
-                <a href="#" class="dropdown-item">Oral-systemic link</a>
-                <a href="#" class="dropdown-item">Ecpd courses</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <button
-                class="nav-button dropdown-toggle"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Patients Education
-              </button>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a href="#" class="dropdown-item"></a>
-                <a href="#" class="dropdown-item"></a>
-                <a href="#" class="dropdown-item"></a>
-                <a href="#" class="dropdown-item"></a>
-                <a href="#" class="dropdown-item"></a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <button
-                class="nav-button dropdown-toggle"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Research
-              </button>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a href="#" class="dropdown-item"></a>
-                <a href="#" class="dropdown-item"></a>
-                <a href="#" class="dropdown-item"></a>
-                <a href="#" class="dropdown-item"></a>
-                <a href="#" class="dropdown-item"></a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <button
-                class="nav-button dropdown-toggle"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Products
-              </button>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a href="#" class="dropdown-item"></a>
-                <a href="#" class="dropdown-item"></a>
-                <a href="#" class="dropdown-item"></a>
-                <a href="#" class="dropdown-item"></a>
-                <a href="#" class="dropdown-item"></a>
-              </div>
-            </li>
-            <li>
-              <button class="nav-button">Contact Us</button>
-            </li>
-          </ul>
+      <li class="nav-item dropdown">
+        <button class="nav-button dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <span>Professional Education</span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a href="#" class="dropdown-item">Overview</a>
+          <a href="#" class="dropdown-item">Webminar</a>
+          <a href="#" class="dropdown-item">Oral-systemic link</a>
+          <a href="#" class="dropdown-item">Ecpd courses</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <button class="nav-button dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Patients Education
+        </button>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a href="#" class="dropdown-item"></a>
+          <a href="#" class="dropdown-item"></a>
+          <a href="#" class="dropdown-item"></a>
+          <a href="#" class="dropdown-item"></a>
+          <a href="#" class="dropdown-item"></a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <button class="nav-button dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Research
+        </button>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a href="#" class="dropdown-item"></a>
+          <a href="#" class="dropdown-item"></a>
+          <a href="#" class="dropdown-item"></a>
+          <a href="#" class="dropdown-item"></a>
+          <a href="#" class="dropdown-item"></a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <button class="nav-button dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Products
+        </button>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a href="#" class="dropdown-item"></a>
+          <a href="#" class="dropdown-item"></a>
+          <a href="#" class="dropdown-item"></a>
+          <a href="#" class="dropdown-item"></a>
+          <a href="#" class="dropdown-item"></a>
+        </div>
+      </li>
+      <li>
+        <button class="nav-button">Contact Us</button>
+      </li>
+    </ul>
 
-    </header>
-    <main></main>
-    <footer class="container">
-      <div class="footer__logo ">
-        <div class="row"></div>
-      </div>
-      <div class="footer__info">
-        <div class="row footer__info-row">
-          <div class="col footer__col-1">
-            <div class="footer_subcribe-wrapper">
-              <div class="footer__subcribe-title">
-                <p>Subcribe</p>
-              </div>
-              <div class="footer__subcribe-input-field">
-                <input class="footer__input-subcribe" type="text" placeholder="Enter your email">
-                <button class="footer__sign-up-button" href="">Sign up</button>
-              </div>
-            </div>
+  </header>
+  <div class="hero container-fluid">
 
-            <ul class="footer__social-media">
-              <li>
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
-              </li>
-              <li>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              </li>
-              <li>
-                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-              </li>
-              <li>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                  <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col footer__col-2">
-            <ul>
-              <li><a href="">Patient education</a></li>
-              <li><a href="">Professional education</a></li>
-              <li><a href="">Research</a></li>
-              <li><a href="">Product</a></li>
-            </ul>
-          </div>
-          <div class="col footer__col-3">
-            <ul>
-              <li><a href="">About us</a></li>
-              <li><a href="">Careers</a></li>
-              <li><a href="">Site map</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
+    <img src="./public/images/homePage-Hero.jpg" alt="">
+    <div class="hero-title">
+      <p>Healthy teeth, happy you.</p>
+    </div>
+  </div>
+
+  <div class="top-news container">
+    <div class="row">
+      <div class="featured">
+        <div class="img-placeholder">
+          <a href="#"> <img
+              src="https://www.health.com/thmb/EyqqXVwWpoV3m1va6gLZ2IupoPk=/1000x666/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Health-GettyImages-1246598739-42ac91710db04afa9d905faeeef3514a.jpg"
+              alt=""></a>
+        </div>
+        <div class="card-content">
+          <a href="#" class="card__title">
+            <span class="card__title-text" href="#">Why You Shouldn't Use Tap Water in Humidifiers, Neti Pots, or Other
+              Home
+              Medical Devices</span>
+          </a>
+          <div class="card__byline-block">
+            <span class="card__byline">By Kaitlin Sullivan</span>
           </div>
         </div>
+
       </div>
-    </footer>
-  </body>
+      <div class="top-news__latest-news">
+        <h2 class="latest-news__title">Latest news</h2>
+        <div class="card-list">
+          <a href="#" class="card-list-item">
+            <div class="card__content">
+              <span class="card__title">EzriCare Eye Drops Recalled as CDC Investigates Link to Drug-Resistant Bacterial
+                Infections</span>
+              <div class="card__byline">
+                <div class="card__time-stamp">
+                  <span class="card__byline-text">2 days ago</span>
+                </div>
+                <div class="card__author">
+                  <span class="card__byline-text">By Julia Landwehr</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card-list-item">
+            <div class="card__content">
+              <span class="card__title">EzriCare Eye Drops Recalled as CDC Investigates Link to Drug-Resistant Bacterial
+                Infections</span>
+              <div class="card__byline">
+                <div class="card__time-stamp">
+                  <span class="card__byline-text">2 days ago</span>
+                </div>
+                <div class="card__author">
+                  <span class="card__byline-text">By Julia Landwehr</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card-list-item">
+            <div class="card__content">
+              <span class="card__title">EzriCare Eye Drops Recalled as CDC Investigates Link to Drug-Resistant Bacterial
+                Infections</span>
+              <div class="card__byline">
+                <div class="card__time-stamp">
+                  <span class="card__byline-text">2 days ago</span>
+                </div>
+                <div class="card__author">
+                  <span class="card__byline-text">By Julia Landwehr</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card-list-item">
+            <div class="card__content">
+              <span class="card__title">EzriCare Eye Drops Recalled as CDC Investigates Link to Drug-Resistant Bacterial
+                Infections</span>
+              <div class="card__byline">
+                <div class="card__time-stamp">
+                  <span class="card__byline-text">2 days ago</span>
+                </div>
+                <div class="card__author">
+                  <span class="card__byline-text">By Julia Landwehr</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="promo">
+        <div class="promo__video">
+          <video autoplay loop playsinline muted
+            src="https://www.health.com/thmb/WkfWoRLgvLMe_j0cz7PWEnWyATk=/1000x1000/filters:gifv(webm)/Health_WIWIK_HIV-cf9fd2d7c5554fd3a56fa4cb42e84c8e.gif"></video>
+        </div>
+        <div class="promo_title">
+          <span>
+            What I Wish I Knew About HIV
+          </span>
+        </div>
+      </div>
+      <div class="trending-topics">
+        <div class="trending-topics__title">Trending Helth Topics</div>
+        <div class="trending-topics__tags">
+          <a href="#" class="trending-topics__item">
+            <span>Weight Loss Foods</span>
+          </a>
+          <a href="#" class="trending-topics__item">
+            <span>Weight Loss Foods</span>
+          </a>
+          <a href="#" class="trending-topics__item">
+            <span>Weight Loss Foods</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container">
+    <div class="footer__logo ">
+      <div class="row"></div>
+    </div>
+    <div class="footer__info">
+      <div class="row footer__info-row">
+        <div class="col footer__col-1">
+          <div class="footer_subcribe-wrapper">
+            <div class="footer__subcribe-title">
+              <p>Subcribe</p>
+            </div>
+            <div class="footer__subcribe-input-field">
+              <input class="footer__input-subcribe" type="text" placeholder="Enter your email">
+              <button class="footer__sign-up-button" href="">Sign up</button>
+            </div>
+          </div>
+
+          <ul class="footer__social-media">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col footer__col-2">
+          <ul>
+            <li><a href="">Patient education</a></li>
+            <li><a href="">Professional education</a></li>
+            <li><a href="">Research</a></li>
+            <li><a href="">Product</a></li>
+          </ul>
+        </div>
+        <div class="col footer__col-3">
+          <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Site map</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

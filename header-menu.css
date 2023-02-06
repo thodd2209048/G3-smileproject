@@ -5,7 +5,6 @@
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     justify-content: space-around;
     list-style: none;
-    background-color: var(--color1);
 }
 
 .navbar li {
@@ -20,26 +19,25 @@
     position: relative;
     height: 60px;
     width: 100%;
-    border: none;
 
     font-size: 18px;
     text-align: center;
     padding: 0 15px ;
-    color: #ffffff;
-    background-color: var(--color1);
-    /* position: -webkit-sticky; */ /* Safari */
-    /* position: sticky; */
+    color: var(--color1);
+    background-color: #fff;
+
+    border: none;
+    /* position: -webkit-sticky;
+    position: sticky; */
 }
 
 .nav-button:hover {
     cursor: pointer;
-    background-color: #e2e2e2;
     color: var(--color1) ;
     text-decoration: underline;
 }
 
 .nav-button:active {
-    background-color: #e2e2e2;
     color: var(--color1);
     text-decoration: underline;
 }

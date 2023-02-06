@@ -4,10 +4,13 @@
   font-family: Arial, Helvetica, sans-serif;
   
   --margin-width: 15%;
+  --border-radius-big: 0.5rem;
+  --border-radius-small: 0.25rem;
 
   --color1: #0f55a6;
   --color1-hover: #1873dc;
   --color2: #15ABDB;
+  --sub-text-color: #948f99;
 }
 
 a{
@@ -20,5 +23,9 @@ li {
 
 .container {
   margin: 0 var(--margin-width);
+}
+
+.container-fluid{
+  width: 100%;
 }
 
