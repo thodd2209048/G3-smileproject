@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  --margin-width: 15%;
+
+  --color1: #0f55a6;
+  --color1-hover: #1873dc;
+  --color2: #15ABDB;
+}
+
+a{
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 var(--margin-width);
+}
+
