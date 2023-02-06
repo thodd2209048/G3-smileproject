@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#slider{
+    background: url('banner.jpg') top center / cover no-repeat;
+    padding-top: 52%;
+    margin-top: 154px;
+    font-size: 10px;
+    width: 100%;
+    height: 500px;
+
+}
+#content .title:hover {
+   color: #14ABD9;
+}
+
+#content .content-main{
+  width: 100%;
+  height: auto;
+
+}
+#content .title-spl{
+   margin-top: 40px;
+   border-bottom: 1px solid #ccc;
+   
+}
+.content-title{
+    float: left;
+    width: 25%;
+    margin-top: 25px;
+    padding: 0 8px;
+}
+.title{
+    font-size:22px;
+    margin-top: 15px;
+    text-align: justify;
+    text-decoration: none;
+    float: left;
+    color:#1C0E40;
+    display: block;
+    margin-top: 3px;
+   
+    
+    
+}
+  
+.content-body{
+    padding: 16px;
+
+}
+#content .content-img{
+    border-radius: 2px;
+}
+#content .content-img:hover{
+    opacity: 0.8;
+}
+.time{
+    color: blueviolet;
+    margin-top: 50px;
+    text-decoration: none;
+    width: 24px;
+    background-color: black;
+}
+.spotlite2{
+    padding-top: 20%;
+
+}
