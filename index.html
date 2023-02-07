@@ -15,22 +15,25 @@
   <link rel="stylesheet" href="header-menu-responsive.css" />
   <link rel="stylesheet" href="header-menu-button-hover-active.css" />
   <link rel="stylesheet" href="header-logo-hover-active.css" />
-  <link rel="stylesheet" href="./footer.css" />
-  <link rel="stylesheet" href="./footer__info.css" />
-  <link rel="stylesheet" href="./footer__col-1-subcribe-title.css" />
-  <link rel="stylesheet" href="./footer__col-1-social-media.css" />
-  <link rel="stylesheet" href="./footer__col-2-3.css" />
-  <link rel="stylesheet" href="hero.css">
-  <link rel="stylesheet" href="top-news.css">
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="footer__col-1.css" />
+  <link rel="stylesheet" href="footer__col-2-3.css" />
+  <link rel="stylesheet" href="main__hero.css">
+  <link rel="stylesheet" href="main__top-news.css">
+  <link rel="stylesheet" href="main__patient-edu.css">
+  <link rel="stylesheet" href="main__pro-edu.css">
+  <link rel="stylesheet" href="main__research.css">
+  <link rel="stylesheet" href="main__products.css">
+
   <title>Document</title>
 </head>
 
 <body>
-  <header class="container">
+  <header class="container-fluid">
 
-    <div class="logo-search">
+    <div class="logo-search container">
       <div class="logo">
-        <img src="./public/images/32SMILES2.svg" alt="Logo" />
+        <img src="./public/images/23smiles-logo-4.svg" alt="Logo" />
       </div>
 
       <div class="search-group">
@@ -48,7 +51,6 @@
         <option value="#">français</option>
         <option value="#">العَرَبِيَّة</option>
         <option value="#">español</option>
-
         <option value="#">हिन्दी</option>
         <option value="#">русский язык</option>
         <option value="#">বাংলা</option>
@@ -56,71 +58,8 @@
       </select>
     </div>
 
-    <ul class="navbar">
-      <li class="nav-item dropdown">
-        <button class="nav-button">Home</button>
-      </li>
-      <!-- <li><a href="#">About Us</a>
-                <ul>
-                  <li><a href="#">Our History</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">Our Mission</a></li>
-                </ul>
-              </li> -->
-      <li class="nav-item dropdown">
-        <button class="nav-button dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <span>Professional Education</span>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a href="#" class="dropdown-item">Overview</a>
-          <a href="#" class="dropdown-item">Webminar</a>
-          <a href="#" class="dropdown-item">Oral-systemic link</a>
-          <a href="#" class="dropdown-item">Ecpd courses</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <button class="nav-button dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Patients Education
-        </button>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a href="#" class="dropdown-item"></a>
-          <a href="#" class="dropdown-item"></a>
-          <a href="#" class="dropdown-item"></a>
-          <a href="#" class="dropdown-item"></a>
-          <a href="#" class="dropdown-item"></a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <button class="nav-button dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Research
-        </button>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a href="#" class="dropdown-item"></a>
-          <a href="#" class="dropdown-item"></a>
-          <a href="#" class="dropdown-item"></a>
-          <a href="#" class="dropdown-item"></a>
-          <a href="#" class="dropdown-item"></a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <button class="nav-button dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Products
-        </button>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a href="#" class="dropdown-item"></a>
-          <a href="#" class="dropdown-item"></a>
-          <a href="#" class="dropdown-item"></a>
-          <a href="#" class="dropdown-item"></a>
-          <a href="#" class="dropdown-item"></a>
-        </div>
-      </li>
-      <li>
-        <button class="nav-button">Contact Us</button>
-      </li>
+    <ul class="nav-bar">
+
     </ul>
 
   </header>
@@ -227,13 +166,13 @@
       <div class="trending-topics">
         <div class="trending-topics__title">Trending Helth Topics</div>
         <div class="trending-topics__tags">
-          <a href="#" class="trending-topics__item">
+          <a href="#" class="button">
             <span>Weight Loss Foods</span>
           </a>
-          <a href="#" class="trending-topics__item">
+          <a href="#" class="button">
             <span>Weight Loss Foods</span>
           </a>
-          <a href="#" class="trending-topics__item">
+          <a href="#" class="button">
             <span>Weight Loss Foods</span>
           </a>
 
@@ -242,56 +181,242 @@
     </div>
   </div>
 
-  <footer class="container">
-    <div class="footer__logo ">
-      <div class="row"></div>
+  <div class="patient-edu container">
+    <div class="section__title">
+      <h2>patient-edu</h2>
     </div>
-    <div class="footer__info">
-      <div class="row footer__info-row">
-        <div class="col footer__col-1">
-          <div class="footer_subcribe-wrapper">
-            <div class="footer__subcribe-title">
-              <p>Subcribe</p>
-            </div>
-            <div class="footer__subcribe-input-field">
-              <input class="footer__input-subcribe" type="text" placeholder="Enter your email">
-              <button class="footer__sign-up-button" href="">Sign up</button>
-            </div>
+    <ul class="patient-edu__lists">
+      <li class="patient-edu__item">
+        <a href="#">
+          <div class="patient-edu__item-pic">
+            <img
+              src="https://post.healthline.com/wp-content/uploads/2023/02/child-backpack-rearview-1296x728-header-1296x729.jpg"
+              alt="">
           </div>
+          <div class="patient-edu__item-text">
+            <div class="patient-edu__item-title">How Poverty, Stress, and Trauma Can Change the Brain Structure in
+              Children</div>
+            <div class="patient-edu__item-content">Racial inequities can produce stressors that can lead to changes in
+              brain structure.</div>
+          </div>
+        </a>
+      </li>
+      <li class="patient-edu__item">
+        <a href="#">
+          <div class="patient-edu__item-pic">
+            <img
+              src="https://post.healthline.com/wp-content/uploads/2021/01/Male_Heartburn_1296x728-header-1296x729.jpg"
+              alt="">
+          </div>
+          <div class="patient-edu__item-text">
+            <div class="patient-edu__item-title">The Difference Between Heartburn and Indigestion</div>
+            <div class="patient-edu__item-content">Heartburn and indigestion are common gastrointestinal (GI) problems
+              that are often discussed interchangeably. While they may occasionally occur at the same time, these are
+              considered separate GI issues.</div>
+          </div>
+        </a>
+      </li>
+      <li class="patient-edu__item">
+        <a href="#">
+          <div class="patient-edu__item-pic">
+            <img
+              src="https://post.healthline.com/wp-content/uploads/2023/02/child-backpack-rearview-1296x728-header-1296x729.jpg"
+              alt="">
+          </div>
+          <div class="patient-edu__item-text">
+            <div class="patient-edu__item-title">How Poverty, Stress, and Trauma Can Change the Brain Structure in
+              Children</div>
+            <div class="patient-edu__item-content">Racial inequities can produce stressors that can lead to changes in
+              brain structure.</div>
+          </div>
+        </a>
+      </li>
+      <li class="patient-edu__item">
+        <a href="#">
+          <div class="patient-edu__item-pic">
+            <img
+              src="https://www.health.com/thmb/ptfCfaDE2xeh-H4sJ9Im-gN_vBk=/500x333/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-2408821-56d35af23df78cfb37d2da23.jpg"
+              alt="">
+          </div>
+          <div class="patient-edu__item-text">
+            <div class="patient-edu__item-title">How Poverty, Stress, and Trauma Can Change the Brain Structure in
+              Children</div>
+            <div class="patient-edu__item-content">Racial inequities can produce stressors that can lead to changes in
+              brain structure.</div>
+          </div>
+        </a>
+      </li>
 
-          <ul class="footer__social-media">
-            <li>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="col footer__col-2">
-          <ul>
-            <li><a href="">Patient education</a></li>
-            <li><a href="">Professional education</a></li>
-            <li><a href="">Research</a></li>
-            <li><a href="">Product</a></li>
-          </ul>
-        </div>
-        <div class="col footer__col-3">
-          <ul>
-            <li><a href="">About us</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Site map</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
+    </ul>
+  </div>
+
+  <div class="pro-edu container">
+    <div class="section__title">
+      <h2>PRO-EDU</h2>
+    </div>
+    <ul class="pro-edu__list">
+      <li class="pro-edu__item">
+        <a href="">
+          <img class="pro-edu__item-pic"
+            src="https://post.healthline.com/wp-content/uploads/2022/05/pensive-person-at-the-pier-1296x728-header.jpg"
+            alt="pensive-person" />
+          <span class="pro-edu__item-title">How to Recognize and Respond to Racial Gaslighting</span>
+        </a>
+      </li>
+      <li class="pro-edu__item">
+        <a href="">
+          <img class="pro-edu__item-pic"
+            src="https://post.healthline.com/wp-content/uploads/2022/05/pensive-person-at-the-pier-1296x728-header.jpg"
+            alt="pensive-person" />
+          <span class="pro-edu__item-title">How to Recognize and Respond to Racial Gaslighting</span>
+        </a>
+      </li>
+      <li class="pro-edu__item">
+        <a href="">
+          <img class="pro-edu__item-pic"
+            src="https://post.healthline.com/wp-content/uploads/2022/05/pensive-person-at-the-pier-1296x728-header.jpg"
+            alt="pensive-person" />
+          <span class="pro-edu__item-title">How to Recognize and Respond to Racial Gaslighting</span>
+        </a>
+      </li>
+      <li class="pro-edu__item">
+        <a href="">
+          <img class="pro-edu__item-pic"
+            src="https://post.healthline.com/wp-content/uploads/2022/05/pensive-person-at-the-pier-1296x728-header.jpg"
+            alt="pensive-person" />
+          <span class="pro-edu__item-title">How to Recognize and Respond to Racial Gaslighting</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="research container">
+    <div class="section__title">
+      <h2>RESEARCH</h2>
+    </div>
+    <div class="research-tags">
+      <a href="" class="button">Preventive dentistry</a>
+      <a href="" class="button">Restorative dentistry</a>
+      <a href="" class="button">Cosmetic dentistry</a>
+      <a href="" class="button">Endodontics</a>
+      <a href="" class="button">Periodontics</a>
+      <a href="" class="button">Prosthodontics</a>
+      <a href="" class="button">Orthodontics</a>
+      <a href="" class="button">Oral and maxillofacial surgery</a>
+      <a href="" class="button">Pediatric dentistry</a>
+      <a href="" class="button">Geriatric dentistry</a>
+    </div>
+    <div class="research-list">
+      <a href="">
+        <img
+          src="https://www.health.com/thmb/eISyOPu-uzqxhV8X-MHHeJpJ0EQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1215798702-d8c760095f0442af9684cccaa5333c2e.jpg"
+          alt="Type 2 Diabetes" />
+        <h3 class="research-list__item-title">What causes Type 2 Diabetes?</h3>
+        <p class="research-list__item-content">Diabetes is a common disease affecting 425 million adults worldwide. That
+          number is expected to rise to 592 million by 2035.12 It’s a chronic disease that causes hyperglycemia (high
+          blood sugar levels).</p>
+      </a>
+      <a href="">
+        <img
+          src="https://www.health.com/thmb/ptfCfaDE2xeh-H4sJ9Im-gN_vBk=/500x333/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-2408821-56d35af23df78cfb37d2da23.jpg"
+          alt="Type 2 Diabetes" />
+        <h3 class="research-list__item-title">What causes Type 2 Diabetes?</h3>
+        <p class="research-list__item-content">Diabetes is a common disease affecting 425 million adults worldwide. That
+          number is expected to rise to 592 million by 2035.12 It’s a chronic disease that causes hyperglycemia (high
+          blood sugar levels).</p>
+      </a>
+      <a href="">
+        <img
+          src="https://www.health.com/thmb/ylmF0HvxkHuIuZXZMWswF7e7p6Q=/500x333/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1156342928-a13afaf6cd924d34ae3a17b8925e477e.jpg"
+          alt="Type 2 Diabetes" />
+        <h3 class="research-list__item-title">What causes Type 2 Diabetes?</h3>
+        <p class="research-list__item-content">Diabetes is a common disease affecting 425 million adults worldwide. That
+          number is expected to rise to 592 million by 2035.12 It’s a chronic disease that causes hyperglycemia (high
+          blood sugar levels).</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="products container">
+    <div class="section__title">
+      <h2>PRODUCT</h2>
+    </div>
+    <div class="products-list">
+      <a href="">
+        <img
+          src="https://www.3m.com/wps/wcm/connect/466fef92-00be-4fa0-80a6-c1418c14fb99/3M_Scotchbond_Universal_Plus_vial_Lpop_etchant_450x225.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-466fef92-00be-4fa0-80a6-c1418c14fb99-nDeIvgL"
+          alt="Type 2 Diabetes" />
+        <h3 class="products-list__item-title">Adhesives</h3>
+
+      </a>
+      <a href="">
+        <img
+          src="https://www.3m.com/wps/wcm/connect/b093682b-ed77-43fe-90d7-bb26434eceaf/Mouthpieces_450x225.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE-b093682b-ed77-43fe-90d7-bb26434eceaf-nDeIxaf"
+          alt="Type 2 Diabetes" />
+        <h3 class="products-list__item-title">Impression Materials</h3>
+
+      </a>
+      <a href="">
+        <img
+          src="https://www.3m.com/wps/wcm/connect/8d89e492-5a0b-4b7c-ac7e-bd1b528786d7/sealant_syringe_450x225.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-8d89e492-5a0b-4b7c-ac7e-bd1b528786d7-nDeIx-b"
+          alt="Type 2 Diabetes" />
+        <h3 class="products-list__item-title">Sealants</h3>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-area container">
+      <!-- <div class="footer__logo ">
+        <img src="./public/images/23smiles-logo-4.svg" alt="">
+      </div> -->
+      <div class="footer__info">
+        <div class="row footer__info-row">
+          <div class="col footer__col-1">
+            <div class="footer_subcribe-wrapper">
+              <div class="footer__subcribe-title">
+                <p>Subcribe</p>
+              </div>
+              <div class="footer__subcribe-input-field">
+                <input class="footer__input-subcribe" type="text" placeholder="Enter your email">
+                <button class="footer__sign-up-button" href="">Sign up</button>
+              </div>
+            </div>
+
+            <ul class="footer__social-media">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col footer__col-2">
+            <ul>
+              <li><a href="">Patient education</a></li>
+              <li><a href="">Professional education</a></li>
+              <li><a href="">Research</a></li>
+              <li><a href="">Product</a></li>
+            </ul>
+          </div>
+          <div class="col footer__col-3">
+            <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Site map</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

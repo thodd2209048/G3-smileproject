@@ -1,5 +1,26 @@
 footer {
-  display: flex;
-  background-color: #13404F;
+  padding: 2rem 0;
+  background-color: var(--color1);
 }
 
+.footer-area {
+  background-color: var(--color1);
+}
+
+/* .footer__logo {
+  height: 100px;
+}
+
+.footer__logo img {
+  height: 100px;
+  background-color: #fff;
+} */
+
+.footer__info {
+  width: 100%;
+}
+
+.footer__info-row {
+  display: flex;
+  overflow: auto;
+}

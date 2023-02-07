@@ -1,0 +1,35 @@
+.pro-edu{
+  margin-bottom: 3rem;
+}
+
+.pro-edu__list{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 1.5rem;
+}
+
+.pro-edu__item{
+
+}
+
+.pro-edu__item a{
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.pro-edu__item a:hover{
+  color: var(--color3);
+  opacity: 0.8;
+}
+
+.pro-edu__item-pic{
+  width: 100%;
+  border-radius: var(--border-radius-big);
+}
+
+.pro-edu__item-title{
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
