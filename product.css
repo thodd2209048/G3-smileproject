@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    --margin-width: 15%;
+
+  
+    --color1: #0f55a6;
+    --color1-hover: #1873dc;
+    --color2: #15ABDB;
+   
+    
+ }
+ .banner{
+    width: 100%;
+    background-image: url('./img/120039kham-rang.jpg');
+    height:600px;
+    margin-top: 40px;
+ }
+.products {
+    margin: 0 var(--margin-width);
+    margin-top: 50px;
+   
+    
+}
+.list-products{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.list-products .item{
+    width: 300px;
+    height: 400px;
+    background:#0f55a6;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc  ;
+
+}
+.list-products .item img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+.text-heading{
+    font-size: 50px;
+    
+}
+ .text-description{
+    margin-top: 50px;
+}
+
+.content-banner{
+    color:#0f55a6;
+    position: absolute;
+    text-align: center;
+    padding-top: 100px;
+}
+.card-img-top{
+  width: 300px;
+}
+
+.list-products .item .name{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.list-products .item .img-card{
+    width: 300px;
+    height: 300px;
+}
+.list-products .item .sub a{
+  color: black;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.list-products .item .sub a:hover{
+    color: #1873dc;
+    background-color:#fff;
+}
+
+
