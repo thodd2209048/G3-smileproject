@@ -4,15 +4,15 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-main{
+.about-main{
     display: grid;
     align-content: flex-start;
     margin: 148px 0 64px 0;
     padding: 0 13% 0 13%;
-    width: 1386px;
+    min-width: 1386px;
     color: #1C0E40;
 }
-article{
+.about-article{
     position: relative;
     display: grid;
     grid-template-columns: 257px auto;
@@ -20,14 +20,15 @@ article{
 
 }
 .about-menu{
+    /* grid-area: sidebar; */
     display: block;
+    background-color:#ffffff ;
     margin-top: 32px;
-    border:1px 1px 1px 0px ;
-    
+    border:1px 1px 1px 0px ;  
 }
 .menu{
-    padding: 24px 24px 16px 24px;
-    border-left: 6px solid #1873dc;
+    padding: 24px 21px 24px 22px;
+    border-left: 7px solid #1873dc;
     border-radius: 8px;
     border-top: 1px solid #e8ddff;
     border-right: 1px solid #e8ddff;
@@ -35,9 +36,10 @@ article{
     position: fixed;
     width: 257px;
 }
-.title-menu{
+.menu-title{
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 .name-menu{
     font-size: 14px;
@@ -47,17 +49,12 @@ article{
     text-size-adjust: 100%;
     text-transform: uppercase;
 }
-
-li .mission{
-    display: list-item;
-    padding-top: 0px;
-}
 a{
     display: inline-block;
     padding-left: 22px;
     padding-top: 0px;
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 18px;
     text-align: left;
@@ -70,83 +67,78 @@ a{
 a:hover{
     color: #0f55a6;
     text-decoration-line:underline ;
-    text-decoration-style: solid;
-    
+    text-decoration-style: solid;    
 }
-li{
+.item{
     display: list-item;
     padding-top: 16px;
     color:#1C0E40 ;
     list-style-type: none;
 }
-
 .about-content{
+    /* grid-area: main; */
     display: block;
     float: right;
+    background-color: #ffffff;
 }
 .content{
     margin-top: 32px;
 }
-h1{
+.content-name{
     margin: 32px 0 16px 0;
     font-size: 46px;
     font-weight: 600;
     line-height: 54px;
     text-size-adjust: 100%;
 }
-p {
-    margin: 0 016px 0;
+.content-text{
+    margin: 0 0 16px 0;
     font-size: 18px;
     line-height: 28px;
 }
-h2{
+.name-item {
     margin: 48px 0 16px 0;
     font-size: 32px;
     font-weight: 600;
     line-height: 42px;
 }
-.img-content{
-    display: block;
-    margin: 48px 0;
-    border-bottom: 1px solid #e8ddff; 
+.medical-members{
+    margin-top: 48px;
+    display: grid;
+    grid-template-rows: 258px 258px 258px 258px;
+    row-gap: 48px;
 }
-img{
-    display: inline-block;
-    float: left;
-    margin: 0 24px 24px 0;
-    width: 210px;
-    max-width: 100%;
-    border: 6px;
-    border-radius: 6px;
-    
-}
-.info{
-    display: block;
-    margin-bottom: 0;
-}
-.name{
-    margin-top: 24px;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 28px;
+.member-bio{
+    margin-top: 0px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #e8ddff;
 
+    display: grid;
+    grid-template-columns: 210px auto;
+    column-gap: 25px;
 }
-.job{
-    margin-top: 8px;
+.member-img > img{
+    max-width: 100%;
+    border-radius: 6px;
+}
+.member-info > .name{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.member-info > .job{
+    margin-top: 8px ;
     color: #615d66;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px;
     line-height: 18px;
     text-transform: uppercase;
 }
-.in4{
-    margin-top: 12px;
+.member-info > .details{
+    margin-top: 10px;
     font-size: 18px;
     line-height: 28px;
-}
-.in4 > p{
-    margin-bottom: 0;
 }
 h4{
     margin: 37px 0 16px 0;
