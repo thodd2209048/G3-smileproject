@@ -221,6 +221,14 @@ header {
   z-index: 2;
 }
 
+.nav-mobile__search {
+  display: flex;
+  align-items: center;
+}
+
+.nav-mobile__search-icon {
+}
+
 .nav-mobile__item-1 {
   padding: 1rem;
   font-weight: 500;
@@ -228,6 +236,9 @@ header {
 
 /* Tablet and mobile: width <1024px  */
 @media only screen and (max-width: 64em) {
+  .search-group {
+    display: none;
+  }
   .nav-mobile__menu-btn {
     display: block;
   }
