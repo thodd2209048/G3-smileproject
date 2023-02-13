@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=KEY_API"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <!-- <script src="location.js"></script> -->
+  <script src="curLocation.js"></script>
+
+  <link rel="stylesheet" href="location.css">
+  <title>Location</title>
+
+</head>
+
+<!-- <body onload="initMap()"> -->
+
+<body>
+  <div class="location container">
+
+    <div class="location-search" ng-app="searchInputApp" ng-controller="myCtrl">
+      <h1>Find a clinic</h1>
+      <input class="location-search__input" type="text" ng-model="searchInput">
+      <button class="location-search__btn" ng-click="getLocation()">Search</button>
+      <button class="location-search__myLocation-btn">Use my location</button>
+    </div>
+    <ul class="location-items">
+      <li class="location-item">
+        <h3 class="location-item-name">Dr. Smiles Dental Clinic</h3>
+        <p class="location-item-address">12th Main Road, Anna Nagar</p>
+        <p class="location-item-phone">+91 44 4204 2040</p>
+        <p class="location-item-city">Chennai 600040, Tamil Nadu </p>
+      </li>
+      <li class="location-item">
+        <h3 class="location-item-name">Pearl Dental Care</h3>
+        <p class="location-item-address">HSR Layout</p>
+        <p class="location-item-phone">+91 80 4343 3331</p>
+        <p class="location-item-city">Bengaluru 560102, Karnataka</p>
+      </li>
+      <li class="location-item">
+        <h3 class="location-item-name">Smilekraft Dentistry</h3>
+        <p class="location-item-address">Kalkaji</p>
+        <p class="location-item-phone">+91 11 4053 8200</p>
+        <p class="location-item-city">New Delhi 110019, Delhi</p>
+      </li>
+    </ul>
+    <div class="map-container" id="map" style="height: 500px; width: 100%;"></div>
+  </div>
+</body>
+
+</html>
