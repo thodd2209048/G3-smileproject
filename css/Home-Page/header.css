@@ -224,14 +224,55 @@ header {
 .nav-mobile__search {
   display: flex;
   align-items: center;
+  padding: 10px;
+}
+
+.nav-mobile__search-wrapper {
+  width: 100%;
+  display: flex;
+  border: 1px solid var(--color1);
+  border-radius: var(--border-radius-small);
+}
+
+.nav-mobile__search-wrapper:focus-within {
+  outline: 2px solid var(--color1);
 }
 
 .nav-mobile__search-icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-top-left-radius: var(--border-radius-small);
+  border-bottom-left-radius: var(--border-radius-small); */
+  cursor: pointer;
+}
+
+.nav-mobile__search-icon:hover {
+  color: var(--color1);
+}
+
+.nav-mobile__search-input {
+  height: 35px;
+  flex: 1;
+  border: none;
+  border-top-right-radius: var(--border-radius-small);
+  border-bottom-right-radius: var(--border-radius-small);
+}
+
+.nav-mobile__search-input:focus {
+  outline: none;
 }
 
 .nav-mobile__item-1 {
-  padding: 1rem;
+  padding: 10px;
   font-weight: 500;
+}
+
+.nav-mobile__link-1:hover {
+  color: var(--color1);
 }
 
 /* Tablet and mobile: width <1024px  */
