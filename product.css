@@ -30,11 +30,12 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 .list-products .item{
     width: 300px;
     height: 400px;
-    background:#0f55a6;
+    background: #1873dc;
     border-radius: 10px;
     margin-bottom: 50px;
     border: 1px solid #ccc  ;
@@ -49,17 +50,18 @@
 }
 .text-heading{
     font-size: 50px;
+    font-weight: bold;
+    
     
 }
-.banner .text-description{
-    margin-top: 50px;
-}
-
 .content-banner{
     color:#0f55a6;
     position: absolute;
-    text-align: center;
+    width: 600px;
     padding-top: 100px;
+    line-height: 1.5;
+    margin-left: 20px;
+   
 }
 .card-img-top{
   width: 300px;
@@ -69,24 +71,32 @@
     text-align: center;
     color: #fff;
     font-weight: bold;
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 5px;
+    font-size: 25px;
 }
 .list-products .item .img-card{
     width: 300px;
     height: 300px;
 }
+
 .list-products .item .sub a{
   color: black;
-  padding: 10px 20px;
+  padding: 10px 5px;
   background-color: #fff;
-  border-radius: 15px;
-  margin-top: 20px;
-  font-size: 14px;
+  border-radius: 13px;
+  font-size: 12px;
+  margin-left: 100px;
+  font-size: 15px;
+  letter-spacing: 1px;
+ 
+}
+.list-products .item .sub{
+    margin-top: 9px;
 }
 .list-products .item .sub a:hover{
-    color: #1873dc;
-    background-color:#fff;
+    color: #fff;
+    background-color:#15ABDB;
+    transform: scale(0.9);
 }
 
 
