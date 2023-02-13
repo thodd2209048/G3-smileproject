@@ -55,6 +55,10 @@ li {
   gap: 20px;
 }
 
+.location {
+  margin-top: 15px;
+}
+
 .location-search {
   grid-area: search;
 }
@@ -63,7 +67,12 @@ li {
   grid-area: address;
 }
 
+.location-item {
+  margin-bottom: 15px;
+}
+
 .map-container {
   grid-area: map;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  border-radius: var(--border-radius-big);
 }
