@@ -65,7 +65,7 @@ header {
 .content{
     text-align: left;
     width: 60%;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .heading{
@@ -83,7 +83,7 @@ header {
 }
 
 .heading .no-fill{
-    font-size: italic;
+    /* font-size: italic; */
     color: transparent;
     -webkit-text-stroke: 2px black ;
     font-size: 60px;
@@ -130,3 +130,27 @@ header {
     background: var(--color2);
     color: #000;
 }
+
+@media (max-width: 870px) {
+
+    .no-fill{
+        display: none;
+    }
+
+    input[type="file"] {
+        width: 225px;
+        display: inline-block;
+        cursor: pointer;
+        border: 1px solid #000;
+      }
+
+    /* .header {
+        min-width: 250px;
+    } */
+    .blogs-section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
