@@ -7,7 +7,7 @@
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  z-index: -2;
+  z-index: 0;
 }
 
 .hero img {
@@ -16,7 +16,7 @@
   min-height: 150px;
   position: absolute;
   opacity: 0.8;
-  z-index: -2;
+  z-index: -1;
 }
 
 .hero-title {
@@ -24,7 +24,7 @@
   padding: 5px 15px;
   background-color: white;
   border-radius: 5px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .hero-title p {
@@ -392,6 +392,7 @@
 @media only screen and (max-width: 64em) {
   .top-news .row {
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'featured news';
   }
   .promo {
     display: none;
