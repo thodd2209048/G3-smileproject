@@ -80,7 +80,7 @@ header {
 }
 
 .logo-search-login-small {
-  display: grid;
+  display: none;
   height: 100%;
   grid-template-columns: 70px 1fr 155px;
   grid-template-areas: logo;
