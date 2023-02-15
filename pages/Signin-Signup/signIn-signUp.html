@@ -44,7 +44,10 @@
                             <span ng-show="myForm.password.$error.required">Password is required</span>
                         </div>
                     </div>
-                    <input type="submit" value="Login" class="btn solid" />
+                    <div class="forgot-pw">
+                        <a href="/pages/forgot-password/forgot-pw.html">Forgot password?</a>
+                    </div>
+                    <input type="submit" ng-disabled="myForm.$invalid" value="Login" class="btn solid" />
                     <p class="social-text">Or Sign in with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -113,7 +116,7 @@
                                 space</span>
                         </div>
                     </div>
-                    <input type="submit" class="btn" value="Sign up" />
+                    <input type="submit" ng-disabled="myForm.$invalid" class="btn" value="Sign up" />
                     <p class="social-text">Or Sign up with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">

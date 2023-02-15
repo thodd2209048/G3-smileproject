@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FGapp">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/42a77365e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./forgot-pw.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"
+        integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./forgot-pw.js"></script>
+    <title>Reset your password</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms-container" >
+            <div class="forgot-pw">
+                <form action="#" class="send-mail-form" name="myForm" ng-controller="FG-ctrl" novalidate>
+                    <div class="logo">
+                        <img src="./public/images/logo.svg" alt="">
+                    </div>
+                    <h2 class="title">
+                        Reset Your Password</h2>
+                    <p class="note">Enter your user account's verified email address and we will send you a password reset link.</p>
+                    <div class="input">
+                            <div class="input-field">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" class="form-control" name="email" placeholder="Email"
+                                    ng-model="user.email" required />
+                            </div>
+                            <div class="errortext" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <span ng-show="myForm.email.$error.required">Email is required</span>
+                                <span ng-show="myForm.email.$error.email">Invalid email format</span>
+                            </div>
+                    </div>
+                    
+                    <input type="submit" ng-disabled="myForm.$invalid" value="Send password reset email" class="btn solid" />
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Wanna try again ?</h3>
+                    <p>
+                        Empowering Professionals to Connect, Collaborate, and Grow.
+                    </p>
+                    <button class="btn transparent" id="sign-up-btn"><a href="/pages/Signin-Signup/signIn-signUp.html">Sign in</a>
+                        
+                    </button>
+                </div>
+                <img src="./public/images/undraw_forgot_password_re_hxwm.svg" class="image" alt="" />
+            </div>
+        </div>
+    </div>
+    <script src="./forgot-pw.js"></script>
+</body>
+
+</html>
