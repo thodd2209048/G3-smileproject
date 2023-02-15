@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/Home-Page/header.css" />
   <link rel="stylesheet" href="./css/Home-Page/footer.css" />
   <link rel="stylesheet" href="./css/Home-Page/main.css">
+  <link rel="icon" href="./public/images/logo.svg">
 
 
   <script src="index.js"></script>
@@ -27,15 +28,14 @@
         <img src="./public/images/logo.svg" alt="Logo" />
       </div>
       <div class="search-group">
+        <input type="text" class="search-input" placeholder="Search in 32SMILES" aria-label="Search"
+          aria-describedby="basic-addon1" />
         <span class="search-group-icon" id="basic-addon1">
           <i class="fas fa-search"></i>
         </span>
-
-        <input type="text" class="search-input" placeholder="Search in 32SMILES" aria-label="Search"
-          aria-describedby="basic-addon1" />
       </div>
       <div class="login">
-        <a href="" class="login_login">Sign in</a>
+        <a href="./pages/Signin-Signup/signIn-signUp.html" class="login_login">Sign in</a>
         <label for="nav-mobile-input" class="nav-mobile__menu-btn"><i class="fa-solid fa-bars"></i></label>
       </div>
     </div>
@@ -101,7 +101,7 @@
         </li>
       </ul>
       <div class="login">
-        <a href="" class="login_login">Sign in</a>
+        <a href="./pages/Signin-Signup/signIn-signUp.html" class="login_login">Sign in</a>
         <label for="nav-mobile-input" class="nav-mobile__menu-btn"><i class="fa-solid fa-bars"></i></label>
       </div>
     </div>
@@ -527,14 +527,19 @@
       <div class="footer__info">
         <div class="row footer__info-row">
           <div class="col footer__col-1">
-            <div class="footer_subcribe-wrapper" ng-app="myApp" ng-controller="myCtrl">
-              <div class="footer__subcribe-title">
+            <div class="footer_subscribe-wrapper" ng-app="myApp" ng-controller="myCtrl">
+              <div class="footer__subscribe-title">
                 <p>Subscribe</p>
               </div>
-              <div class="footer__subcribe-input-field">
-                <input ng-model="emailInput" class="footer__input-subcribe" type="text" placeholder="Enter your email">
-                <button ng-click="getAndSave()" class="footer__sign-up-button" href="">Sign up</button>
-              </div>
+              <form name="subscribeForm">
+                <div class="footer__subscribe-input-field">
+                  <input ng-model="emailInput" class="footer__input-subscribe" type="email"
+                    placeholder="Enter your email">
+                  <button ng-click="validateEmail()" class="footer__sign-up-button" type="submit">Sign up</button>
+
+                </div>
+                <p class="footer__subscribe-error"> {{errorMessage}}</p>
+              </form>
               <div class="footer__thanks">
                 <span>Thank you for subscribe</span>
               </div>

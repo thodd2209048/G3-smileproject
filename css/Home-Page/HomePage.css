@@ -16,7 +16,7 @@
   --sub-text-color: #948f99;
   --color3: #0f55a6;
   /* --color3: #ffde17; */
-  --color-red: #e60039;
+  --color-red: #cc3a55;
   --background-color: #f7f7f7;
   --header-background-color: #fff;
 }
@@ -69,7 +69,7 @@ li {
   color: #fff;
   background-color: var(--color1);
   border: none;
-  border-radius: var(--border-radius-small);
+  border-radius: 9999px;
   font-weight: 600;
 }
 

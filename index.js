@@ -24,7 +24,8 @@ function scrollFunction() {
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function ($scope, $window) {
   var emails = [];
-  console.log(typeof emails);
+  var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
   getEmails = () => {
     let JSONEmail = $window.localStorage.getItem('emails');
     let localStorageEmail = JSON.parse(JSONEmail);
@@ -38,8 +39,19 @@ app.controller('myCtrl', function ($scope, $window) {
     $window.localStorage.setItem('emails', JSON.stringify(emails));
   };
 
-  $scope.getAndSave = () => {
+  getAndSave = () => {
     getEmails();
     saveEmails();
+  };
+
+  $scope.validateEmail = () => {
+    $scope.errorMessage = '';
+    if ($scope.emailInput == undefined) {
+      $scope.errorMessage = 'Email is required.';
+    } else if (!regexEmail.test($scope.emailInput)) {
+      $scope.errorMessage = 'Invalid email address.';
+    } else {
+      getAndSave();
+    }
   };
 });
