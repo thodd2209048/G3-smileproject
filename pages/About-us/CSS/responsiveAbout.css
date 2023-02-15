@@ -1,0 +1,117 @@
+/* Tablet */
+
+@media only screen and (min-width: 46.25em) and (max-width: 64em) {
+  .about-main {
+    padding: 0 6%;
+  }
+  .about-article {
+    column-gap: 4rem;
+  }
+  .name-menu {
+    font-size: 11px;
+  }
+  a {
+    font-size: 12px;
+  }
+  .content-name {
+    font-size: 35px;
+  }
+  .content-text {
+    font-size: 13px;
+  }
+  .name-item {
+    font-size: 23px;
+    margin-top: 28px;
+  }
+  .member-info > .name {
+    font-size: 17px;
+  }
+  .member-info > .job {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+  .member-info > .details {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  h4 {
+    font-size: 14px;
+    margin: 20px 0 10px 0;
+  }
+  #mail {
+    font-size: 10px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+  .about-main {
+    padding: 4%;
+  }
+
+  .about-article {
+    grid-template-columns: 100%;
+    grid-template-areas: 'sidebar' 'content';
+  }
+  .menu {
+    max-width: auto;
+    padding: 15;
+  }
+  .about-menu {
+    border-left: none;
+    border-radius: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .menu-title {
+    margin: 0;
+  }
+  .name-menu {
+    font-size: 10px;
+  }
+  .item {
+    padding-top: 5px;
+  }
+  a {
+    padding-left: 10px;
+    font-size: 10px;
+  }
+  .content-name {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .content-text {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .name-item {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .medical-members {
+    margin-top: 30px;
+  }
+  .member-bio {
+    padding-bottom: 0;
+    column-gap: 27px;
+  }
+  .member-info > .name {
+    font-size: 13px;
+  }
+  .member-info > .job {
+    font-size: 10px;
+    margin-top: 6px;
+  }
+  .member-info > .details {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  h4 {
+    font-size: 14px;
+    margin: 20px 0 10px 0;
+  }
+  #mail {
+    font-size: 10px;
+  }
+}
