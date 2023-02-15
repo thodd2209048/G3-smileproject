@@ -2,12 +2,12 @@
 
 footer {
   padding: 5px 0;
-  background-color: var(--background-color);
+  background-color: var(--background-color2);
   border-top: 3px solid var(--color1);
 }
 
 .footer-area {
-  background-color: var(--background-color);
+  background-color: var(--background-color2);
 }
 
 /* .footer__logo {

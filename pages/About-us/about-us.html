@@ -5,12 +5,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/CSS/aboutUs.css">
-    <link rel="stylesheet" href="/CSS/responsiveAbout.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/1fb8bb996b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <link rel="stylesheet" href="./css/aboutUs.css">
+    <link rel="stylesheet" href="./css/responsiveAbout.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+
+    <link rel="icon" href="../../public/images/favicon.jpg">
+
+    <script src="../../js/header-footer.js"></script>
+    <title>About us</title>
 </head>
 
 <body>
+    <header class="container-fluid">
+        <input type="checkbox" class="nav__input" id="nav-mobile-input">
+        <div class="logo-search-login container" id="logo-search-login-1">
+            <div class="logo">
+                <img src="../../public/images/logo.svg" alt="Logo" />
+            </div>
+            <div class="search-group">
+                <input type="text" class="search-input" placeholder="Search in 32SMILES" aria-label="Search"
+                    aria-describedby="basic-addon1" />
+                <span class="search-group-icon" id="basic-addon1">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+            <div class="login">
+                <a href="../../pages/Signin-Signup/signIn-signUp.html" class="login_login">Sign in</a>
+                <label for="nav-mobile-input" class="nav-mobile__menu-btn"><i class="fa-solid fa-bars"></i></label>
+            </div>
+        </div>
+
+        <div class="logo-search-login-small container" id="logo-search-login-2">
+            <div class="logo">
+                <img src="../../public/images/logo.svg" alt="Logo" />
+            </div>
+            <ul class="nav-bar container" id="smallNav">
+                <li class="nav-bar__item-1">
+                    <a href="" class="nav-bar__link-1">HOME</a>
+                    <ul class="nav-bar__list-2">
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    </ul>
+                </li>
+                <li class="nav-bar__item-1">
+                    <a href="" class="nav-bar__link-1">PROFESSIONAL EDUCATION</a>
+                    <ul class="nav-bar__list-2">
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    </ul>
+                </li>
+                <li class="nav-bar__item-1">
+                    <a href="" class="nav-bar__link-1">PATIENTS EDUCATION</a>
+                    <ul class="nav-bar__list-2">
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    </ul>
+                </li>
+                <li class="nav-bar__item-1">
+                    <a href="" class="nav-bar__link-1">RESEARCH</a>
+                    <ul class="nav-bar__list-2">
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    </ul>
+                </li>
+                <li class="nav-bar__item-1">
+                    <a href="" class="nav-bar__link-1">PRODUCTS</a>
+                    <ul class="nav-bar__list-2">
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    </ul>
+                </li>
+                <li class="nav-bar__item-1">
+                    <a href="" class="nav-bar__link-1">CONTACT US</a>
+                    <ul class="nav-bar__list-2">
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="login">
+                <a href="../../pages/Signin-Signup/signIn-signUp.html" class="login_login">Sign in</a>
+                <label for="nav-mobile-input" class="nav-mobile__menu-btn"><i class="fa-solid fa-bars"></i></label>
+            </div>
+        </div>
+        <ul class="nav-bar container" id="mainNav">
+            <li class="nav-bar__item-1">
+                <a href="" class="nav-bar__link-1">HOME</a>
+                <ul class="nav-bar__list-2">
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                </ul>
+            </li>
+            <li class="nav-bar__item-1">
+                <a href="" class="nav-bar__link-1">PROFESSIONAL EDUCATION</a>
+                <ul class="nav-bar__list-2">
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                </ul>
+            </li>
+            <li class="nav-bar__item-1">
+                <a href="" class="nav-bar__link-1">PATIENTS EDUCATION</a>
+                <ul class="nav-bar__list-2">
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                </ul>
+            </li>
+            <li class="nav-bar__item-1">
+                <a href="" class="nav-bar__link-1">RESEARCH</a>
+                <ul class="nav-bar__list-2">
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                </ul>
+            </li>
+            <li class="nav-bar__item-1">
+                <a href="" class="nav-bar__link-1">PRODUCTS</a>
+                <ul class="nav-bar__list-2">
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                </ul>
+            </li>
+            <li class="nav-bar__item-1">
+                <a href="" class="nav-bar__link-1">CONTACT US</a>
+                <ul class="nav-bar__list-2">
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+
+        <label for="nav-mobile-input" class="nav__overlay"></label>
+
+        <di class="nav-mobile">
+            <label for="nav-mobile-input" class="nav-mobile-close"><i class="fa-solid fa-xmark"></i></label>
+            <div class="nav-mobile__search">
+                <div class="nav-mobile__search-wrapper">
+                    <span class="nav-mobile__search-icon" id="basic-addon1">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input type="text" class="nav-mobile__search-input" placeholder="Search in 32SMILES"
+                        aria-label="Search" aria-describedby="basic-addon1" />
+                </div>
+            </div>
+            <ul class="nav-mobile__list-1">
+                <li class="nav-mobile__item-1">
+                    <a href="" class="nav-mobile__link-1">HOME</a>
+                </li>
+                <li class="nav-mobile__item-1">
+                    <a href="" class="nav-mobile__link-1">PROFESSIONAL EDUCATION</a>
+                </li>
+                <li class="nav-mobile__item-1">
+                    <a href="" class="nav-mobile__link-1">PATIENTS EDUCATION</a>
+                </li>
+                <li class="nav-mobile__item-1">
+                    <a href="" class="nav-mobile__link-1">RESEARCH</a>
+                </li>
+                <li class="nav-mobile__item-1">
+                    <a href="" class="nav-mobile__link-1">PRODUCTS</a>
+                </li>
+                <li class="nav-mobile__item-1">
+                    <a href="" class="nav-mobile__link-1">CONTACT US</a>
+                </li>
+            </ul>
+        </di>
+
+    </header>
     <main class="about-main container">
         <article class="about-article">
             <div class="about-menu ">
@@ -69,7 +260,7 @@
                         <div class="medical-members">
                             <div class="member-bio">
                                 <div class="member-img">
-                                    <img src="/img/Anju.webp" alt="Anju Goel">
+                                    <img src="./public/Anju.webp" alt="Anju Goel">
                                 </div>
                                 <div class="member-info">
                                     <div class="name"> Anju Goel, MD, MPH</div>
@@ -86,7 +277,7 @@
                             </div>
                             <div class="member-bio">
                                 <div class="member-img">
-                                    <img src="/img/yasmine.webp" alt="Yasmine Ali">
+                                    <img src="./public/yasmine.webp" alt="Yasmine Ali">
                                 </div>
                                 <div class="member-info">
                                     <div class="name">Yasmine S. Ali, MD, MSCI</div>
@@ -102,7 +293,7 @@
                             </div>
                             <div class="member-bio">
                                 <div class="member-img">
-                                    <img src="/img/doru.webp" alt="Doru Paul">
+                                    <img src="./public/doru.webp" alt="Doru Paul">
                                 </div>
                                 <div class="member-info">
                                     <div class="name">Doru Paul, MD</div>
@@ -119,7 +310,7 @@
                             </div>
                             <div class="member-bio">
                                 <div class="member-img">
-                                    <img src="/img/Mary.webp" alt="Mary Choy">
+                                    <img src="./public/Mary.webp" alt="Mary Choy">
                                 </div>
                                 <div class="member-info">
                                     <div class="name">Mary Choy, PharmD</div>
@@ -171,7 +362,7 @@
                         <div class="medical-members">
                             <div class="member-bio">
                                 <div class="member-img">
-                                    <img src="/img/Sara.webp" alt="Sara Michael">
+                                    <img src="./public/Sara.webp" alt="Sara Michael">
                                 </div>
                                 <div class="member-info">
                                     <div class="name"> Sara Michael</div>
@@ -187,7 +378,7 @@
                             </div>
                             <div class="member-bio">
                                 <div class="member-img">
-                                    <img src="/img/yasmine.webp" alt="Ronald Lubelchek">
+                                    <img src="./public/yasmine.webp" alt="Ronald Lubelchek">
                                 </div>
                                 <div class="member-info">
                                     <div class="name">Ronald Lubelchek, MD</div>
@@ -202,7 +393,7 @@
                             </div>
                             <div class="member-bio">
                                 <div class="member-img">
-                                    <img src="/img/Jessica.webp" alt="Jessica">
+                                    <img src="./public/Jessica.webp" alt="Jessica">
                                 </div>
                                 <div class="member-info">
                                     <div class="name">Jessica Shepherd, MD</div>
@@ -219,7 +410,7 @@
                             </div>
                             <div class="member-bio">
                                 <div class="member-img">
-                                    <img src="/img/Rob.webp" alt="Rob Stephen">
+                                    <img src="./public/Rob.webp" alt="Rob Stephen">
                                 </div>
                                 <div class="member-info">
                                     <div class="name"> Rob Stephen</div>
@@ -286,6 +477,69 @@
             </div>
         </article>
     </main>
+
+    <footer>
+        <div class="footer-area container">
+            <div class="footer__info">
+                <div class="row footer__info-row">
+                    <div class="col footer__col-1">
+                        <div class="footer_subscribe-wrapper" ng-app="myApp" ng-controller="myCtrl">
+                            <div class="footer__subscribe-title">
+                                <p>Subscribe</p>
+                            </div>
+                            <form name="subscribeForm">
+                                <div class="footer__subscribe-input-field">
+                                    <input ng-model="emailInput" class="footer__input-subscribe" type="email"
+                                        placeholder="Enter your email">
+                                    <button ng-click="validateEmail()" class="footer__sign-up-button" type="submit">Sign
+                                        up</button>
+
+                                </div>
+                                <p class="footer__subscribe-error"> {{errorMessage}}</p>
+                            </form>
+                            <div class="footer__thanks">
+                                <span>Thank you for subscribe</span>
+                            </div>
+                        </div>
+
+                        <ul class="footer__social-media">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col footer__col-2">
+                        <ul>
+                            <li><a href="">Patient education</a></li>
+                            <li><a href="">Professional education</a></li>
+                            <li><a href="">Research</a></li>
+                            <li><a href="">Product</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer__col-3">
+                        <ul>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Site map</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
