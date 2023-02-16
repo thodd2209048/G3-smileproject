@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?famil...lay=swap");
 *{
     margin: 0;
     padding: 0;
@@ -14,25 +14,18 @@
     
  }
  .banner{
-<<<<<<< HEAD:G3-32smiles-child-page/css/product.css
-   background: url('../public/img/nha-khoa-dong-da.webp') no-repeat center ;
+   background: url('../public/nha-khoa-dong-da.webp') no-repeat center ;
    background-size: cover;
-=======
-    /* margin-top: 60px; */
->>>>>>> 60bcfd7525b279b0e54ed6c3d8c16c43ca17dd14:pages/products/css/product.css
     width: 100%;
-    height: 400px;
-    background: url(../img/product4.png);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 550px;
+   text-align: center;
+   overflow: hidden;
  
  }
 .products {
     margin: 0 var(--margin-width);
     margin-top: 50px;
-    /* max-width: 70%; */
+   
     
 }
 .list-products{
@@ -69,27 +62,28 @@
     font-size: 50px;
     font-weight: bold;
     margin: 0;
-    text-align: left;
+    text-align: center;
 }
 .text-description{
     display: inline-block;
     text-align: left;
-    width: 50%;
+   
 }
 .content-banner{
     color:#0f55a6;
-    position: relative;
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, 50%); */
-    /* justify-content: ; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
     text-transform: uppercase;
-    /* z-index: 1; */
-    /* display: inline-block; */
-    /* text-align: left; */
+    z-index: 1;
+    display: inline-block;
+    text-align: left;
+   
 }
 .card-img-top{
-  width: 100%;
+  width: 300px;
 }
 
 .list-products .item .name{
@@ -100,7 +94,7 @@
     font-size: 25px;
 }
 .list-products .item .img-card{
-    width: 100%;
+    width: 300px;
     height: 300px;
 }
 
@@ -122,18 +116,24 @@
     transform: scale(0.9);
 }
 /* Mobile: width < 740px*/
-@media (max-width: 1070px) {
-    
+@media only screen and (max-width: 46.1875em) {
+    .banner{
+        width: 90%;
+       
+    }
     .content-banner{
-        padding-left: 30px;
-        padding-right: 30px;
-    } 
+        margin-top: -20%;
+      
+    }
     
   }
 
   /* Tablet: width >=740px and width <1024px  */
-
-    
-
-
-
+@media only screen and (min-width: 46.25em) and (max-width: 64em) {
+    .content-banner{
+         margin-top: -28%;
+    }
+    .banner{
+        width: 95%;
+    }
+}

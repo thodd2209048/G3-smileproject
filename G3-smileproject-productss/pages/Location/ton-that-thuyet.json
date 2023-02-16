@@ -1,0 +1,64 @@
+{
+  "results" : [
+     {
+        "address_components" : [
+           {
+              "long_name" : "8",
+              "short_name" : "8",
+              "types" : [ "street_number" ]
+           },
+           {
+              "long_name" : "Tôn Thất Thuyết",
+              "short_name" : "Tôn Thất Thuyết",
+              "types" : [ "route" ]
+           },
+           {
+              "long_name" : "Từ Liêm",
+              "short_name" : "Từ Liêm",
+              "types" : [ "administrative_area_level_2", "political" ]
+           },
+           {
+              "long_name" : "Hà Nội",
+              "short_name" : "Hà Nội",
+              "types" : [ "administrative_area_level_1", "political" ]
+           },
+           {
+              "long_name" : "Vietnam",
+              "short_name" : "VN",
+              "types" : [ "country", "political" ]
+           }
+        ],
+        "formatted_address" : "8 Tôn Thất Thuyết, Mỹ Đình, Từ Liêm, Hà Nội, Vietnam",
+        "geometry" : {
+           "bounds" : {
+              "northeast" : {
+                 "lat" : 21.0286594,
+                 "lng" : 105.7834536
+              },
+              "southwest" : {
+                 "lat" : 21.0284952,
+                 "lng" : 105.7832048
+              }
+           },
+           "location" : {
+              "lat" : 21.0285639,
+              "lng" : 105.7833285
+           },
+           "location_type" : "ROOFTOP",
+           "viewport" : {
+              "northeast" : {
+                 "lat" : 21.0299262802915,
+                 "lng" : 105.7846830802915
+              },
+              "southwest" : {
+                 "lat" : 21.0272283197085,
+                 "lng" : 105.7819851197085
+              }
+           }
+        },
+        "place_id" : "ChIJAYP03kyrNTEReA3fmnv14wk",
+        "types" : [ "premise" ]
+     }
+  ],
+  "status" : "OK"
+}
