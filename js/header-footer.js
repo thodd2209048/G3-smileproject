@@ -15,7 +15,6 @@ function scrollFunction() {
     document.getElementById('logo-search-login-1').style.display = 'grid';
     document.getElementById('logo-search-login-2').style.display = 'none';
     document.getElementById('mainNav').style.display = 'flex';
-    console.log('check');
   }
 }
 
@@ -34,7 +33,6 @@ app.controller('myCtrl', function ($scope, $window) {
     }
   };
   saveEmails = () => {
-    console.log(typeof emails);
     emails.push($scope.emailInput);
     $window.localStorage.setItem('emails', JSON.stringify(emails));
   };

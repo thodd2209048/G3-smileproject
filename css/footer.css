@@ -106,7 +106,7 @@ footer {
 .footer__social-media {
   width: 100%;
   display: flex;
-  margin: 2rem 0 0;
+  margin: 1rem 0 1rem;
 }
 
 .footer__social-media li {
