@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    --margin-width: 15%;
+
+  
+    --color1: #0f55a6;
+    --color1-hover: #1873dc;
+    --color2: #15ABDB;
+     box-sizing: border-box;
+ }
+ .container__patEdu{
+    margin: 0 var(--margin-width);
+    margin-top: 80px;
+    margin-left:15%;
+    width: 70%;
+ 
+ }
+ .row {
+    float: left;
+    padding: 15px;
+    
+    
+   
+  }
+  
+  /* Clear floats */
+  .container__patEdu:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ /*Responsive*/
+ 
+    .row{
+      width: 100%;
+    }
+  
+
+  /*filter */
+  .filterDiv {
+   float: left;
+    display: none;
+  
+    width: 100px;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+  /*.PatEdu__post{
+   
+  }*/
+  .PatEdu__post:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .patdeu__post{
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .patedu__in4{
+    display: flex;
+    width: 45%;
+    margin: 1.5rem 0;
+  }
+  .patedu__link{
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+  .patedu__link:hover .patedu__title{
+    color: var(--color3);
+    opacity: 0.8;
+  }
+  .patedu__link:hover{
+    opacity: 0.5;
+  }
+  .patedu__img{
+    width: 200%;
+  }
+  .patedu__text{
+    
+    padding-left: 10px;
+    color: black;
+    min-width: 200px;
+  }
+  .patedu__title{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .patedu__content{
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    
+  }
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
