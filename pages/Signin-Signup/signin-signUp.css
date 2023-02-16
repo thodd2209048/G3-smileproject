@@ -57,7 +57,19 @@ body, input {
     grid-template-columns: 1fr;
     z-index: 5;
 }
+.back a {
+  text-decoration: none;
+  color: var(--color3);
+}
+.back {
+  padding-top: 10px;
+  
+}
 
+.back a:hover {
+  text-decoration: underline;
+  color: var(--color1-hover);
+}
 form {
     display: flex;
     align-items: center;
@@ -68,6 +80,8 @@ form {
     overflow: hidden;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    margin-top: 20px;
+    
 }
 /* hide sign up form */
 form.sign-in-form {
