@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/1fb8bb996b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <link rel="stylesheet" href="./css/aboutUs.css">
+    <link rel="stylesheet" href="./css/responsiveAbout.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+
+    <link rel="icon" href="../../public/images/favicon.jpg">
+
+    <script src="../../js/header-footer.js"></script>
+    <title>About us</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <input type="checkbox" class="nav__input" id="nav-mobile-input">
+        <div class="logo-search-login container" id="logo-search-login-1">
+            <div class="logo">
+                <img src="../../public/images/logo.svg" alt="Logo" />
+            </div>
+            <div class="search-group">
+                <input type="text" class="search-input" placeholder="Search in 32SMILES" aria-label="Search"
+                    aria-describedby="basic-addon1" />
+                <span class="search-group-icon" id="basic-addon1">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+            <div class="login">
+                <a href="../../pages/Signin-Signup/signIn-signUp.html" class="login_login">Sign in</a>
+                <label for="nav-mobile-input" class="nav-mobile__menu-btn"><i class="fa-solid fa-bars"></i></label>
+            </div>
+        </div>
+
+        <div class="logo-search-login-small container" id="logo-search-login-2">
+            <div class="logo">
+                <img src="../../public/images/logo.svg" alt="Logo" />
+            </div>
+            <ul class="nav-bar container" id="smallNav">
+                <li class="nav-bar__item-1">
+                    <a href="" class="nav-bar__link-1">HOME</a>
+                    <ul class="nav-bar__list-2">
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    </ul>
+                </li>
+                <li class="nav-bar__item-1">
+                    <a href="" class="nav-bar__link-1">PROFESSIONAL EDUCATION</a>
+                    <ul class="nav-bar__list-2">
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    </ul>
+                </li>
+                <li class="nav-bar__item-1">
+                    <a href="" class="nav-bar__link-1">PATIENTS EDUCATION</a>
+                    <ul class="nav-bar__list-2">
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    </ul>
+                </li>
+                <li class="nav-bar__item-1">
+                    <a href="" class="nav-bar__link-1">RESEARCH</a>
+                    <ul class="nav-bar__list-2">
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    </ul>
+                </li>
+                <li class="nav-bar__item-1">
+                    <a href="" class="nav-bar__link-1">PRODUCTS</a>
+                    <ul class="nav-bar__list-2">
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    </ul>
+                </li>
+                <li class="nav-bar__item-1">
+                    <a href="" class="nav-bar__link-1">CONTACT US</a>
+                    <ul class="nav-bar__list-2">
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                        <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="login">
+                <a href="../../pages/Signin-Signup/signIn-signUp.html" class="login_login">Sign in</a>
+                <label for="nav-mobile-input" class="nav-mobile__menu-btn"><i class="fa-solid fa-bars"></i></label>
+            </div>
+        </div>
+        <ul class="nav-bar container" id="mainNav">
+            <li class="nav-bar__item-1">
+                <a href="" class="nav-bar__link-1">HOME</a>
+                <ul class="nav-bar__list-2">
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                </ul>
+            </li>
+            <li class="nav-bar__item-1">
+                <a href="" class="nav-bar__link-1">PROFESSIONAL EDUCATION</a>
+                <ul class="nav-bar__list-2">
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                </ul>
+            </li>
+            <li class="nav-bar__item-1">
+                <a href="" class="nav-bar__link-1">PATIENTS EDUCATION</a>
+                <ul class="nav-bar__list-2">
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                </ul>
+            </li>
+            <li class="nav-bar__item-1">
+                <a href="" class="nav-bar__link-1">RESEARCH</a>
+                <ul class="nav-bar__list-2">
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                </ul>
+            </li>
+            <li class="nav-bar__item-1">
+                <a href="" class="nav-bar__link-1">PRODUCTS</a>
+                <ul class="nav-bar__list-2">
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                </ul>
+            </li>
+            <li class="nav-bar__item-1">
+                <a href="" class="nav-bar__link-1">CONTACT US</a>
+                <ul class="nav-bar__list-2">
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                    <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+
+        <label for="nav-mobile-input" class="nav__overlay"></label>
+
+        <di class="nav-mobile">
+            <label for="nav-mobile-input" class="nav-mobile-close"><i class="fa-solid fa-xmark"></i></label>
+            <div class="nav-mobile__search">
+                <div class="nav-mobile__search-wrapper">
+                    <span class="nav-mobile__search-icon" id="basic-addon1">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input type="text" class="nav-mobile__search-input" placeholder="Search in 32SMILES"
+                        aria-label="Search" aria-describedby="basic-addon1" />
+                </div>
+            </div>
+            <ul class="nav-mobile__list-1">
+                <li class="nav-mobile__item-1">
+                    <a href="" class="nav-mobile__link-1">HOME</a>
+                </li>
+                <li class="nav-mobile__item-1">
+                    <a href="" class="nav-mobile__link-1">PROFESSIONAL EDUCATION</a>
+                </li>
+                <li class="nav-mobile__item-1">
+                    <a href="" class="nav-mobile__link-1">PATIENTS EDUCATION</a>
+                </li>
+                <li class="nav-mobile__item-1">
+                    <a href="" class="nav-mobile__link-1">RESEARCH</a>
+                </li>
+                <li class="nav-mobile__item-1">
+                    <a href="" class="nav-mobile__link-1">PRODUCTS</a>
+                </li>
+                <li class="nav-mobile__item-1">
+                    <a href="" class="nav-mobile__link-1">CONTACT US</a>
+                </li>
+            </ul>
+        </di>
+
+    </header>
+    <main class="about-main container">
+        <article class="about-article">
+            <div class="about-menu ">
+                <div class="menu">
+                    <div class="menu-title">
+                        <span class="name-menu">IN THIS ARTICLE</span>
+                    </div>
+                    <div class="title">
+                        <ul class="title-lists">
+                            <li class="article__item"><a href="#mission">Our Mission</a></li>
+                            <li class="article__item"><a href="#medical-expert">Our Medical Expert Board</a></li>
+                            <li class="article__item"><a href="#commitment">Our Commitment to Diversity, Equity, and
+                                    Inclusion</a></li>
+                            <li class="article__item"><a href="#editorial">Our Editorial Process</a></li>
+                            <li class="article__item"><a href="#team">Our Team</a></li>
+                            <li class="article__item"><a href="#policies">Our Policies</a></li>
+                            <li class="article__item"><a href="#connect">Connect With Us</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="content">
+                    <h1 class="content-name">About Us</h1>
+                    <div class="content-main">
+                        <p class="content-text">
+                            32Smiles was founded in 2020 as a publication focusing on a healthy lifestyle for women.
+                            Since then, 32Smiles has expanded to cover health and wellness information for everyone and
+                            reaches over 120 million people annually.
+                        </p>
+
+                        <h2 class="name-item" id="mission">Our Mission</h2>
+                        <p class="content-text">
+                            Our mission is to update and provide the latest, most accurate and useful information about
+                            oral health. What's more, we can help you diagnose, fix the problems you are facing and
+                            accompany you to make the most informed consumer choice for a strong set of teeth to
+                            confidently show off your smile.
+                        </p>
+                        <p class="content-text" style="font-style: italic; font-size: 20px; color: #024087;">
+                            "Where healthy teeth meet happy smiles."
+                        </p>
+
+                        <h2 class="name-item" id="medical-expert">Our Medical Expert Board</h2>
+                        <p class="content-text">
+                            Our team of more than 150 experienced medical professionals join us in our mission to
+                            empower you to confidently take the next steps in your health journey—for yourself or a
+                            loved one. They ensure our content is medically accurate and reflects the latest in
+                            evidence-based research and health information.
+                        </p>
+                        <p class="content-text">
+                            Our Medical Expert Board includes healthcare professionals that span across multiple
+                            specialties. Here are a few of our members:
+                        </p>
+
+                        <div class="medical-members">
+                            <div class="member-bio">
+                                <div class="member-img">
+                                    <img src="./public/Anju.webp" alt="Anju Goel">
+                                </div>
+                                <div class="member-info">
+                                    <div class="name"> Anju Goel, MD, MPH</div>
+                                    <div class="job">PHYSICIAN, PUBLIC HEALTH CONSULTANT</div>
+                                    <div class="details">
+                                        <p class="content-text">
+                                            Anju Goel, MD, MPH, is a public health consultant and internist with over 10
+                                            years of experience addressing communicable disease, health policy, health
+                                            promotion, and disaster preparedness within the California public health
+                                            system.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-bio">
+                                <div class="member-img">
+                                    <img src="./public/yasmine.webp" alt="Yasmine Ali">
+                                </div>
+                                <div class="member-info">
+                                    <div class="name">Yasmine S. Ali, MD, MSCI</div>
+                                    <div class="job">CARDIOLOGIST</div>
+                                    <div class="details">
+                                        <p class="content-text">
+                                            Yasmine Ali, MD, is board-certified in cardiology. She is an assistant
+                                            clinical professor of medicine at Vanderbilt University School of Medicine
+                                            and an award-winning physician writer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-bio">
+                                <div class="member-img">
+                                    <img src="./public/doru.webp" alt="Doru Paul">
+                                </div>
+                                <div class="member-info">
+                                    <div class="name">Doru Paul, MD</div>
+                                    <div class="job">ONCOLOGIST</div>
+                                    <div class="details">
+                                        <p class="content-text">
+                                            Doru Paul, MD, is triple board-certified in medical oncology, hematology,
+                                            and internal medicine. He is an associate professor of clinical medicine at
+                                            Weill Cornell Medical College and attending physician in the Department of
+                                            Hematology
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-bio">
+                                <div class="member-img">
+                                    <img src="./public/Mary.webp" alt="Mary Choy">
+                                </div>
+                                <div class="member-info">
+                                    <div class="name">Mary Choy, PharmD</div>
+                                    <div class="job">PHARMACIST</div>
+                                    <div class="details">
+                                        <p class="content-text">
+                                            Mary Choy, PharmD, is board-certified in geriatric pharmacotherapy. She
+                                            currently serves as the director of pharmacy practice of the New York State
+                                            Council of Health-System Pharmacists.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="name-item" id="commitment">Our Commitment to Diversity, Equity, and Inclusion</h2>
+                        <p class="content-text">
+                            32Smiles’s mission is to bring fact-based health and wellness information to all people
+                            regardless of race, gender identity, sexual orientation, age, religion, culture, body type,
+                            and ability.
+                            We create content that reflects the variety of backgrounds and experiences of our audience,
+                            especially when it comes to groups that have historically been marginalized in the health
+                            space.
+                            We believe that the diversity of our writers, editors, medical experts, producers, and
+                            photographers makes our coverage more accessible and empathetic.
+                        </p>
+
+                        <h2 class="name-item" id="editorial">Our Editorial Process</h2>
+                        <p class="content-text">
+                            Our editorial process is built to help you digest and easily understand health information.
+                            Our writers and editors are experienced journalists who are unpacking research studies,
+                            data,
+                            and medical jargon to ensure this information is clear, accurate, empathetic, and actionable
+                            to help you make the right health decisions.
+                        </p>
+                        <p class="content-text">
+                            Our editorial team oversees the creation and development of all our content and brings you
+                            breaking health news and everlasting health topics that you’re searching for.
+                            We prioritize the integrity of our content and are not influenced by sponsors.
+                        </p>
+
+                        <h2 class="name-item" id="team">Our Team</h2>
+                        <p class="content-text">
+                            Our team is composed of passionate editors, designers, developers, marketers, SEO experts,
+                            and others who are committed to bringing you trusted, empathetic health information.
+                            <br><strong>Meet some of our leaders on the 32Smiles team:</strong>
+                        </p>
+
+                        <div class="medical-members">
+                            <div class="member-bio">
+                                <div class="member-img">
+                                    <img src="./public/Sara.webp" alt="Sara Michael">
+                                </div>
+                                <div class="member-info">
+                                    <div class="name"> Sara Michael</div>
+                                    <div class="job">EDITORIAL DIRECTOR</div>
+                                    <div class="details">
+                                        <p class="content-text">
+                                            Sara Michael joined Dotdash Meredith in 2022 as the Editorial Director of
+                                            Health.com. She previously held editorial positions at several leading
+                                            consumer health and wellness brands.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-bio">
+                                <div class="member-img">
+                                    <img src="./public/yasmine.webp" alt="Ronald Lubelchek">
+                                </div>
+                                <div class="member-info">
+                                    <div class="name">Ronald Lubelchek, MD</div>
+                                    <div class="job">INFECTIOUS DISEASES PHYSICIAN</div>
+                                    <div class="details">
+                                        <p class="content-text">
+                                            Ronald Lubelchek, MD, is an infectious disease specialist in Chicago,
+                                            Illinois.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-bio">
+                                <div class="member-img">
+                                    <img src="./public/Jessica.webp" alt="Jessica">
+                                </div>
+                                <div class="member-info">
+                                    <div class="name">Jessica Shepherd, MD</div>
+                                    <div class="job">CHIEF REVENUE OFFICER</div>
+                                    <div class="details">
+                                        <p class="content-text">
+                                            Jessica is the Chief Revenue Officer at Dotdash Meredith. He has over 20
+                                            years of experience in the pharmaceutical industry,
+                                            leading sales and partnerships at top publishers and pharmaceutical
+                                            companies.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-bio">
+                                <div class="member-img">
+                                    <img src="./public/Rob.webp" alt="Rob Stephen">
+                                </div>
+                                <div class="member-info">
+                                    <div class="name"> Rob Stephen</div>
+                                    <div class="job">SVP MARKETING</div>
+                                    <div class="details">
+                                        <p class="content-text">
+                                            Rob is the Senior Vice President of Marketing at Dotdash Meredith.
+                                            Previously, he held roles at Time Inc, Everyday Health, and FCB Health.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="name-item" id="policies">Our Policies</h2>
+                        <h4>Advertising Policy</h4>
+                        <p class="content-text">
+                            Health accepts advertising on all of its sites but maintains a strict and clear separation
+                            between advertising and editorial content. We pay special attention to featuring advertising
+                            in a way that will not interfere with your reading experience.
+                        </p>
+                        <h4>Terms of Use</h4>
+                        <p class="content-text">
+                            Health and its affiliated sites (collectively, the “Site”) are Dotdash Meredith brands,
+                            owned and operated by About, Inc. and its affiliates ("Health.” the "Company,” "we,” or
+                            "us"). Access to and use of the Site is subject to terms and conditions of use (“Terms of
+                            Use”).
+                        </p>
+                        <h4>Privacy Policy</h4>
+                        <p class="content-text">
+                            We take online privacy seriously and we respect the concerns of our community of users. We
+                            may collect information, including personal data, directly from you if you choose to provide
+                            that information. When you access the Site,
+                            we and our third-party partners may automatically collect certain information about your
+                            visit using tools such as cookies, web beacons, and other similar technologies. We may use
+                            the information gathered on Health for various purposes,
+                            including responding to an email inquiry, and to serve advertising content and offers to you
+                            based on your interests and online activities.
+                        </p>
+
+                        <h2 class="name-item" id="connect">Connect With Us</h2>
+                        <p class="content-text">
+                            We want to hear from you. If you have a comment, suggestion, or correction to share, please
+                            contact us at
+                            <a id="mail" href="#">contact@32Smiles.com </a>
+                        </p>
+                        <p class="content-text">
+                            For press inquiries, email us at
+                            <a id="mail" href="#">press@32Smiles.com</a>
+                        </p>
+                        <h4>Write for Us</h4>
+                        <p class="content-text">
+                            We are continuously looking for qualified medical and health writers. If interested, reach
+                            out to us at
+                            <a id="mail" href="#">contact@32Smiles.com</a>
+                        </p>
+                        <h4>Join Us</h4>
+                        <p class="content-text">
+                            Join our team! We’re looking for bright, engaged, creative, and inspiring people who want to
+                            make a difference in the world of health and wellness information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-area container">
+            <div class="footer__info">
+                <div class="row footer__info-row">
+                    <div class="col footer__col-1">
+                        <div class="footer_subscribe-wrapper" ng-app="myApp" ng-controller="myCtrl">
+                            <div class="footer__subscribe-title">
+                                <p>Subscribe</p>
+                            </div>
+                            <form name="subscribeForm">
+                                <div class="footer__subscribe-input-field">
+                                    <input ng-model="emailInput" class="footer__input-subscribe" type="email"
+                                        placeholder="Enter your email">
+                                    <button ng-click="validateEmail()" class="footer__sign-up-button" type="submit">Sign
+                                        up</button>
+
+                                </div>
+                                <p class="footer__subscribe-error"> {{errorMessage}}</p>
+                            </form>
+                            <div class="footer__thanks">
+                                <span>Thank you for subscribe</span>
+                            </div>
+                        </div>
+
+                        <ul class="footer__social-media">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col footer__col-2">
+                        <ul>
+                            <li><a href="">Patient education</a></li>
+                            <li><a href="">Professional education</a></li>
+                            <li><a href="">Research</a></li>
+                            <li><a href="">Product</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer__col-3">
+                        <ul>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Site map</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

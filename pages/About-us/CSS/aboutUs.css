@@ -1,0 +1,140 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"); */
+.about-main {
+  /* align-content: flex-start; */
+  width: 100%;
+}
+
+.about-article {
+  position: relative;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  column-gap: 8%;
+  grid-template-areas: 'sidebar content';
+}
+.about-menu {
+  grid-area: sidebar;
+  display: block;
+  background-color: var(--background-color);
+  margin-top: 32px;
+  /* border: 1px solid var(--color1);
+  border-radius: var(--border-radius-big); */
+}
+.menu {
+  padding: 1em;
+  top: 156px;
+  border-left: 7px solid var(--color1);
+  border-radius: 8px;
+  border-top: 1px solid var(--color1);
+  border-right: 1px solid var(--color1);
+  border-bottom: 1px solid var(--color1);
+  position: sticky;
+  /* max-width: 257px; */
+}
+.menu-title {
+  display: block;
+  margin-bottom: 20px;
+}
+.name-menu {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 18px;
+  text-size-adjust: 100%;
+  text-transform: uppercase;
+}
+.article__item {
+  width: 100%;
+  display: inline-block;
+  padding: 0 0 0.5em 1em;
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  text-size-adjust: 100%;
+}
+.article__item a:hover {
+  color: var(--color1-hover);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+.about-content {
+  grid-area: content;
+  display: block;
+}
+.content {
+  margin-top: 32px;
+}
+.content-name {
+  margin: 32px 0 16px 0;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 54px;
+  text-size-adjust: 100%;
+}
+.content-text {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+.name-item {
+  margin: 48px 0 16px 0;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+}
+.medical-members {
+  margin-top: 48px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 1em;
+}
+.member-bio {
+  margin-top: 0px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #e8ddff;
+
+  display: grid;
+  grid-template-columns: 33% 1fr;
+  column-gap: 25px;
+}
+.member-img > img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 6px;
+}
+.member-info > .name {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.member-info > .job {
+  margin-top: 8px;
+  color: #615d66;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.member-info > .details {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 28px;
+}
+h4 {
+  margin: 37px 0 16px 0;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 32px;
+}
+#mail {
+  margin-bottom: 0px;
+  padding-left: 0px;
+  font-size: 18px;
+  color: #0f55a6;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+#mail:hover {
+  color: #4949ea;
+}
