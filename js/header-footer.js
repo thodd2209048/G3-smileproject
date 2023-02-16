@@ -15,7 +15,6 @@ function scrollFunction() {
     document.getElementById('logo-search-login-1').style.display = 'grid';
     document.getElementById('logo-search-login-2').style.display = 'none';
     document.getElementById('mainNav').style.display = 'flex';
-    console.log('check');
   }
 }
 
