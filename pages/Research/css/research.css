@@ -21,7 +21,7 @@ h1 {
 }
 h2 {
   font-size: 26px;
-  margin-top: 48px;
+  margin-top: 35px;
   padding-bottom: 5px;
   font-weight: 600;
   border-bottom: 1px solid var(--color1);
@@ -32,7 +32,7 @@ h2 {
   margin-bottom: 20px;
 }
 p {
-  margin-bottom: 25px;
+  margin-top: 25px;
   font-size: 18px;
 }
 .latest-research {
@@ -40,28 +40,23 @@ p {
 }
 .latest-tags {
   display: flex;
-  margin-top: 0.8em;
+  margin-top: 1em;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 40px;
 }
 .latest-tags > a {
   margin: 0.5rem 1rem 0.5rem 0;
-  padding: 10px 20px;
+  padding: 10px 18px;
   align-items: center;
   display: flex;
-  /* flex-direction: row;
-  justify-content: center;
-  min-width: 165px;
-  min-height: 38px; */
   color: #fff;
   background-color: var(--color1);
-  font-weight: 500;
-  line-height: 20px;
+  font-weight: 300;
+  line-height: 10px;
   text-decoration-line: none;
   text-decoration-style: solid;
   text-size-adjust: 100%;
-  border-radius: 9999px;
+  border-radius: 999px;
 }
 .latest-tags > a:hover {
   background-color: var(--color1-hover);
@@ -69,62 +64,17 @@ p {
 .latest-tags > a > span {
   align-items: center;
   color: var(--header-background-color);
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 550;
   line-height: 20px;
   word-spacing: 2px;
 }
 .latest-bio {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    min-width: 25%;
-  }
-.latest-card {
-    display: grid;
-    grid-template-rows: 175px 100px;
-    row-gap: 1em;
-    text-decoration: none;
-    color: rgb(28, 14, 64) ;
-    background-color: var(--background-color);
-}
-.latest-card {
-  display: grid;
-  grid-template-rows: 150px 100px;
-  row-gap: 1em;
-  text-decoration: none;
-  background-color: var(--background-color);
-}
-.latest-card:hover {
-  color: var(--color1-hover);
-  opacity: 0.8;
-}
-.img-card {
-    display: flex;
-    justify-content: center;
-    width:250px;
-    height: 185px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-
-.img-card > img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-}
-.main-card {
-  margin-top: 13px;
-  padding-bottom: 8px;
-}
-.text-card {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: left;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    min-width: 33.33%;
 }
 .clinical-content{
     display: grid;
@@ -133,11 +83,10 @@ p {
     min-width: 33.33%;
     column-gap: 25px;
 }
-.patients-card{
-    padding:16px 0 ;
-
+.card{
+    padding-top:40px;
 }
-.patients-card > img{
+.card > img{
     max-width:1000px;
     max-height: 185px;
     width: 100%;
@@ -145,48 +94,44 @@ p {
     border-radius: var(--border-radius-small);
 }
 .content-card{
-    margin: 23px 0;
+    margin-top: 15px;
     line-height: 22px;
 }
-.content-card > a{
+.content-card > span{
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.content-card > a:hover{
-    text-decoration: underline;
-    color: var(--color1-hover)
+.content-card > span:hover{
+    color: var(--color1-hover);
+    opacity: 0.8;
 }
 .content-card > p{
+    margin-top: 4px;
     font-size: 14px;
     width: auto;
 } 
-.partnerships-content > p{
-    margin-left: 15px;
-}
-.partnerships-content > a {
-  margin-left: 40px;
+
+.partnerships-content  p > a {
+  margin-left: 20px;
   text-decoration: underline;
   color: var(--color3);
   line-height: 45px;
 }
 .partnerships-content > a:hover {
   color: rgb(29, 4, 120);
+  text-decoration: none;
 }
-.partnerships-content > p {
-  margin-top: 30px;
-}
-.future-content {
-  margin-left: 15px;
+.future-content > p{
+  margin-top: 25px;
+  font-size: 18px;
 }
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
     .latest-bio {
         grid-template-columns: repeat(2, 1fr);
-        min-width: 20%;
     }
-    .img-card {
-        width: 385px;
-        height: 195px;
+    .card{
+      max-width: 95%;
     }
     .clinical-content{
         display: grid;
@@ -195,76 +140,107 @@ p {
     }
 }
 /* Tablet */
-@media only screen and (min-width: 480px) and (max-width: 800px) {
+@media only screen and (min-width: 600px) and (max-width: 800px) {
     .latest-bio {
       grid-template-columns: repeat(2, 1fr);
-      min-width: 50%;
+      max-width: 95%;
+      height: 100%;
     }
-    .img-card {
-        width: 320px;
-        height: 185px;
+    .latest-tags {
+      display: flex;
+      margin-top: 1em;
+      align-items: flex-start;
+      flex-wrap: wrap;
     }
    .clinical-content{
         display: grid;
         position: relative;
+
         grid-template-columns:repeat(2, 1fr);
+        max-width: 95%;
+      height: 100%;
     }
-    .patients-card > img{
-        width: 320px;
-        height: 185px;}
-
 }
-
-/* For mobile screens */
-@media (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 600px) {
   .latest-bio {
-    grid-template-columns: repeat(1, 1fr);
-    min-width: 100%;
-  }
-  .latest-card {
     display: grid;
-    grid-template-rows: 185px 100px;
-    row-gap: 1em;
-    text-decoration: none;
-    color: rgb(28, 14, 64);
-    background-color: var(--background-color);
-  }
-  .latest-card:hover {
-    text-decoration-line: underline;
-    color: var(--color1-hover);
-  }
-  .img-card {
-    display: flex;
-    justify-content: center;
-    width: 345px;
-    height: 185px;
-  }
-
-  .img-card > img {
-    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 95%;
     height: 100%;
-    border-radius: 5px;
   }
-
-  .main-card {
-    margin-top: 13px;
-    padding-bottom: 8px;
-}
-.text-card {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: left;
-}
-.latest-tags {
+  .latest-tags {
+    display: flex;
+    margin-top: 1em;
+    align-items: flex-start;
     flex-wrap: wrap;
-  }
-  .latest-tags > a {
-    min-width: 130px;
   }
   .clinical-content{
     display: grid;
     position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    height: 100%;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 15px;
+    li
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  h1{
+    font-size: 24px;
+  }
+  h2{
+    font-size: 22px;
+  }
+  .latest-bio {
+    grid-template-columns: repeat(1, 1fr);
+    min-width: 100%;
+  }
+  .card > img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+.main-card {
+    margin-top: 13px;
+    padding-bottom: 8px;
+}
+.latest-tags {
+  display: flex;
+  margin-top: 1em;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.latest-tags > a > span {
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 20px;
+  word-spacing: 1px;
+}
+  .clinical-content{
+    display: grid;
+    position: relative;
     grid-template-columns:repeat(1, 1fr);
+}
+p{
+  font-size: 14px;
+  line-height: 20px;
+}
+.future-content > p{
+  font-size: 14px;
+}
+.partnerships-content  p > a {
+  margin-left: 10px;
 }
 }
