@@ -17,6 +17,15 @@
   margin-bottom: 16px;
 }
 
+.sub-page-satellite a {
+  color: var(--color1);
+  text-decoration: underline;
+}
+
+.sub-page-satellite a:hover {
+  color: var(--color3);
+}
+
 .sub-page-content {
   margin-bottom: 24px;
 }
@@ -52,6 +61,7 @@
   border-bottom: 5px solid var(--sub-text-color);
 }
 
-.table-text-left {
+.table-text-left,
+.table-text-char {
   text-align: left;
 }

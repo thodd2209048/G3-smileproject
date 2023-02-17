@@ -207,192 +207,91 @@
 
   <main class="container sub-page-all">
     <div class="sub-page-header">
-      <h1 class="sub-page-title">Table 1</h1>
-      <p class="sub-page-satellite">From: <a href="../../article-0001.html">Validation of data mining models by
-          comparing with conventional methods for dental age estimation in Korean juveniles and young adults</a></p>
+      <h1 class="sub-page-title">Table 4 Diagnostic metrics used to evaluate the performance of the investigated CNN
+        architectures.</h1>
+      <p class="sub-page-satellite">From: <a href="../../article-0002.html">Diagnostic performance of convolutional
+          neural networks for dental sexual dimorphism</a></p>
     </div>
     <div class="sub-page-content">
       <div class="article-table-container">
         <table class="article-page-table">
           <thead class="article-page-table__head">
             <tr>
-              <th class="table-text-left">
-                <p>Internal test set</p>
+              <th class="table-text-left ">
+                <p>Metrics</p>
               </th>
-              <th class="table-text-left" colspan="2">
-                <p>Male</p>
-              </th>
-              <th class="table-text-left" colspan="2">
-                <p>Female</p>
-              </th>
-            </tr>
-            <tr>
-              <th class="table-text-left">
-                <p>Method</p>
-              </th>
-              <th class="table-text-left">
-                <p>MAE</p>
-              </th>
-              <th class="table-text-left">
-                <p>RMSE</p>
-              </th>
-              <th class="table-text-left">
-                <p>MAE</p>
-              </th>
-              <th class="table-text-left">
-                <p>RMSE</p>
+              <th class="table-text-left ">
+                <p>Description</p>
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td class="table-text-left ">
-                <p>Single layer perceptron</p>
+                <p>Loss</p>
               </td>
-              <td class="table-text-char ">
-                <p>1.1974</p>
-              </td>
-              <td class="table-text-char ">
-                <p>1.4814</p>
-              </td>
-              <td class="table-text-char ">
-                <p>1.0634</p>
-              </td>
-              <td class="table-text-char ">
-                <p>1.3165</p>
+              <td class="table-text-left ">
+                <p>A loss function indicates how well the model assimilates the dataset. The loss function will output a
+                  higher value if the predictions are off the actual target. Since our problem/question relies on a
+                  multi-class classification, we used cross-entropy within our loss function</p>
               </td>
             </tr>
             <tr>
               <td class="table-text-left ">
-                <p>Multilayer perceptron</p>
+                <p>Accuracy</p>
               </td>
-              <td class="table-text-char ">
-                <p>1.1325</p>
-              </td>
-              <td class="table-text-char ">
-                <p>1.4125</p>
-              </td>
-              <td class="table-text-char ">
-                <p>1.0308</p>
-              </td>
-              <td class="table-text-char ">
-                <p>1.2776</p>
+              <td class="table-text-left ">
+                <p>The accuracy of a machine learning classification algorithm is one way to measure how often the
+                  algorithm classifies a data point correctly. This can be understood as the number of items correctly
+                  identified as either true positive or true negative out of the total number of items</p>
               </td>
             </tr>
             <tr>
               <td class="table-text-left ">
-                <p>Conventional method</p>
+                <p>F<sub>1</sub>-score</p>
               </td>
-              <td class="table-text-char ">
-                <p>1.0155</p>
+              <td class="table-text-left ">
+                <p>Represents the average of precision and recall and measures the effectiveness of identification when
+                  recall and precision have balanced importance</p>
               </td>
-              <td class="table-text-char ">
-                <p>1.2398</p>
+            </tr>
+            <tr>
+              <td class="table-text-left ">
+                <p>Precision</p>
               </td>
-              <td class="table-text-char ">
-                <p>0.8539</p>
+              <td class="table-text-left ">
+                <p>Agreement of true class labels with machine’s predictions. It is calculated by summing all true
+                  positives and false positives in the system, across all classes</p>
               </td>
-              <td class="table-text-char ">
-                <p>1.0772</p>
+            </tr>
+            <tr>
+              <td class="table-text-left ">
+                <p>Recall</p>
+              </td>
+              <td class="table-text-left ">
+                <p>Effectiveness of a classifier to identify class labels. It is calculated by summing all true
+                  positives and false negatives in the system, across all classes</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-text-left ">
+                <p>Specificity</p>
+              </td>
+              <td class="table-text-left ">
+                <p>Known as the true negative rate. This function calculates the proportion of actual negative cases
+                  that have gotten predicted as negative by our model</p>
               </td>
             </tr>
           </tbody>
         </table>
-        <table class="article-page-table">
-          <thead class="article-page-table__head">
-            <tr>
-              <th class="table-text-left ">
-                <p>External test set</p>
-              </th>
-              <th class="table-text-left " colspan="2">
-                <p>Male</p>
-              </th>
-              <th class="table-text-left " colspan="2">
-                <p>Female</p>
-              </th>
-            </tr>
-            <tr>
-              <th class="table-text-left ">
-                <p>Method</p>
-              </th>
-              <th class="table-text-left ">
-                <p>MAE</p>
-              </th>
-              <th class="table-text-left ">
-                <p>RMSE</p>
-              </th>
-              <th class="table-text-left ">
-                <p>MAE</p>
-              </th>
-              <th class="table-text-left ">
-                <p>RMSE</p>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="table-text-left ">
-                <p>Single layer perceptron</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.3011</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.5957</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.4500</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.7611</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-text-left ">
-                <p>Multilayer perceptron</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.2487</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.5513</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.4877</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.8025</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-text-left ">
-                <p>Conventional method</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.2497</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.5241</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.3996</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.7168</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+
+
       </div>
 
-
-
-      <p class="sub-page-footer">MAE and RMSE of conventional regression and data mining regression models. MAE mean
-        absolute error, RMSE root
-        mean square error, SLP single layer perceptron, MLP multilayer perceptron, CM conventional method.</p>
+      <p class="sub-page-footer">CNN convolutional neural network.</p>
     </div>
     <div class="link-right">
-      <a class="article__pill-button" href="../../article-0001.html">
+      <a class="article__pill-button" href="../../article-0002.html">
         <span>Back to article page</span>
         <i class="fa-solid fa-angle-right"></i>
       </a>

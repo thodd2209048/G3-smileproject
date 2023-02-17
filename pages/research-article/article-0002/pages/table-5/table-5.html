@@ -20,7 +20,7 @@
 
 
   <script src="../../../../../js/header-footer.js"></script>
-  <title>Table 1</title>
+  <title>Table 5</title>
 </head>
 
 
@@ -207,178 +207,335 @@
 
   <main class="container sub-page-all">
     <div class="sub-page-header">
-      <h1 class="sub-page-title">Table 1</h1>
-      <p class="sub-page-satellite">From: <a href="../../article-0001.html">Validation of data mining models by
-          comparing with conventional methods for dental age estimation in Korean juveniles and young adults</a></p>
+      <h1 class="sub-page-title">Table 5 Quantified performances of DenseNet121 with FS and TL architectures.</h1>
+      <p class="sub-page-satellite">From: <a href="../../article-0002.html">Diagnostic performance of convolutional
+          neural networks for dental sexual dimorphism</a></p>
     </div>
     <div class="sub-page-content">
       <div class="article-table-container">
         <table class="article-page-table">
           <thead class="article-page-table__head">
             <tr>
-              <th class="table-text-left">
-                <p>Internal test set</p>
+              <th rowspan="2" class="table-text-left ">
+                <p>CNN model</p>
               </th>
-              <th class="table-text-left" colspan="2">
-                <p>Male</p>
+              <th rowspan="2" class="table-text-left ">
+                <p>Architecture</p>
               </th>
-              <th class="table-text-left" colspan="2">
-                <p>Female</p>
+              <th rowspan="2" class="table-text-left ">
+                <p>K-fold 5</p>
+              </th>
+              <th class="table-text-left " colspan="6">
+                <p>Metrics</p>
               </th>
             </tr>
             <tr>
-              <th class="table-text-left">
-                <p>Method</p>
+              <th class="table-text-left ">
+                <p>Loss</p>
               </th>
-              <th class="table-text-left">
-                <p>MAE</p>
+              <th class="table-text-left ">
+                <p>Accuracy</p>
               </th>
-              <th class="table-text-left">
-                <p>RMSE</p>
+              <th class="table-text-left ">
+                <p>F<sub>1</sub>-score</p>
               </th>
-              <th class="table-text-left">
-                <p>MAE</p>
+              <th class="table-text-left ">
+                <p>Precision</p>
               </th>
-              <th class="table-text-left">
-                <p>RMSE</p>
+              <th class="table-text-left ">
+                <p>Recall</p>
+              </th>
+              <th class="table-text-left ">
+                <p>Specificity</p>
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
+              <td rowspan="12" class="table-text-left ">
+                <p>DenseNet121</p>
+                <p>100 epochs</p>
+                <p>Batch size = 32</p>
+              </td>
+              <td rowspan="6" class="table-text-left ">
+                <p>FS</p>
+              </td>
               <td class="table-text-left ">
-                <p>Single layer perceptron</p>
+                <p>Fold 1</p>
               </td>
               <td class="table-text-char ">
-                <p>1.1974</p>
+                <p>0.6835</p>
               </td>
               <td class="table-text-char ">
-                <p>1.4814</p>
+                <p>0.7215</p>
               </td>
               <td class="table-text-char ">
-                <p>1.0634</p>
+                <p>0.7104</p>
               </td>
               <td class="table-text-char ">
-                <p>1.3165</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-text-left ">
-                <p>Multilayer perceptron</p>
+                <p>0.7272</p>
               </td>
               <td class="table-text-char ">
-                <p>1.1325</p>
+                <p>0.6959</p>
               </td>
               <td class="table-text-char ">
-                <p>1.4125</p>
-              </td>
-              <td class="table-text-char ">
-                <p>1.0308</p>
-              </td>
-              <td class="table-text-char ">
-                <p>1.2776</p>
+                <p>0.8705</p>
               </td>
             </tr>
             <tr>
               <td class="table-text-left ">
-                <p>Conventional method</p>
+                <p>Fold 2</p>
               </td>
               <td class="table-text-char ">
-                <p>1.0155</p>
+                <p>0.6175</p>
               </td>
               <td class="table-text-char ">
-                <p>1.2398</p>
+                <p>0.7166</p>
               </td>
               <td class="table-text-char ">
-                <p>0.8539</p>
+                <p>0.6863</p>
               </td>
               <td class="table-text-char ">
-                <p>1.0772</p>
+                <p>0.6916</p>
               </td>
-            </tr>
-          </tbody>
-        </table>
-        <table class="article-page-table">
-          <thead class="article-page-table__head">
-            <tr>
-              <th class="table-text-left ">
-                <p>External test set</p>
-              </th>
-              <th class="table-text-left " colspan="2">
-                <p>Male</p>
-              </th>
-              <th class="table-text-left " colspan="2">
-                <p>Female</p>
-              </th>
-            </tr>
-            <tr>
-              <th class="table-text-left ">
-                <p>Method</p>
-              </th>
-              <th class="table-text-left ">
-                <p>MAE</p>
-              </th>
-              <th class="table-text-left ">
-                <p>RMSE</p>
-              </th>
-              <th class="table-text-left ">
-                <p>MAE</p>
-              </th>
-              <th class="table-text-left ">
-                <p>RMSE</p>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="table-text-left ">
-                <p>Single layer perceptron</p>
+              <td class="table-text-char ">
+                <p>0.6814</p>
               </td>
-              <td class="u-text-char ">
-                <p>1.3011</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.5957</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.4500</p>
-              </td>
-              <td class="u-text-char ">
-                <p>1.7611</p>
+              <td class="table-text-char ">
+                <p>0.8627</p>
               </td>
             </tr>
             <tr>
               <td class="table-text-left ">
-                <p>Multilayer perceptron</p>
+                <p>Fold 3</p>
               </td>
-              <td class="u-text-char ">
-                <p>1.2487</p>
+              <td class="table-text-char ">
+                <p>0.6203</p>
               </td>
-              <td class="u-text-char ">
-                <p>1.5513</p>
+              <td class="table-text-char ">
+                <p>0.7141</p>
               </td>
-              <td class="u-text-char ">
-                <p>1.4877</p>
+              <td class="table-text-char ">
+                <p>0.7093</p>
               </td>
-              <td class="u-text-char ">
-                <p>1.8025</p>
+              <td class="table-text-char ">
+                <p>0.7133</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7055</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8719</p>
               </td>
             </tr>
             <tr>
               <td class="table-text-left ">
-                <p>Conventional method</p>
+                <p>Fold 4</p>
               </td>
-              <td class="u-text-char ">
-                <p>1.2497</p>
+              <td class="table-text-char ">
+                <p>0.6174</p>
               </td>
-              <td class="u-text-char ">
-                <p>1.5241</p>
+              <td class="table-text-char ">
+                <p>0.7200</p>
               </td>
-              <td class="u-text-char ">
-                <p>1.3996</p>
+              <td class="table-text-char ">
+                <p>0.7200</p>
               </td>
-              <td class="u-text-char ">
-                <p>1.7168</p>
+              <td class="table-text-char ">
+                <p>0.7284</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7124</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8840</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-text-left ">
+                <p>Fold 5</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7234</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7099</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7061</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7187</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.6949</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8844</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-text-left ">
+                <p>Average</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.6524</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7164</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7064</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7159</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.6980</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8747</p>
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="6" class="table-text-left ">
+                <p>TL</p>
+              </td>
+              <td class="table-text-left ">
+                <p>Fold 1</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7780</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8327</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8193</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8203</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8185</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.9213</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-text-left ">
+                <p>Fold 2</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.6892</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8227</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7920</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7920</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7920</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.9112</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-text-left ">
+                <p>Fold 3</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.6635</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8114</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7804</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7808</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7800</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.9121</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-text-left ">
+                <p>Fold 4</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7392</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8162</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8159</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8169</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8149</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.9320</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-text-left ">
+                <p>Fold 5</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.6757</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8262</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8242</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8261</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8224</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.9334</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-text-left ">
+                <p>Average</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.7091</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8218</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8064</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8072</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.8056</p>
+              </td>
+              <td class="table-text-char ">
+                <p>0.9220</p>
               </td>
             </tr>
           </tbody>
@@ -387,12 +544,10 @@
 
 
 
-      <p class="sub-page-footer">MAE and RMSE of conventional regression and data mining regression models. MAE mean
-        absolute error, RMSE root
-        mean square error, SLP single layer perceptron, MLP multilayer perceptron, CM conventional method.</p>
+      <p class="sub-page-footer">FS from scratch, TL transfer learning.</p>
     </div>
     <div class="link-right">
-      <a class="article__pill-button" href="../../article-0001.html">
+      <a class="article__pill-button" href="../../article-0002.html">
         <span>Back to article page</span>
         <i class="fa-solid fa-angle-right"></i>
       </a>

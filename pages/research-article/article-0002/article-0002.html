@@ -19,8 +19,7 @@
 
 
   <script src="../../../js/header-footer.js"></script>
-  <title>Validation of data mining models by comparing with conventional methods for dental age estimation in Korean
-    juveniles and young adults</title>
+  <title>Article 2</title>
 </head>
 
 
@@ -210,22 +209,22 @@
       <div class="article-header">
         <ul class="article-identifiers">
           <li><span>Open Access</span></li>
-          <li><span>Published: 13 January 2023</span></li>
+          <li><span>Published: 14 October 2022</span></li>
         </ul>
         <div class="article-title">
-          <h1>Validation of data mining models by comparing with conventional methods for dental age estimation in
-            Korean juveniles and young adults</h1>
+          <h1>Diagnostic performance of convolutional neural networks for dental sexual dimorphism</h1>
         </div>
         <div class="article-authors">
-          <p>Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee</p>
+          <p>Ademir Franco, Lucas Porto, Dennis Heng, Jared Murray, Anna Lygate, Raquel Franco, Juliano Bueno, Marilia
+            Sobania, Márcio M. Costa, Luiz R. Paranhos, Scheila Manica & André Abade </p>
         </div>
         <ul class="article-metrics-bar">
           <li>
-            <p>418</p>
+            <p>589</p>
             <span>Accesses</span>
           </li>
           <li>
-            <p>2</p>
+            <p>1</p>
             <span>Altmetric</span>
           </li>
         </ul>
@@ -234,135 +233,141 @@
         <section class="article-section abstract">
           <h2 class="article-section__title" id="Sec1">Abstract</h2>
           <div class="article-section__content">
-            <p>Teeth are known to be the most accurate age indicators of human body and are frequently applied in
-              forensic age estimation. We aimed to validate data mining-based dental age estimation, by comparing the
-              accuracy of the estimation and classification performance of 18-year thresholds with conventional methods
-              and with data mining-based age estimation. A total of 2657 panoramic radiographs were collected from
-              Koreans and Japanese populations aged 15 to 23&nbsp;years. They were subdivided into a training and
-              internal test set of 900 radiographs each from Koreans, and an external test set of 857 radiographs from
-              Japanese. We compared the accuracy and classification performance of the test sets from conventional
-              methods with those from the data mining models. The accuracy of the conventional method with the internal
-              test set was slightly higher than that of the data mining models, with a slight difference (mean absolute
-              error &lt; 0.21&nbsp;years, root mean square error &lt; 0.24&nbsp;years). The classification performance
-              of the 18-year threshold was also similar between the conventional method and the data mining models.
-              Thus, conventional methods can be replaced by data mining models in forensic age estimation using second
-              and third molar maturity of Korean juveniles and young adults.</p>
-
+            <p>Convolutional neural networks (CNN) led to important solutions in the field of Computer Vision. More
+              recently, forensic sciences benefited from the resources of artificial intelligence, especially in
+              procedures that normally require operator-dependent steps. Forensic tools for sexual dimorphism based on
+              morphological dental traits are available but have limited performance. This study aimed to test the
+              application of a machine learning setup to distinguish females and males using dentomaxillofacial features
+              from a radiographic dataset. The sample consisted of panoramic radiographs (n = 4003) of individuals in
+              the age interval of 6 and 22.9 years. Image annotation was performed with V7 software (V7labs, London,
+              UK). From Scratch (FS) and Transfer Learning (TL) CNN architectures were compared, and diagnostic accuracy
+              tests were used. TL (82%) performed better than FS (71%). The correct classifications of females and males
+              aged ≥ 15 years were 87% and 84%, respectively. For females and males &#60; 15 years, the correct
+              classifications were 80% and 83%, respectively. The Area Under the Curve (AUC) from Receiver-operating
+              Characteristic (ROC) curves showed high classification accuracy between 0.87 and 0.91. The
+              radio-diagnostic use of CNN for sexual dimorphism showed positive outcomes and promising forensic
+              applications to the field of dental human identification. </p>
           </div>
         </section>
         <div class="main-content">
           <section class="article-section main-content__introduction">
             <h2 class="article-section__title" id="Sec2">Introduction</h2>
             <div class="article-section__content">
-              <p>Dental age estimation is widely used in forensic science and pediatric dentistry. In particular, age
-                estimation using the developmental stages of teeth is an important criterion for estimating the age of
-                children and adolescents, due to the high correlation between chronological age and teeth development.
-                However, in the case of young adults, dental age estimation with teeth maturity has limitations because
-                the growth of teeth is largely complete, except the third molars. The legal purpose of age estimation
-                for young adults and adolescents is to provide an accurate estimation and scientific evidence as to
-                whether they have reached the age of majority. In Korean forensic practice for juveniles and young
-                adults, age was estimated with Lee’s method, and the legal 18-year threshold was predicted with the data
-                suggested by Oh et al.</p>
-              <p>Machine learning, a type of artificial intelligence (AI), repeatedly learns and categorizes large
-                amounts of data, solves problems on its own, and induces data programming. Machine learning can discover
-                useful hidden patterns within a large amount of data. In contrast, labor-intensive and time-consuming
-                classical methods may have limitations in dealing with large amounts of complex data that are difficult
-                to process manually. Thus, many studies have been conducted recently using the latest computer
-                technology to minimize human error and efficiently process multi-dimensional data. In particular, deep
-                learning is widely used for medical image analysis, and various methods have been reported to estimate
-                age by automatically analyzing radiographs to improve the accuracy and efficiency of age estimation. For
-                example, Halabi et al. developed machine learning algorithms based on convolutional neural networks
-                (CNN) using pediatric hand radiographs to estimate the age of bones. This study presented a model that
-                applied machine learning to medical images and showed that these techniques can aid diagnostic accuracy.
-                Li et al. estimated age from X-ray images of pelvic bones by applying deep learning CNN and compared
-                with the results of regression analysis using the evaluation of the ossification stages. They found that
-                the deep learning CNN model showed the same age estimation performance as the conventional regression
-                model. A study by Guo et al. evaluated the classification performance of legal age thresholds by
-                applying CNN technology based on dental orthopantomograms, and the result of the CNN model proved that
-                humans outperformed its age classification performance.</p>
-              <p>Most of the age estimation studies performed with machine learning use deep learning methods. Deep
-                learning-based age estimation has been reported to be more accurate than conventional methods. However,
-                this method makes it almost impossible to present the scientific basis of age estimation, such as the
-                age indicators used in the estimation. In addition, there was a legal controversy about who performed
-                the examination. Therefore, deep learning-based age estimation is difficult to accept by administrative
-                and judicial agencies. Data mining (DM) is a technique that can find not only expected but also
-                unexpected information as a method to discover useful correlations among a large amount of data. When
-                conducting DM, machine learning is usually used and both DM and machine learning employ the same
-                critical algorithms to discover data patterns. Age estimation using tooth development is based on the
-                examiner's maturity evaluation of the targeted teeth, and this evaluation is expressed as the stage of
-                each targeted tooth. DM can be used to analyze the correlation between the evaluated stages of the teeth
-                and their chronological age and has the potential to replace conventional statistical analysis.
-                Therefore, if we apply DM approaches to age estimation, we can introduce machine learning to forensic
-                age estimation free of legal responsibility concerns. Some comparative studies on the possible
-                substitution of conventional manual methods used in forensic practice with the DM-based methods in
-                dental age estimation have been published. Shen et al. showed that the DM models were more accurate than
-                the traditional Cameriere formula. Galibourg et al., who predicted age by applying various DM methods
-                based on Demirjian’s criteria, showed that the DM methods were superior to the Demirjian’s and Willems
-                methods in age estimation for the French population.</p>
-              <p>For the dental age estimation of Korean juveniles and young adults, Lee’s method has been widely used
-                in Korean forensic practice. This method uses conventional statistical analysis, such as multiple
-                regression, to examine the relationship between Korean subjects and chronological ages. In this study,
-                the age estimation method derived through conventional statistical techniques was defined as a
-                "conventional method." The accuracy of Lee's method, which is a conventional method, has already been
-                validated by Oh et al.; however, the applicability of age estimation based on DM models in Korean
-                forensic practice remains questionable. We aimed to scientifically validate the potential utility of age
-                estimation based on DM models. The objectives of this study were to (1) compare the accuracy of two DM
-                models in dental age estimation and (2) compare the classification performance of the 18-year threshold
-                of seven DM models and the methods derived from conventional statistical approaches using the maturity
-                of the second and third molars in both jaws.</p>
+              <p>Several techniques used in forensic sciences rely on subjective operator-dependent procedures . The
+                decision-making process behind these procedures requires experience and may lead to error rates with a
+                significant impact in practice2. Important contributions of forensic dentistry to forensic sciences
+                emerged from radio-diagnostic procedures, such as dental charting for human identification, and dental
+                staging for age estimation6,7,8,9,10. Computer-based tools were developed to create a man–machine
+                interface and reduce bias from the operator’s side. Software like KMD PlassData DVI™ (KMD s/a, Ballerup,
+                Denmark) added quality control procedures to the reconciliation process, made disaster victim
+                identification less time-consuming, and guaranteed more straightforward human identifications. In dental
+                age estimation, promising automated techniques abbreviated the number of manual interactions needed to
+                allocate developmental stages to teeth examined on radiographs. While dental charting has a fundamental
+                role in comparative human identification, dental age estimation contributes indirectly as a
+                reconstructive factor.</p>
+              <p>
+                Among the reconstructive factors, sex plays a fundamental part in narrowing lists of missing persons.
+                When biological/physical sex-related parameters are available they may lead to binary segregation of the
+                victims (into males and females) and limit the number of required antemortem (AM) and postmortem (PM)
+                comparisons. A recent systematic literature review with over a hundred eligible studies highlighted the
+                importance of dentomaxillofacial features in the process of sexual dimorphism. According to the authors,
+                the existing techniques for sexual dimorphism based on teeth can be biochemical (e.g. from the analysis
+                of dental tissues), metric (namely measuring teeth), and non-metric (e.g. relying on dental
+                morphology)15. Biochemical techniques seem to be more accurate and represent the current
+                state-of-the-art when it comes to dental analyses. However, the application of these techniques in
+                practice is restricted because they require advanced facilities and tools that are not usually available
+                in most medicolegal institutes, especially in developing countries.
+              </p>
+              <p>The most common techniques debated in the current scientific literature fall within the group of metric
+                analyses, in which linear measurements (mesiodistal width and intercanine distance) and volumetric
+                assessments can be performed ex-vivo or through 2D (radiographic/photographic) 3D (tomographic scan)
+                imaging. In this context, examiner reproducibility is a drawback since millimetric measurements and
+                volumetric analyses require extensive calibration and training. In order to reduce operator-dependent
+                interactions, artificial intelligence could figure as an option to enhance diagnostic performances of
+                sex estimation techniques. Machine learning algorithms are known to learn underlying relationships in
+                data and support the decision-making process (or even make decisions without requiring explicit
+                instructions). In 1989, the concept of a Convolutional Neural Network (CNN) was introduced and
+                demonstrated enormous potential for tasks related to computer vision. CNNs are among the best learning
+                algorithms for understanding images and have demonstrated exemplary performance in tasks related to
+                image segmentation, classification, detection, and retrieval. One of the most outstanding features of
+                CNNs is their ability to explore spatial or temporal correlation in the data. The CNN topology is
+                divided into several learning stages that consist of a combination of convolutional layers, non-linear
+                processing units, and subsampling layers. Since the late ’90 s, several improvements in the learning
+                architecture of CNNs were made to enable the assessment of large, heterogeneous, complex, and multiclass
+                datasets. The proposed innovations included the modification of image processing units, optimization for
+                the assessment of parameters and hyperparameters, new “design” patterns, and layer connectivity.</p>
+              <p>In this scenario, artificial intelligence could find productive grounds for the use of radiographic
+                datasets and could be challenged for sexual dimorphism. However, given the existing scientific
+                literature and the morphological parameters currently known to be dimorphic (e.g. the maxillary
+                sinuses), testing the performance of machine learning algorithms to estimate the sex of adults would be
+                merely confirmatory. In order to propose a real challenge to artificial intelligence, sexual dimorphism
+                could be performed with a sample of children and juveniles—a population in which anthropological
+                indicators of sex are not well-pronounced or at least not fully expressed.</p>
+              <p>In country-specific jurisdictions, the admissibility of evidence in Court depends on several technical
+                aspects, including the knowledge about the error of the method (factor including in Daubert’s rule, for
+                instance). With that in mind, testing forensic solutions developed with artificial intelligence, and
+                investigating the accuracy of the method (and inherent error) are initial steps prior to implementing
+                computer-aided tools in practice. This diagnostic study aimed to use a radiographic dataset in a machine
+                learning setup to promote an automated process of sexual dimorphism based on dentomaxillofacial features
+                of children and juveniles.</p>
             </div>
           </section>
-          <section class="article-section main-content__result">
-            <h2 class="article-section__title" id="Sec3">Result</h2>
+
+          <section class="article-section main-content__method">
+            <h2 class="article-section__title" id="Sec6">Materials and methods</h2>
             <div class="article-section__content">
-              <h3 class="article-section__sub-title" id="Sec3-1">Observer reliability</h3>
-              <p>
-                The means and standard deviations of chronological ages according to stages and types of teeth are
-                presented in Supplementary Table S1 (Training set), Supplementary Table S2 (Internal test set), and
-                Supplementary Table S3 (External test
-                set) online. The kappa values, of the intra- and inter-observer reliability obtained in the training set
-                were 0.951 and 0.947, respectively. The p-values and 95% confidence intervals of kappa values are
-                presented in Supplementary Table S4 online. The kappa values were construed as “almost
-                perfect,” consistent with Landis and Koch’s standards
-              </p>
-              <h3 class="article-section__sub-title" id="Sec3-2">Accuracy of age estimation</h3>
-              <p>
-                When comparing the mean absolute error (MAE), the conventional methods were marginally better than the
-                DM models in all sexes and test sets other than the multilayer perceptron (MLP) in the male external
-                test set. The differences between the conventional and DM models for the internal test sets in MAE were
-                0.12 –0.19&nbsp;years in males and 0.17 ~ 0.21&nbsp;years in females. For the external test sets, the
-                differences were smaller (0.001 – 0.05&nbsp;years in males, 0.05 –0.09&nbsp;years in females). In
-                addition, the root mean square error (RMSE) had slightly lower values with the conventional method with
-                small differences (0.17– 0.24, 0.2 –0.24 for the internal test sets, 0.03 ~ 0.07, 0.04 ~ 0.08 for the
-                external test sets in males and females, respectively). Other than the case of the female external test
-                set, the MLP showed slightly better performance than the single layer perceptron (SLP). With both MAE
-                and RMSE, the external test set results were higher than those of the internal test sets in all sexes
-                and models. All the MAE and RMSE are shown in Table <a href="#tab1">1</a> and Fig. <a
-                  href="#fig1">1</a>.
-              </p>
-              <div class="article-table" id="table-1">
-                <figure class="article-table__figure">
-                  <figcaption class="article-table__figcaption">
-                    <b id="tab1">Table 1 MAE and RMSE of conventional regression and data mining regression models.</b>
-                  </figcaption>
-                  <div class="link-right">
-                    <a class="article__pill-button" href="./pages/table-1/table-1.html">
-                      <span>Full size table</span>
-                      <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                  </div>
-                </figure>
-              </div>
+              <h3 class="article-section__sub-title">Ethical aspects and study design</h3>
+              <p>This was a diagnostic study with retrospective sample collection. The methodological architecture was
+                based on a medical imaging dataset to feed machine learning within the context of artificial
+                intelligence. Informed consent was waived because the study was observation and required retrospective
+                sampling from a pre-existing image database, but ethical approval was obtained from the Ethics Committee
+                in Human Research of Faculdade Sao Leopoldo Mandic. The Declaration of Helsinki (DoH), 2013, was
+                followed to assure ethical standards in this medical research. The sample was collected from a
+                pre-existing institutional image database. Hence, no patient was prospectively exposed to ionizing
+                radiation merely for research purposes. All the images that populated the database were obtained for
+                diagnostic, therapeutic, or follow-up reasons.</p>
+              <h3>Sample and participants</h3>
+              <p>The sample consisted of panoramic radiographs (n = 4003; 1809 males and 2194 females) collected
+                according to the following eligibility criteria: Inclusion criteria—radiographs of male and female
+                Brazilian individuals with age between 6 and 22.9 years. Exclusion criteria—panoramic radiographs
+                missing patient’s information about sex, date of birth, and date of image acquisition; visible bone
+                lesions and anatomic deformity; the presence of implants and extensive restorative materials; severely
+                displaced and/or supernumerary teeth. The radiographs were obtained from a private oral imaging company
+                in the Central-Western region of Brazil. The images were imported to an Elitebook 15.6" FHD Laptop with
+                i5 (Hewlett-Packard, Palo Alto, CA, USA) for analysis.</p>
+              <p>The annotations were accomplished by three trained observers, with experience in forensic odontology,
+                supervised by a forensic odontologist with 11 years of practice in the field. A bounding-box tool was
+                used to annotate the region of interest in Darwin V7 (V7 Labs, London, UK) software package. Vertically
+                (y-axis), the box was positioned covering the apical region of the most superior teeth whilst the lower
+                limit covered the apical region of the most inferior teeth. Laterally (x-axis), the box ended right
+                after the third molars, bilaterally. The final selection of the region of interest was represented by a
+                rectangular box covering all the teeth visible in the panoramic radiograph. The images were anonymized
+                for annotation, hiding age and sex information. The software registered the annotations that were later
+                tested for association with sex.</p>
+              <h3>Pre-processing and training approach</h3>
+              <p>The full dataset of panoramic radiographs was initially divided into the age groups “under 15 years"
+                (n = 2,254) and “equal or older 15 years" (n = 1,749). This division was justified to challenge the
+                network regarding the sexual dimorphism. In children, sexual dimorphism is more difficult because the
+                expression of external sexual features is not pronounced. Hence, the age of 15 years represents a
+                transitional point to a fully developed permanent dentition (except for the third molars). Normally, all
+                the permanent teeth will have fully developed crowns around this age. The roots, if not developed, will
+                present a late stage of formation16. In each age group (&#60; 15 years vs. ≥ 15 years) a single problem
+                was
+                established: sexual dimorphism, and a binary outcome was expected regarding sex (male vs. female), and
+                age (&#60; 15 years vs. ≥ 15 years). Hence, four classes were considered in this study: under 15 males
+                vs.
+                under 15 females; and over 15 males vs. over 15 females (Fig. <a href="#fig1">1</a>)</p>
+
               <div class="article-figure">
                 <figure>
                   <figcaption>
                     <b id="fig1">Figure 1</b>
                   </figcaption>
                   <div class="article-figure__content">
-                    <a href=""><img src="./public/figure/fig1.webp" alt="figure 1"></a>
-                    <p class="article-figure__description">MAE and RMSE of conventional regression and data mining
-                      regression models. MAE mean absolute error, RMSE root mean square error, SLP single layer
-                      perceptron, MLP multilayer perceptron, CM conventional method.</p>
+                    <a href=""><img src="./public/figure/figure2.1.webp" alt="figure 2.1"></a>
+                    <p class="article-figure__description">Model structured for this study showing the workflow from
+                      sampling, image processing, annotation, cross-validation, training/validation to classification.
+                    </p>
                   </div>
                   <div class="link-right">
                     <a class="article__pill-button" href="./pages/figures-1/figures-1.html">
@@ -372,6 +377,157 @@
                   </div>
                 </figure>
               </div>
+
+              <p>Next, the images were pre-processed preserving high-level of detail and signal-to-noise ratio while
+                avoiding photometric nonlinearity and geometric distortion. Initially, in this study, we used eight CNNs
+                architectures namely DenseNet121, InceptionV3, Xception, InceptionResNetV2, ResNet50, ResNet101,
+                MobileNetV2, and VGG16. DenseNet121 was selected in this study because this is one of the most
+                successful models of recent times, and is available from open sources (e.g. Pytorch, TensorFlow and
+                Keras API). Additionally, it must be noted that DenseNet121 outperformed the other architectures during
+                a pilot study that we performed with 100 epochs (Table <a href="#tab1">1</a>). Table <a
+                  href="#tab2">2</a> shows the characteristics of the
+                architecture models used in this study.</p>
+
+              <div class="article-figure">
+                <figure class="article-table__figure">
+                  <figcaption class="article-table__figcaption">
+                    <b id="tab1">Table 1 Summarized results of the metrics of the seven models evaluated in a pilot test
+                      to support the decision-making process for the selection of a network.</b>
+                  </figcaption>
+                  <div class="link-right">
+                    <a class="article__pill-button" href="./pages/table-1/table-1.html">
+                      <span>Full size table</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </figure>
+              </div>
+
+              <div class="article-figure">
+                <figure class="article-table__figure">
+                  <figcaption class="article-table__figcaption">
+                    <b id="tab2">Table 2 Specifics of the CNN architectures applied and tested in this study.</b>
+                  </figcaption>
+                  <div class="link-right">
+                    <a class="article__pill-button" href="./pages/table-2/table-2.html">
+                      <span>Full size table</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </figure>
+              </div>
+
+              <p>In this study, we evaluated the DenseNet121 architecture using two training approaches: From Scratch
+                (FS)
+                and Transfer Learning (TL). With FS the network weights are not inherited from a previous model but are
+                randomly initialized. It requires 1) a larger training set, 2) the risk of overfitting`1` is higher
+                since
+                the network has no experience from previous training sessions, and 3) the network needs to rely on the
+                input data to define all inherent weights. However, this approach allows the creation of a network
+                topology that can work towards a specific problem/question. TL is a method that reuses models applied to
+                specific tasks as a starting point for new domains of interest. Consequently, the network borrows data
+                (with original labels) or extracts knowledge from related fields to obtain the highest possible
+                performance in the area of interest. As per standard practices, TL can be applied using a base neural
+                network as a fixed feature extractor. This way the images of the target dataset are fed to the deep
+                neural
+                network. Later, the features that are generated as input to the final layer classifier are extracted.
+                Through these features, a new classifier is built, and the model is created. Specifically for the base
+                network (last layer), a fine-tuning strategy is added, and the weights of previous layers are also
+                modified. We used pre-trained weights based on the ImageNet model and implemented transfer learning to
+                best fit our dataset.</p>
+              <p>To avoid overfitting and improve the generalizability of the evaluated models (due to the quantitative
+                restriction of images in the data set) we used a computational framework (Keras) for pre-processing
+                layers to create a pipeline augmentation layers of image data—which can be used as an independent
+                pre-processing code in non-Keras30 workflows. These layers apply random augmentation transformations to
+                a batch of images and are only active during training30. Table <a href="#tab3">3</a> presents each layer
+                with its respective
+                implemented parameters.</p>
+              <div class="article-figure">
+                <figure class="article-table__figure">
+                  <figcaption class="article-table__figcaption">
+                    <b id="tab3">Table 3 Image data augmentation layers and parameters.</b>
+                  </figcaption>
+                  <div class="link-right">
+                    <a class="article__pill-button" href="./pages/table-3/table-3.html">
+                      <span>Full size table</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </figure>
+              </div>
+
+              <p>A stochastic optimization algorithm (SGD) was used to optimize the training process. We initially set a
+                base learning rate of 1 × 10−3. The base learning rate was decreased to 6 × 10−6 with increased
+                iterations. In the validation process, we used the k-fold cross-validation method. The dataset was
+                divided into 5 (k) mutually exclusive subsets of the same size (five sets of 20% of the sample). This
+                strategy creates a subset (20%) to be used for the tests and the remaining k − 1 (80%) is used to
+                estimate the parameters (training). The five sets were dynamic over five repetitions for each of the
+                architectures (TL and FS). It means that all the training samples had a different (randomly selected)
+                dataset built from the original sample. Hence, images used during the training process were not used in
+                the subsequent validation stage within the same k-fold training-test. After this process quantification
+                of the model accuracy is feasible.</p>
+              <h3>Diagnostic metrics</h3>
+              <p>To evaluate the (radio-diagnostic) classification performance of the proposed architecture, the loss,
+                overall accuracy, F1-scores, precision, recall, and specificity were selected as the accuracy
+                performance metrics (Table <a href="#tab4">4</a>). In the training stage, the internal weights of the
+                model are updated
+                during several iterations. We supervised each iteration in the training period, registering the weights
+                with the best predictive power of the model determined by the overall accuracy metric.</p>
+              <div class="article-table">
+                <figure class="article-table__figure">
+                  <figcaption class="article-table__figcaption">
+                    <b id="tab4">Table 4 Diagnostic metrics used to evaluate the performance of the investigated CNN
+                      architectures.</b>
+                  </figcaption>
+                  <div class="link-right">
+                    <a class="article__pill-button" href="./pages/table-1/table-1.html">
+                      <span>Full size table</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </figure>
+              </div>
+
+              <p>Additionally, this study quantified the performance of the CNN into a confusion matrix for FS and TL.
+                The matrix contains information about true (real) and predicted classifications accomplished the CNN.
+                This approach helps on finding and reducing bias and variance issues and enables adjustments capable of
+                producing more accurate results. Another approach used in this study was the Receiver Operating
+                Characteristic (ROC) curve, which is a diagnostic tool to enable the analysis of classification
+                performances represented by sensitivity, specificity, and area under the curve (AUC). Visual outcomes
+                were illustrated with gradient-weighted class activation mapping (Grad-CAM) to indicate the region on
+                the panoramic radiograph that was more activated during the machine-guided decision to classify females
+                and males. The study was performed with a Linux machine, with Ubuntu 20.04, an Intel® Core(TM) i7-6800 K
+                processor, 2 Nvidia® GTX Titan Xp 12 GB GPUs, and 64 GB of DDR4 RAM. All models were developed using
+                TensorFlow API version 2.5 and Keras version 2.5 . Python 3.8.10 was used for algorithm implementation
+                and data wrangling.</p>
+            </div>
+          </section>
+
+          <section class="article-section main-content__result">
+            <h2 class="article-section__title" id="Sec3">Result</h2>
+            <div class="article-section__content">
+              <p>
+                The performance of DenseNet121 architecture tested with FS and TL approaches showed that the former had
+                an overall accuracy rate of 0.71 with a specificity rate of 0.87. With TL, the overall accuracy
+                increased to 0.82 with a specificity rate of 0.92—between K-folds 1–5 TL accuracy floated between 0.81
+                to 0.83. All the other metrics quantified in this study confirmed the superior performance of TL over FS
+                (Table <a href="#tab5">5</a>).
+              </p>
+              <div class="article-table" id="table-1">
+                <figure class="article-table__figure">
+                  <figcaption class="article-table__figcaption">
+                    <b id="tab5">Table 5 Quantified performances of DenseNet121 with FS and TL architectures.</b>
+                  </figcaption>
+                  <div class="link-right">
+                    <a class="article__pill-button" href="./pages/table-5/table-5.html">
+                      <span>Full size table</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </figure>
+              </div>
+
+
             </div>
           </section>
           <section class="article-section main-content__discussion">
@@ -470,30 +626,7 @@
                 methods with the same sample are also needed.</p>
             </div>
           </section>
-          <section class="article-section main-content__method">
-            <h2 class="article-section__title" id="Sec6">Materials and methods</h2>
-            <div class="article-section__content">
-              <h3 class="article-section__sub-title">Data collection</h3>
-              <p> This study was conducted with 2657 orthopantomograms, which were collected from Korean and Japanese
-                populations, aged 15 to 23 years. The radiographs from the Koreans were subdivided into a training set
-                of 900 (19.42 ± 2.65 years) and an internal test set of 900 (19.52 ± 2.59 years). The training set was
-                collected from single institution (Seoul St. Mary’s Hospital), and the internal test set was collected
-                from two institutions (Seoul National University Dental Hospital and Yonsei University Dental Hospital).
-                We also collected 857 radiographs from other population data (Iwate Medical University, Japan) for
-                external testing. The radiographs from the Japanese were set as an external test set (19.31 ± 2.60
-                years). The data were collected retrospectively to analyze the developmental stages of the teeth from
-                panoramic radiographs taken during dental treatment. All the collected data were anonymized, other than
-                sex, date of birth, and the date the radiographs were taken. The inclusion and exclusion criteria were
-                the same as those in previously published studies4,5. The chronological age of the samples was
-                calculated by subtracting the date of birth from the date the radiographs were taken. The sample group
-                was classified into nine age groups. The age and sex distribution are shown in Table 3. This study was
-                conducted in compliance with the Declaration of Helsinki and approved by the Institutional Review Board
-                (IRB) of Seoul St. Mary’s Hospital, the Catholic University of Korea (KC22WISI0328). Since this study
-                has a retrospective design, it is impossible to obtain informed consent from all patients who had
-                radiographs for treatment purposes. The requirement for informed consent was waived by the IRB of Seoul
-                St. Mary’s Hospital, the Catholic University of Korea.</p>
-            </div>
-          </section>
+
           <section class="article-section main-content__data-availability">
             <h2 class="article-section__title" id="Sec7">Data availability</h2>
             <div class="article-section__content">
