@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/1fb8bb996b.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+  <link rel="stylesheet" href="../../../css/styles.css">
+  <link rel="stylesheet" href="../../../css/header.css">
+  <link rel="stylesheet" href="../../../css/footer.css">
+  <link rel="stylesheet" href="../research-article.css">
+
+
+  <link rel="icon" href="../../../public/images/favicon.jpg">
+
+
+  <script src="../../../js/header-footer.js"></script>
+  <title>Article 2</title>
+</head>
+
+
+<body>
+  <header class="container-fluid">
+    <input type="checkbox" class="nav__input" id="nav-mobile-input">
+    <div class="logo-search-login container" id="logo-search-login-1">
+      <div class="logo">
+        <img src="../../../public/images/logo.svg" alt="Logo" />
+      </div>
+      <div class="search-group">
+        <input type="text" class="search-input" placeholder="Search in 32SMILES" aria-label="Search"
+          aria-describedby="basic-addon1" />
+        <span class="search-group-icon" id="basic-addon1">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
+      <div class="login">
+        <a href="../../../pages/Signin-Signup/signIn-signUp.html" class="login_login">Sign in</a>
+        <label for="nav-mobile-input" class="nav-mobile__menu-btn"><i class="fa-solid fa-bars"></i></label>
+      </div>
+    </div>
+
+    <div class="logo-search-login-small container" id="logo-search-login-2">
+      <div class="logo">
+        <img src="../../../public/images/logo.svg" alt="Logo" />
+      </div>
+      <ul class="nav-bar container" id="smallNav">
+        <li class="nav-bar__item-1">
+          <a href="" class="nav-bar__link-1">HOME</a>
+          <ul class="nav-bar__list-2">
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          </ul>
+        </li>
+        <li class="nav-bar__item-1">
+          <a href="" class="nav-bar__link-1">PROFESSIONAL EDUCATION</a>
+          <ul class="nav-bar__list-2">
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          </ul>
+        </li>
+        <li class="nav-bar__item-1">
+          <a href="" class="nav-bar__link-1">PATIENTS EDUCATION</a>
+          <ul class="nav-bar__list-2">
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          </ul>
+        </li>
+        <li class="nav-bar__item-1">
+          <a href="" class="nav-bar__link-1">RESEARCH</a>
+          <ul class="nav-bar__list-2">
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          </ul>
+        </li>
+        <li class="nav-bar__item-1">
+          <a href="" class="nav-bar__link-1">PRODUCTS</a>
+          <ul class="nav-bar__list-2">
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          </ul>
+        </li>
+        <li class="nav-bar__item-1">
+          <a href="" class="nav-bar__link-1">CONTACT US</a>
+          <ul class="nav-bar__list-2">
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="login">
+        <a href="../../pages/Signin-Signup/signIn-signUp.html" class="login_login">Sign in</a>
+        <label for="nav-mobile-input" class="nav-mobile__menu-btn"><i class="fa-solid fa-bars"></i></label>
+      </div>
+    </div>
+    <ul class="nav-bar container" id="mainNav">
+      <li class="nav-bar__item-1">
+        <a href="" class="nav-bar__link-1">HOME</a>
+        <ul class="nav-bar__list-2">
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+        </ul>
+      </li>
+      <li class="nav-bar__item-1">
+        <a href="" class="nav-bar__link-1">PROFESSIONAL EDUCATION</a>
+        <ul class="nav-bar__list-2">
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+        </ul>
+      </li>
+      <li class="nav-bar__item-1">
+        <a href="" class="nav-bar__link-1">PATIENTS EDUCATION</a>
+        <ul class="nav-bar__list-2">
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+        </ul>
+      </li>
+      <li class="nav-bar__item-1">
+        <a href="" class="nav-bar__link-1">RESEARCH</a>
+        <ul class="nav-bar__list-2">
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+        </ul>
+      </li>
+      <li class="nav-bar__item-1">
+        <a href="" class="nav-bar__link-1">PRODUCTS</a>
+        <ul class="nav-bar__list-2">
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+        </ul>
+      </li>
+      <li class="nav-bar__item-1">
+        <a href="" class="nav-bar__link-1">CONTACT US</a>
+        <ul class="nav-bar__list-2">
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+
+    <label for="nav-mobile-input" class="nav__overlay"></label>
+
+    <di class="nav-mobile">
+      <label for="nav-mobile-input" class="nav-mobile-close"><i class="fa-solid fa-xmark"></i></label>
+      <div class="nav-mobile__search">
+        <div class="nav-mobile__search-wrapper">
+          <span class="nav-mobile__search-icon" id="basic-addon1">
+            <i class="fas fa-search"></i>
+          </span>
+          <input type="text" class="nav-mobile__search-input" placeholder="Search in 32SMILES" aria-label="Search"
+            aria-describedby="basic-addon1" />
+        </div>
+      </div>
+      <ul class="nav-mobile__list-1">
+        <li class="nav-mobile__item-1">
+          <a href="" class="nav-mobile__link-1">HOME</a>
+        </li>
+        <li class="nav-mobile__item-1">
+          <a href="" class="nav-mobile__link-1">PROFESSIONAL EDUCATION</a>
+        </li>
+        <li class="nav-mobile__item-1">
+          <a href="" class="nav-mobile__link-1">PATIENTS EDUCATION</a>
+        </li>
+        <li class="nav-mobile__item-1">
+          <a href="" class="nav-mobile__link-1">RESEARCH</a>
+        </li>
+        <li class="nav-mobile__item-1">
+          <a href="" class="nav-mobile__link-1">PRODUCTS</a>
+        </li>
+        <li class="nav-mobile__item-1">
+          <a href="" class="nav-mobile__link-1">CONTACT US</a>
+        </li>
+      </ul>
+    </di>
+
+  </header>
+
+  <main class="research-article-main container">
+    <div class="research-article-content">
+      <div class="article-header">
+        <ul class="article-identifiers">
+          <li><span>Open Access</span></li>
+          <li><span>Published: 14 October 2022</span></li>
+        </ul>
+        <div class="article-title">
+          <h1>Diagnostic performance of convolutional neural networks for dental sexual dimorphism</h1>
+        </div>
+        <div class="article-authors">
+          <p>Ademir Franco, Lucas Porto, Dennis Heng, Jared Murray, Anna Lygate, Raquel Franco, Juliano Bueno, Marilia
+            Sobania, Márcio M. Costa, Luiz R. Paranhos, Scheila Manica & André Abade </p>
+        </div>
+        <ul class="article-metrics-bar">
+          <li>
+            <p>589</p>
+            <span>Accesses</span>
+          </li>
+          <li>
+            <p>1</p>
+            <span>Altmetric</span>
+          </li>
+        </ul>
+      </div>
+      <div class="article-body">
+        <section class="article-section abstract">
+          <h2 class="article-section__title" id="Sec1">Abstract</h2>
+          <div class="article-section__content">
+            <p>Convolutional neural networks (CNN) led to important solutions in the field of Computer Vision. More
+              recently, forensic sciences benefited from the resources of artificial intelligence, especially in
+              procedures that normally require operator-dependent steps. Forensic tools for sexual dimorphism based on
+              morphological dental traits are available but have limited performance. This study aimed to test the
+              application of a machine learning setup to distinguish females and males using dentomaxillofacial features
+              from a radiographic dataset. The sample consisted of panoramic radiographs (n = 4003) of individuals in
+              the age interval of 6 and 22.9 years. Image annotation was performed with V7 software (V7labs, London,
+              UK). From Scratch (FS) and Transfer Learning (TL) CNN architectures were compared, and diagnostic accuracy
+              tests were used. TL (82%) performed better than FS (71%). The correct classifications of females and males
+              aged ≥ 15 years were 87% and 84%, respectively. For females and males &#60; 15 years, the correct
+              classifications were 80% and 83%, respectively. The Area Under the Curve (AUC) from Receiver-operating
+              Characteristic (ROC) curves showed high classification accuracy between 0.87 and 0.91. The
+              radio-diagnostic use of CNN for sexual dimorphism showed positive outcomes and promising forensic
+              applications to the field of dental human identification. </p>
+          </div>
+        </section>
+        <div class="main-content">
+          <section class="article-section main-content__introduction">
+            <h2 class="article-section__title" id="Sec2">Introduction</h2>
+            <div class="article-section__content">
+              <p>Several techniques used in forensic sciences rely on subjective operator-dependent procedures . The
+                decision-making process behind these procedures requires experience and may lead to error rates with a
+                significant impact in practice2. Important contributions of forensic dentistry to forensic sciences
+                emerged from radio-diagnostic procedures, such as dental charting for human identification, and dental
+                staging for age estimation6,7,8,9,10. Computer-based tools were developed to create a man–machine
+                interface and reduce bias from the operator’s side. Software like KMD PlassData DVI™ (KMD s/a, Ballerup,
+                Denmark) added quality control procedures to the reconciliation process, made disaster victim
+                identification less time-consuming, and guaranteed more straightforward human identifications. In dental
+                age estimation, promising automated techniques abbreviated the number of manual interactions needed to
+                allocate developmental stages to teeth examined on radiographs. While dental charting has a fundamental
+                role in comparative human identification, dental age estimation contributes indirectly as a
+                reconstructive factor.</p>
+              <p>
+                Among the reconstructive factors, sex plays a fundamental part in narrowing lists of missing persons.
+                When biological/physical sex-related parameters are available they may lead to binary segregation of the
+                victims (into males and females) and limit the number of required antemortem (AM) and postmortem (PM)
+                comparisons. A recent systematic literature review with over a hundred eligible studies highlighted the
+                importance of dentomaxillofacial features in the process of sexual dimorphism. According to the authors,
+                the existing techniques for sexual dimorphism based on teeth can be biochemical (e.g. from the analysis
+                of dental tissues), metric (namely measuring teeth), and non-metric (e.g. relying on dental
+                morphology)15. Biochemical techniques seem to be more accurate and represent the current
+                state-of-the-art when it comes to dental analyses. However, the application of these techniques in
+                practice is restricted because they require advanced facilities and tools that are not usually available
+                in most medicolegal institutes, especially in developing countries.
+              </p>
+              <p>The most common techniques debated in the current scientific literature fall within the group of metric
+                analyses, in which linear measurements (mesiodistal width and intercanine distance) and volumetric
+                assessments can be performed ex-vivo or through 2D (radiographic/photographic) 3D (tomographic scan)
+                imaging. In this context, examiner reproducibility is a drawback since millimetric measurements and
+                volumetric analyses require extensive calibration and training. In order to reduce operator-dependent
+                interactions, artificial intelligence could figure as an option to enhance diagnostic performances of
+                sex estimation techniques. Machine learning algorithms are known to learn underlying relationships in
+                data and support the decision-making process (or even make decisions without requiring explicit
+                instructions). In 1989, the concept of a Convolutional Neural Network (CNN) was introduced and
+                demonstrated enormous potential for tasks related to computer vision. CNNs are among the best learning
+                algorithms for understanding images and have demonstrated exemplary performance in tasks related to
+                image segmentation, classification, detection, and retrieval. One of the most outstanding features of
+                CNNs is their ability to explore spatial or temporal correlation in the data. The CNN topology is
+                divided into several learning stages that consist of a combination of convolutional layers, non-linear
+                processing units, and subsampling layers. Since the late ’90 s, several improvements in the learning
+                architecture of CNNs were made to enable the assessment of large, heterogeneous, complex, and multiclass
+                datasets. The proposed innovations included the modification of image processing units, optimization for
+                the assessment of parameters and hyperparameters, new “design” patterns, and layer connectivity.</p>
+              <p>In this scenario, artificial intelligence could find productive grounds for the use of radiographic
+                datasets and could be challenged for sexual dimorphism. However, given the existing scientific
+                literature and the morphological parameters currently known to be dimorphic (e.g. the maxillary
+                sinuses), testing the performance of machine learning algorithms to estimate the sex of adults would be
+                merely confirmatory. In order to propose a real challenge to artificial intelligence, sexual dimorphism
+                could be performed with a sample of children and juveniles—a population in which anthropological
+                indicators of sex are not well-pronounced or at least not fully expressed.</p>
+              <p>In country-specific jurisdictions, the admissibility of evidence in Court depends on several technical
+                aspects, including the knowledge about the error of the method (factor including in Daubert’s rule, for
+                instance). With that in mind, testing forensic solutions developed with artificial intelligence, and
+                investigating the accuracy of the method (and inherent error) are initial steps prior to implementing
+                computer-aided tools in practice. This diagnostic study aimed to use a radiographic dataset in a machine
+                learning setup to promote an automated process of sexual dimorphism based on dentomaxillofacial features
+                of children and juveniles.</p>
+            </div>
+          </section>
+
+          <section class="article-section main-content__method">
+            <h2 class="article-section__title" id="Sec6">Materials and methods</h2>
+            <div class="article-section__content">
+              <h3 class="article-section__sub-title">Ethical aspects and study design</h3>
+              <p>This was a diagnostic study with retrospective sample collection. The methodological architecture was
+                based on a medical imaging dataset to feed machine learning within the context of artificial
+                intelligence. Informed consent was waived because the study was observation and required retrospective
+                sampling from a pre-existing image database, but ethical approval was obtained from the Ethics Committee
+                in Human Research of Faculdade Sao Leopoldo Mandic. The Declaration of Helsinki (DoH), 2013, was
+                followed to assure ethical standards in this medical research. The sample was collected from a
+                pre-existing institutional image database. Hence, no patient was prospectively exposed to ionizing
+                radiation merely for research purposes. All the images that populated the database were obtained for
+                diagnostic, therapeutic, or follow-up reasons.</p>
+              <h3>Sample and participants</h3>
+              <p>The sample consisted of panoramic radiographs (n = 4003; 1809 males and 2194 females) collected
+                according to the following eligibility criteria: Inclusion criteria—radiographs of male and female
+                Brazilian individuals with age between 6 and 22.9 years. Exclusion criteria—panoramic radiographs
+                missing patient’s information about sex, date of birth, and date of image acquisition; visible bone
+                lesions and anatomic deformity; the presence of implants and extensive restorative materials; severely
+                displaced and/or supernumerary teeth. The radiographs were obtained from a private oral imaging company
+                in the Central-Western region of Brazil. The images were imported to an Elitebook 15.6" FHD Laptop with
+                i5 (Hewlett-Packard, Palo Alto, CA, USA) for analysis.</p>
+              <p>The annotations were accomplished by three trained observers, with experience in forensic odontology,
+                supervised by a forensic odontologist with 11 years of practice in the field. A bounding-box tool was
+                used to annotate the region of interest in Darwin V7 (V7 Labs, London, UK) software package. Vertically
+                (y-axis), the box was positioned covering the apical region of the most superior teeth whilst the lower
+                limit covered the apical region of the most inferior teeth. Laterally (x-axis), the box ended right
+                after the third molars, bilaterally. The final selection of the region of interest was represented by a
+                rectangular box covering all the teeth visible in the panoramic radiograph. The images were anonymized
+                for annotation, hiding age and sex information. The software registered the annotations that were later
+                tested for association with sex.</p>
+              <h3>Pre-processing and training approach</h3>
+              <p>The full dataset of panoramic radiographs was initially divided into the age groups “under 15 years"
+                (n = 2,254) and “equal or older 15 years" (n = 1,749). This division was justified to challenge the
+                network regarding the sexual dimorphism. In children, sexual dimorphism is more difficult because the
+                expression of external sexual features is not pronounced. Hence, the age of 15 years represents a
+                transitional point to a fully developed permanent dentition (except for the third molars). Normally, all
+                the permanent teeth will have fully developed crowns around this age. The roots, if not developed, will
+                present a late stage of formation16. In each age group (&#60; 15 years vs. ≥ 15 years) a single problem
+                was
+                established: sexual dimorphism, and a binary outcome was expected regarding sex (male vs. female), and
+                age (&#60; 15 years vs. ≥ 15 years). Hence, four classes were considered in this study: under 15 males
+                vs.
+                under 15 females; and over 15 males vs. over 15 females (Fig. <a href="#fig1">1</a>)</p>
+
+              <div class="article-figure">
+                <figure>
+                  <figcaption>
+                    <b id="fig1">Figure 1</b>
+                  </figcaption>
+                  <div class="article-figure__content">
+                    <a href=""><img src="./public/figure/figure2.1.webp" alt="figure 2.1"></a>
+                    <p class="article-figure__description">Model structured for this study showing the workflow from
+                      sampling, image processing, annotation, cross-validation, training/validation to classification.
+                    </p>
+                  </div>
+                  <div class="link-right">
+                    <a class="article__pill-button" href="./pages/figures-1/figures-1.html">
+                      <span>Full size image</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </figure>
+              </div>
+
+              <p>Next, the images were pre-processed preserving high-level of detail and signal-to-noise ratio while
+                avoiding photometric nonlinearity and geometric distortion. Initially, in this study, we used eight CNNs
+                architectures namely DenseNet121, InceptionV3, Xception, InceptionResNetV2, ResNet50, ResNet101,
+                MobileNetV2, and VGG16. DenseNet121 was selected in this study because this is one of the most
+                successful models of recent times, and is available from open sources (e.g. Pytorch, TensorFlow and
+                Keras API). Additionally, it must be noted that DenseNet121 outperformed the other architectures during
+                a pilot study that we performed with 100 epochs (Table <a href="#tab1">1</a>). Table <a
+                  href="#tab2">2</a> shows the characteristics of the
+                architecture models used in this study.</p>
+
+              <div class="article-figure">
+                <figure class="article-table__figure">
+                  <figcaption class="article-table__figcaption">
+                    <b id="tab1">Table 1 Summarized results of the metrics of the seven models evaluated in a pilot test
+                      to support the decision-making process for the selection of a network.</b>
+                  </figcaption>
+                  <div class="link-right">
+                    <a class="article__pill-button" href="./pages/table-1/table-1.html">
+                      <span>Full size table</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </figure>
+              </div>
+
+              <div class="article-figure">
+                <figure class="article-table__figure">
+                  <figcaption class="article-table__figcaption">
+                    <b id="tab2">Table 2 Specifics of the CNN architectures applied and tested in this study.</b>
+                  </figcaption>
+                  <div class="link-right">
+                    <a class="article__pill-button" href="./pages/table-2/table-2.html">
+                      <span>Full size table</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </figure>
+              </div>
+
+              <p>In this study, we evaluated the DenseNet121 architecture using two training approaches: From Scratch
+                (FS)
+                and Transfer Learning (TL). With FS the network weights are not inherited from a previous model but are
+                randomly initialized. It requires 1) a larger training set, 2) the risk of overfitting`1` is higher
+                since
+                the network has no experience from previous training sessions, and 3) the network needs to rely on the
+                input data to define all inherent weights. However, this approach allows the creation of a network
+                topology that can work towards a specific problem/question. TL is a method that reuses models applied to
+                specific tasks as a starting point for new domains of interest. Consequently, the network borrows data
+                (with original labels) or extracts knowledge from related fields to obtain the highest possible
+                performance in the area of interest. As per standard practices, TL can be applied using a base neural
+                network as a fixed feature extractor. This way the images of the target dataset are fed to the deep
+                neural
+                network. Later, the features that are generated as input to the final layer classifier are extracted.
+                Through these features, a new classifier is built, and the model is created. Specifically for the base
+                network (last layer), a fine-tuning strategy is added, and the weights of previous layers are also
+                modified. We used pre-trained weights based on the ImageNet model and implemented transfer learning to
+                best fit our dataset.</p>
+              <p>To avoid overfitting and improve the generalizability of the evaluated models (due to the quantitative
+                restriction of images in the data set) we used a computational framework (Keras) for pre-processing
+                layers to create a pipeline augmentation layers of image data—which can be used as an independent
+                pre-processing code in non-Keras30 workflows. These layers apply random augmentation transformations to
+                a batch of images and are only active during training30. Table <a href="#tab3">3</a> presents each layer
+                with its respective
+                implemented parameters.</p>
+              <div class="article-figure">
+                <figure class="article-table__figure">
+                  <figcaption class="article-table__figcaption">
+                    <b id="tab3">Table 3 Image data augmentation layers and parameters.</b>
+                  </figcaption>
+                  <div class="link-right">
+                    <a class="article__pill-button" href="./pages/table-3/table-3.html">
+                      <span>Full size table</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </figure>
+              </div>
+
+              <p>A stochastic optimization algorithm (SGD) was used to optimize the training process. We initially set a
+                base learning rate of 1 × 10−3. The base learning rate was decreased to 6 × 10−6 with increased
+                iterations. In the validation process, we used the k-fold cross-validation method. The dataset was
+                divided into 5 (k) mutually exclusive subsets of the same size (five sets of 20% of the sample). This
+                strategy creates a subset (20%) to be used for the tests and the remaining k − 1 (80%) is used to
+                estimate the parameters (training). The five sets were dynamic over five repetitions for each of the
+                architectures (TL and FS). It means that all the training samples had a different (randomly selected)
+                dataset built from the original sample. Hence, images used during the training process were not used in
+                the subsequent validation stage within the same k-fold training-test. After this process quantification
+                of the model accuracy is feasible.</p>
+              <h3>Diagnostic metrics</h3>
+              <p>To evaluate the (radio-diagnostic) classification performance of the proposed architecture, the loss,
+                overall accuracy, F1-scores, precision, recall, and specificity were selected as the accuracy
+                performance metrics (Table <a href="#tab4">4</a>). In the training stage, the internal weights of the
+                model are updated
+                during several iterations. We supervised each iteration in the training period, registering the weights
+                with the best predictive power of the model determined by the overall accuracy metric.</p>
+              <div class="article-table">
+                <figure class="article-table__figure">
+                  <figcaption class="article-table__figcaption">
+                    <b id="tab4">Table 4 Diagnostic metrics used to evaluate the performance of the investigated CNN
+                      architectures.</b>
+                  </figcaption>
+                  <div class="link-right">
+                    <a class="article__pill-button" href="./pages/table-1/table-1.html">
+                      <span>Full size table</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </figure>
+              </div>
+
+              <p>Additionally, this study quantified the performance of the CNN into a confusion matrix for FS and TL.
+                The matrix contains information about true (real) and predicted classifications accomplished the CNN.
+                This approach helps on finding and reducing bias and variance issues and enables adjustments capable of
+                producing more accurate results. Another approach used in this study was the Receiver Operating
+                Characteristic (ROC) curve, which is a diagnostic tool to enable the analysis of classification
+                performances represented by sensitivity, specificity, and area under the curve (AUC). Visual outcomes
+                were illustrated with gradient-weighted class activation mapping (Grad-CAM) to indicate the region on
+                the panoramic radiograph that was more activated during the machine-guided decision to classify females
+                and males. The study was performed with a Linux machine, with Ubuntu 20.04, an Intel® Core(TM) i7-6800 K
+                processor, 2 Nvidia® GTX Titan Xp 12 GB GPUs, and 64 GB of DDR4 RAM. All models were developed using
+                TensorFlow API version 2.5 and Keras version 2.5 . Python 3.8.10 was used for algorithm implementation
+                and data wrangling.</p>
+            </div>
+          </section>
+
+          <section class="article-section main-content__result">
+            <h2 class="article-section__title" id="Sec3">Result</h2>
+            <div class="article-section__content">
+              <p>
+                The performance of DenseNet121 architecture tested with FS and TL approaches showed that the former had
+                an overall accuracy rate of 0.71 with a specificity rate of 0.87. With TL, the overall accuracy
+                increased to 0.82 with a specificity rate of 0.92—between K-folds 1–5 TL accuracy floated between 0.81
+                to 0.83. All the other metrics quantified in this study confirmed the superior performance of TL over FS
+                (Table <a href="#tab5">5</a>).
+              </p>
+              <div class="article-table" id="table-1">
+                <figure class="article-table__figure">
+                  <figcaption class="article-table__figcaption">
+                    <b id="tab5">Table 5 Quantified performances of DenseNet121 with FS and TL architectures.</b>
+                  </figcaption>
+                  <div class="link-right">
+                    <a class="article__pill-button" href="./pages/table-5/table-5.html">
+                      <span>Full size table</span>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                  </div>
+                </figure>
+              </div>
+              <p>A deeper look at FS and TL considering the metrics of loss and accuracy per epoch was presented in
+                Figs. 2 and 3, respectively. In both architectures, loss (which is the combination of errors after
+                iterations) decreases progressively with the epochs, while accuracy increases, both during training and
+                validation setups. TL, however, shows a more evident reduction of loss over time—within a shallow curve
+                that ends close to zero by the end of the 100 epochs. This phenomenon is not observed in FS.
+                Additionally, the accuracy of TL is represented by a more curvilinear improvement that starts over 0.5
+                increasing to nearly 1. In FS, the accuracy curve starts over 0.6 (initially better) and stabilizes when
+                it reaches 0.9. These outcomes show that TL had better improvement over sequential iterations.</p>
+
+
+            </div>
+          </section>
+          <section class="article-section main-content__discussion">
+            <h2 class="article-section__title" id="Sec4">Discussion</h2>
+            <div class="article-section__content">
+              <p>The first step of this study was to compare the accuracy of dental age estimation by seven DM models
+                with that derived from conventional regression. Both MAE and RMSE were assessed in the internal test
+                sets for both sexes, and the differences between the conventional methods and DM models were 44 ~ 77
+                days with MAE and 62 ~ 88 days with RMSE. Although the conventional methods were slightly more accurate
+                in this study, it is difficult to conclude whether such a small difference is clinically or practically
+                meaningful. These results imply that dental age estimation by DM models can be performed with almost the
+                same accuracy as the conventional method. Direct comparison with the results of previous studies is
+                difficult because there are no studies comparing the accuracy of DM models with conventional statistical
+                approaches using the same tooth registration technique for the same age span, as was done in this study.
+                Galibourg et al.24 compared the MAE and RMSE between two conventional methods (Demirjian’s method25 and
+                Willems’ method29) and ten DM models in a French population aged 2 to 24 years. They reported that all
+                the DM models proved more accurate than conventional methods, with differences of 0.20 and 0.38 years in
+                MAE, and 0.25 and 0.47 years in RMSE, with Willems and Demirjian’s methods, respectively. Considering
+                the many reports30,31,32,33 that Demirjian's method inaccurately estimates dental age in populations
+                other than French Canadian, on which the study was based, the difference between the DM models and
+                conventional methods shown in Galibourg's study is quite similar to that observed in this study. Tao et
+                al.34 used the MLP algorithm to predict the dental age of 1636 Chinese orthopantomograms, and they also
+                compared the accuracy with the results using Demirjian’s and Willems methods. They reported greater
+                accuracy with MLP than with conventional methods. The differences between DM and conventional methods
+                were < 0.32 years for Demirjian’s method and 0.28 years for Willems’ method, with similar results as
+                  this study. The results of these previous studies24,34 are also consistent with the results of this
+                  study, in that the age estimation accuracy with DM models and conventional methods are similar.
+                  However, based on the present results, we can only cautiously conclude that age estimation using the
+                  DM model can replace the existing method, as there is currently a lack of comparative and
+                  referenceable previous studies. Subsequent studies using more samples are warranted to confirm the
+                  results observed in this study.</p>
+                  <p>Among the studies testing the accuracy of dental age estimation with DM, some studies demonstrated
+                    higher accuracy than our study. Štepanovský et al.35 applied 22 DM models to panoramic radiographs
+                    of 976 members of a Czech population aged 2.7 to 20.5 years and verified the accuracy between each
+                    model. They evaluated the development of a total of 16 upper and lower left permanent teeth using
+                    the classification criteria proposed by Moorrees et al36. The MAE was 0.64 to 0.94 years, and the
+                    RMSE was 0.85 to 1.27 years, which is more accurate than the two DM models used in this study. Shen
+                    et al.23 estimated the dental age of seven permanent teeth in the left mandible for Eastern Chinese
+                    aged 5 to 13 years using the Cameriere method, which was compared with age estimated by linear
+                    regression, SVM, and RF. They showed that all the three DM models had greater accuracy compared to
+                    the traditional Cameriere formula. The MAE and RMSE in Shen’s study were lower than those of the DM
+                    models in this study. The reason for this increased accuracy in the studies of Štepanovský et al.35
+                    and Shen et al.23 may be the inclusion of younger subjects in their study samples. Since the age
+                    estimation of a participant with developing teeth becomes more accurate as the number of teeth
+                    increase during development, when the study participants are younger, the accuracy of the age
+                    estimation method derived from it could be higher37. In addition, the error in the estimated age
+                    with MLP was slightly smaller than that with SLP, which means greater accuracy with MLP than with
+                    SLP. MLP was considered slightly more suitable for age estimation, and this may be due to the hidden
+                    layer in MLP38. However, there is an exception in the case of the female external test set (1.45 for
+                    SLP, 1.49 for MLP). Concluding that MLP is more accurate than SLP in estimating age requires more
+                    retrospective studies.</p>
+                  <p>The classification performance of the 18-year threshold was also compared between the DM models and
+                    conventional methods. All the tested DM models and conventional methods for the internal test sets
+                    showed a practically acceptable discrimination level for the 18-year samples. The sensitivity was
+                    greater than 87.7% and 94.9%, and the specificity was greater than 89.3% and 84.7% in males and
+                    females, respectively. The AUROC was also greater than 0.925 in all the tested models. To the best
+                    of our knowledge, there is no study that tested the performance of a DM model for the 18-year
+                    classification according to teeth maturity. We can compare the results of this study with the
+                    classification performance of deep learning models with panoramic radiographs. Guo et al.15
+                    calculated the classification performance for a certain threshold age of a CNN-based deep learning
+                    model compared with a manual method based on the Demirjian method. The sensitivity and specificity
+                    of the manual method were 87.7% and 95.5%, and those of the CNN model were over 89.2% and 86.6%,
+                    respectively. They concluded that a deep learning model could replace or be superior to the manual
+                    estimation in the classification of the legal age threshold. The results of this study show similar
+                    classification performance; it is thought that classification using the DM models can substitute for
+                    age estimation with conventional statistical approaches. Among the DM models, LR was the best model
+                    in terms of sensitivity for the male internal test set and with regard to sensitivity and
+                    specificity for the female set. LR was the second most accurate in specificity for males. In
+                    addition, LR was regarded as one of the more user-friendly DM models35 and was less complex and
+                    sophisticated in treating data. Based on these results, LR is considered the optimal model for
+                    classification performance with the 18-year threshold in the Korean population.</p>
+                  <p>Overall, the accuracy of age estimation or classification performance of the external test set was
+                    less accurate or lower compared with results of the internal test set. Several reports indicate that
+                    the accuracy or classification performance deteriorates when the age estimation based on Korean
+                    population data is applied to the Japanese population5,39, and a similar pattern was found in this
+                    study. This deterioration tendency was observed in DM models also. Therefore, for accurate age
+                    estimation, even when DM is applied in the analysis process, the method derived from own population
+                    data should be used as first choice, like the conventional approaches5,39,40,41,42. Since it is
+                    still not clear whether similar tendencies can be shown with deep learning models, a study comparing
+                    accuracy and classification performance by applying conventional method, DM models, and deep
+                    learning models to the same samples is necessary to confirm whether AI can overcome the limits of
+                    ethnic differences in age estimation.</p>
+            </div>
+          </section>
+          <section class="article-section main-content__conclusions">
+            <h2 class="article-section__title" id="Sec5">Conclusions</h2>
+            <div class="article-section__content">
+              <p>We confirmed that the conventional method could be replaced by a DM model-based age estimation in
+                forensic practice for age estimation of Koreans. We also found the possibility of introducing ML for
+                forensic age estimation. However, there were also clear limitations, such as an insufficient number of
+                participants in this study to finalize the findings, and a lack of previous studies to compare and
+                verify the results of this study. In future, it will be necessary to conduct DM studies with more
+                samples and in more diverse populations to improve its practical applicability compared to conventional
+                methods. To confirm the possibility of multi-populational use of AI in age estimation, future studies
+                comparing the accuracy and classification performance of DM and deep learning models with conventional
+                methods with the same sample are also needed.</p>
+            </div>
+          </section>
+
+          <section class="article-section main-content__data-availability">
+            <h2 class="article-section__title" id="Sec7">Data availability</h2>
+            <div class="article-section__content">
+              <p> The authors confirm that the data supporting the findings of this study are available within the
+                article and its Supplementary material. The datasets generated and/or analyzed during the study can be
+                available from the corresponding author upon reasonable request.</p>
+            </div>
+          </section>
+          <section class="article-section main-content__references">
+            <h2 class="article-section__title" id="Sec8">References</h2>
+            <div class="article-section__content">
+              <ol class="reference-list">
+                <li>
+                  <p>Ritz-Timme, S. et al. Age estimation: The state of the art in relation to the specific demands of
+                    forensic practise. Int. J. Legal Med. 113, 129–136 (2000).</p>
+                </li>
+                <li>
+                  <p>Schmeling, A., Reisinger, W., Geserick, G. & Olze, A. The current state of forensic age estimation
+                    of live subjects for the purpose of criminal prosecution. Forensic Sci. Med. Pathol. 1, 239–246
+                    (2005).</p>
+                </li>
+                <li>
+                  <p>Pan, J. et al. A modified dental age assessment method for 5- to 16-year-old eastern Chinese
+                    children. Clin. Oral Investig. 25, 3463–3474 (2021).</p>
+                </li>
+                <li>
+                  <p>Lee, S. S. et al. The chronology of second and third molar development in Koreans and its
+                    application to forensic age estimation. Int. J. Legal Med. 124, 659–665 (2010).</p>
+                </li>
+                <li>
+                  <p>Oh, S., Kumagai, A., Kim, S. Y. & Lee, S. S. Accuracy of age estimation and assessment of the
+                    18-year threshold based on second and third molar maturity in Koreans and Japanese. PLoS ONE 17,
+                    e0271247 (2022).</p>
+                </li>
+                <li>
+                  <p>Kim, J. Y. et al. Machine learning-based preoperative datamining can predict the therapeutic
+                    outcome of sleep surgery in OSA subjects. Sci. Rep. 11, 14911 (2021).</p>
+                </li>
+              </ol>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-bar-area">
+      <div class="side-bar">
+        <div class="pdf-download">
+          <a class="download-btn" download href="../../../public/pdf/samplePDF.pdf">
+            <span>Download PDF</span>
+            <span><i class="fa-solid fa-download"></i></span>
+          </a>
+        </div>
+        <div class="side-bar__menu">
+          <div class="side-bar__menu-title">
+            <h4>Section</h4>
+          </div>
+          <ul class="side-bar__menu-list">
+            <li class="side-bar__menu-item"><a href="#Sec1">Abstract</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec2">Introduction</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec3">Result</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec4">Discussion</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec5">Conclusions</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec6">Materials and methods</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec7">Data availability</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec8">References</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="footer-area container">
+      <div class="footer__info">
+        <div class="row footer__info-row">
+          <div class="col footer__col-1">
+            <div class="footer_subscribe-wrapper" ng-app="myApp" ng-controller="myCtrl">
+              <div class="footer__subscribe-title">
+                <p>Subscribe</p>
+              </div>
+              <form name="subscribeForm">
+                <div class="footer__subscribe-input-field">
+                  <input ng-model="emailInput" class="footer__input-subscribe" type="email"
+                    placeholder="Enter your email">
+                  <button ng-click="validateEmail()" class="footer__sign-up-button" type="submit">Sign up</button>
+
+                </div>
+                <p class="footer__subscribe-error"> {{errorMessage}}</p>
+              </form>
+              <div class="footer__thanks">
+                <span>Thank you for subscribe</span>
+              </div>
+            </div>
+
+            <ul class="footer__social-media">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col footer__col-2">
+            <ul>
+              <li><a href="">Patient education</a></li>
+              <li><a href="">Professional education</a></li>
+              <li><a href="">Research</a></li>
+              <li><a href="">Product</a></li>
+            </ul>
+          </div>
+          <div class="col footer__col-3">
+            <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Site map</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
