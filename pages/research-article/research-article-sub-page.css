@@ -1,0 +1,57 @@
+/* Use for all sub page */
+
+.sub-page-all {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.sub-page-header {
+  margin-bottom: 16px;
+}
+
+.sub-page-title {
+  margin-bottom: 16px;
+}
+
+.sub-page-satellite {
+  margin-bottom: 16px;
+}
+
+.sub-page-content {
+  margin-bottom: 24px;
+}
+
+.sub-page-footer {
+  padding: 10px;
+}
+
+/* Table */
+
+.article-page-table {
+  width: 100%;
+  border: 2px solid var(--sub-text-color);
+  border-collapse: collapse;
+}
+
+.article-page-table tr,
+.article-page-table td,
+.article-page-table th {
+  border: 1px solid var(--sub-text-color);
+  padding: 6px;
+}
+
+.article-page-table th {
+  background-color: lightgray;
+}
+
+.article-page-table p {
+  margin-bottom: 28px;
+}
+
+.article-page-table__head {
+  border-bottom: 5px solid var(--sub-text-color);
+}
+
+.table-text-left {
+  text-align: left;
+}

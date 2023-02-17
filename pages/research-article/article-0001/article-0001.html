@@ -12,14 +12,15 @@
   <link rel="stylesheet" href="../../../css/styles.css">
   <link rel="stylesheet" href="../../../css/header.css">
   <link rel="stylesheet" href="../../../css/footer.css">
-  <link rel="stylesheet" href="article-0001.css">
+  <link rel="stylesheet" href="../research-article.css">
 
 
   <link rel="icon" href="../../../public/images/favicon.jpg">
 
 
   <script src="../../../js/header-footer.js"></script>
-  <title>Validation of data mining models by comparing with conventional methods for dental age estimation in Korean juveniles and young adults</title>
+  <title>Validation of data mining models by comparing with conventional methods for dental age estimation in Korean
+    juveniles and young adults</title>
 </head>
 
 
@@ -204,42 +205,139 @@
 
   </header>
 
-  <main>
-    <div class="content">
+  <main class="research-article-main container">
+    <div class="research-article-content">
       <div class="article-header">
-        <div class="article-identifiers"></div>
-        <div class="article-title"></div>
-        <div class="article-authors"></div>
-        <div class="article-metrics-bar"></div>
+        <ul class="article-identifiers">
+          <li><span>Open Access</span></li>
+          <li><span>Published: 13 January 2023</span></li>
+        </ul>
+        <div class="article-title">
+          <h1>Validation of data mining models by comparing with conventional methods for dental age estimation in
+            Korean juveniles and young adults</h1>
+        </div>
+        <div class="article-authors">
+          <p>Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee</p>
+        </div>
+        <ul class="article-metrics-bar">
+          <li>
+            <p>418</p>
+            <span>Accesses</span>
+          </li>
+          <li>
+            <p>2</p>
+            <span>Altmetric</span>
+          </li>
+        </ul>
       </div>
       <div class="article-body">
         <section class="article-section abstract">
           <h2 class="article-section__title" id="Sec1">Abstract</h2>
           <div class="article-section__content">
-            <p>Teeth are known to be the most accurate age indicators of human body and are frequently applied in forensic age estimation. We aimed to validate data mining-based dental age estimation, by comparing the accuracy of the estimation and classification performance of 18-year thresholds with conventional methods and with data mining-based age estimation. A total of 2657 panoramic radiographs were collected from Koreans and Japanese populations aged 15 to 23&nbsp;years. They were subdivided into a training and internal test set of 900 radiographs each from Koreans, and an external test set of 857 radiographs from Japanese. We compared the accuracy and classification performance of the test sets from conventional methods with those from the data mining models. The accuracy of the conventional method with the internal test set was slightly higher than that of the data mining models, with a slight difference (mean absolute error &lt; 0.21&nbsp;years, root mean square error &lt; 0.24&nbsp;years). The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.</p>
+            <p>Teeth are known to be the most accurate age indicators of human body and are frequently applied in
+              forensic age estimation. We aimed to validate data mining-based dental age estimation, by comparing the
+              accuracy of the estimation and classification performance of 18-year thresholds with conventional methods
+              and with data mining-based age estimation. A total of 2657 panoramic radiographs were collected from
+              Koreans and Japanese populations aged 15 to 23&nbsp;years. They were subdivided into a training and
+              internal test set of 900 radiographs each from Koreans, and an external test set of 857 radiographs from
+              Japanese. We compared the accuracy and classification performance of the test sets from conventional
+              methods with those from the data mining models. The accuracy of the conventional method with the internal
+              test set was slightly higher than that of the data mining models, with a slight difference (mean absolute
+              error &lt; 0.21&nbsp;years, root mean square error &lt; 0.24&nbsp;years). The classification performance
+              of the 18-year threshold was also similar between the conventional method and the data mining models.
+              Thus, conventional methods can be replaced by data mining models in forensic age estimation using second
+              and third molar maturity of Korean juveniles and young adults.</p>
 
           </div>
         </section>
         <div class="main-content">
           <section class="article-section main-content__introduction">
-            <h2 class="article-section__title">Introduction</h2>
+            <h2 class="article-section__title" id="Sec2">Introduction</h2>
             <div class="article-section__content">
-              <p>Dental age estimation is widely used in forensic science and pediatric dentistry. In particular, age estimation using the developmental stages of teeth is an important criterion for estimating the age of children and adolescents, due to the high correlation between chronological age and teeth development.               However, in the case of young adults, dental age estimation with teeth maturity has limitations because the growth of teeth is largely complete, except the third molars. The legal purpose of age estimation for young adults and adolescents is to provide an accurate estimation and scientific evidence as to whether they have reached the age of majority. In Korean forensic practice for juveniles and young adults, age was estimated with Lee’s method, and the legal 18-year threshold was predicted with the data suggested by Oh et al.</p>
-              <p>Machine learning, a type of artificial intelligence (AI), repeatedly learns and categorizes large amounts of data, solves problems on its own, and induces data programming. Machine learning can discover useful hidden patterns within a large amount of data. In contrast, labor-intensive and time-consuming classical methods may have limitations in dealing with large amounts of complex data that are difficult to process manually. Thus, many studies have been conducted recently using the latest computer technology to minimize human error and efficiently process multi-dimensional data. In particular, deep learning is widely used for medical image analysis, and various methods have been reported to estimate age by automatically analyzing radiographs to improve the accuracy and efficiency of age estimation. For example, Halabi et al. developed machine learning algorithms based on convolutional neural networks (CNN) using pediatric hand radiographs to estimate the age of bones. This study presented a model that applied machine learning to medical images and showed that these techniques can aid diagnostic accuracy. Li et al. estimated age from X-ray images of pelvic bones by applying deep learning CNN and compared with the results of regression analysis using the evaluation of the ossification stages. They found that the deep learning CNN model showed the same age estimation performance as the conventional regression model. A study by Guo et al. evaluated the classification performance of legal age thresholds by applying CNN technology based on dental orthopantomograms, and the result of the CNN model proved that humans outperformed its age classification performance.</p>
-              <p>Most of the age estimation studies performed with machine learning use deep learning methods. Deep learning-based age estimation has been reported to be more accurate than conventional methods. However, this method makes it almost impossible to present the scientific basis of age estimation, such as the age indicators used in the estimation. In addition, there was a legal controversy about who performed the examination. Therefore, deep learning-based age estimation is difficult to accept by administrative and judicial agencies. Data mining (DM) is a technique that can find not only expected but also unexpected information as a method to discover useful correlations among a large amount of data. When conducting DM, machine learning is usually used and both DM and machine learning employ the same critical algorithms to discover data patterns. Age estimation using tooth development is based on the examiner's maturity evaluation of the targeted teeth, and this evaluation is expressed as the stage of each targeted tooth. DM can be used to analyze the correlation between the evaluated stages of the teeth and their chronological age and has the potential to replace conventional statistical analysis. Therefore, if we apply DM approaches to age estimation, we can introduce machine learning to forensic age estimation free of legal responsibility concerns. Some comparative studies on the possible substitution of conventional manual methods used in forensic practice with the DM-based methods in dental age estimation have been published. Shen et al. showed that the DM models were more accurate than the traditional Cameriere formula. Galibourg et al., who predicted age by applying various DM methods based on Demirjian’s criteria, showed that the DM methods were superior to the Demirjian’s and Willems methods in age estimation for the French population.</p>
-              <p>For the dental age estimation of Korean juveniles and young adults, Lee’s method has been widely used in Korean forensic practice. This method uses conventional statistical analysis, such as multiple regression, to examine the relationship between Korean subjects and chronological ages. In this study, the age estimation method derived through conventional statistical techniques was defined as a "conventional method." The accuracy of Lee's method, which is a conventional method, has already been validated by Oh et al.; however, the applicability of age estimation based on DM models in Korean forensic practice remains questionable. We aimed to scientifically validate the potential utility of age estimation based on DM models. The objectives of this study were to (1) compare the accuracy of two DM models in dental age estimation and (2) compare the classification performance of the 18-year threshold of seven DM models and the methods derived from conventional statistical approaches using the maturity of the second and third molars in both jaws.</p>
+              <p>Dental age estimation is widely used in forensic science and pediatric dentistry. In particular, age
+                estimation using the developmental stages of teeth is an important criterion for estimating the age of
+                children and adolescents, due to the high correlation between chronological age and teeth development.
+                However, in the case of young adults, dental age estimation with teeth maturity has limitations because
+                the growth of teeth is largely complete, except the third molars. The legal purpose of age estimation
+                for young adults and adolescents is to provide an accurate estimation and scientific evidence as to
+                whether they have reached the age of majority. In Korean forensic practice for juveniles and young
+                adults, age was estimated with Lee’s method, and the legal 18-year threshold was predicted with the data
+                suggested by Oh et al.</p>
+              <p>Machine learning, a type of artificial intelligence (AI), repeatedly learns and categorizes large
+                amounts of data, solves problems on its own, and induces data programming. Machine learning can discover
+                useful hidden patterns within a large amount of data. In contrast, labor-intensive and time-consuming
+                classical methods may have limitations in dealing with large amounts of complex data that are difficult
+                to process manually. Thus, many studies have been conducted recently using the latest computer
+                technology to minimize human error and efficiently process multi-dimensional data. In particular, deep
+                learning is widely used for medical image analysis, and various methods have been reported to estimate
+                age by automatically analyzing radiographs to improve the accuracy and efficiency of age estimation. For
+                example, Halabi et al. developed machine learning algorithms based on convolutional neural networks
+                (CNN) using pediatric hand radiographs to estimate the age of bones. This study presented a model that
+                applied machine learning to medical images and showed that these techniques can aid diagnostic accuracy.
+                Li et al. estimated age from X-ray images of pelvic bones by applying deep learning CNN and compared
+                with the results of regression analysis using the evaluation of the ossification stages. They found that
+                the deep learning CNN model showed the same age estimation performance as the conventional regression
+                model. A study by Guo et al. evaluated the classification performance of legal age thresholds by
+                applying CNN technology based on dental orthopantomograms, and the result of the CNN model proved that
+                humans outperformed its age classification performance.</p>
+              <p>Most of the age estimation studies performed with machine learning use deep learning methods. Deep
+                learning-based age estimation has been reported to be more accurate than conventional methods. However,
+                this method makes it almost impossible to present the scientific basis of age estimation, such as the
+                age indicators used in the estimation. In addition, there was a legal controversy about who performed
+                the examination. Therefore, deep learning-based age estimation is difficult to accept by administrative
+                and judicial agencies. Data mining (DM) is a technique that can find not only expected but also
+                unexpected information as a method to discover useful correlations among a large amount of data. When
+                conducting DM, machine learning is usually used and both DM and machine learning employ the same
+                critical algorithms to discover data patterns. Age estimation using tooth development is based on the
+                examiner's maturity evaluation of the targeted teeth, and this evaluation is expressed as the stage of
+                each targeted tooth. DM can be used to analyze the correlation between the evaluated stages of the teeth
+                and their chronological age and has the potential to replace conventional statistical analysis.
+                Therefore, if we apply DM approaches to age estimation, we can introduce machine learning to forensic
+                age estimation free of legal responsibility concerns. Some comparative studies on the possible
+                substitution of conventional manual methods used in forensic practice with the DM-based methods in
+                dental age estimation have been published. Shen et al. showed that the DM models were more accurate than
+                the traditional Cameriere formula. Galibourg et al., who predicted age by applying various DM methods
+                based on Demirjian’s criteria, showed that the DM methods were superior to the Demirjian’s and Willems
+                methods in age estimation for the French population.</p>
+              <p>For the dental age estimation of Korean juveniles and young adults, Lee’s method has been widely used
+                in Korean forensic practice. This method uses conventional statistical analysis, such as multiple
+                regression, to examine the relationship between Korean subjects and chronological ages. In this study,
+                the age estimation method derived through conventional statistical techniques was defined as a
+                "conventional method." The accuracy of Lee's method, which is a conventional method, has already been
+                validated by Oh et al.; however, the applicability of age estimation based on DM models in Korean
+                forensic practice remains questionable. We aimed to scientifically validate the potential utility of age
+                estimation based on DM models. The objectives of this study were to (1) compare the accuracy of two DM
+                models in dental age estimation and (2) compare the classification performance of the 18-year threshold
+                of seven DM models and the methods derived from conventional statistical approaches using the maturity
+                of the second and third molars in both jaws.</p>
             </div>
           </section>
           <section class="article-section main-content__result">
-            <h2 class="article-section__title" id="Sec2">Result</h2>
+            <h2 class="article-section__title" id="Sec3">Result</h2>
             <div class="article-section__content">
-              <h3 class="article-section__sub-title" id="Sec3">Observer reliability</h3>
+              <h3 class="article-section__sub-title" id="Sec3-1">Observer reliability</h3>
               <p>
-                The means and standard deviations of chronological ages according to stages and types of teeth are presented in Supplementary Table <a href="#sp">S1</a> (Training set), Supplementary Table <a href="#sp">S2</a> (Internal test set), and Supplementary Table <a href="#sp">S3</a> (External test set) online. The kappa values, of the intra- and inter-observer reliability obtained in the training set were 0.951 and 0.947, respectively. The p-values and 95% confidence intervals of kappa values are presented in Supplementary Table <a href="#sp">S4</a> online. The kappa values were construed as “almost perfect,” consistent with Landis and Koch’s standards
+                The means and standard deviations of chronological ages according to stages and types of teeth are
+                presented in Supplementary Table <a href="#sp">S1</a> (Training set), Supplementary Table <a
+                  href="#sp">S2</a> (Internal test set), and Supplementary Table <a href="#sp">S3</a> (External test
+                set) online. The kappa values, of the intra- and inter-observer reliability obtained in the training set
+                were 0.951 and 0.947, respectively. The p-values and 95% confidence intervals of kappa values are
+                presented in Supplementary Table <a href="#sp">S4</a> online. The kappa values were construed as “almost
+                perfect,” consistent with Landis and Koch’s standards
               </p>
-              <h3 class="article-section__sub-title" id="Sec4">Accuracy of age estimation</h3>
+              <h3 class="article-section__sub-title" id="Sec3-2">Accuracy of age estimation</h3>
               <p>
-                When comparing the mean absolute error (MAE), the conventional methods were marginally better than the DM models in all sexes and test sets other than the multilayer perceptron (MLP) in the male external test set. The differences between the conventional and DM models for the internal test sets in MAE were 0.12 –0.19&nbsp;years in males and 0.17 ~ 0.21&nbsp;years in females. For the external test sets, the differences were smaller (0.001 – 0.05&nbsp;years in males, 0.05 –0.09&nbsp;years in females). In addition, the root mean square error (RMSE) had slightly lower values with the conventional method with small differences (0.17– 0.24, 0.2 –0.24 for the internal test sets, 0.03 ~ 0.07, 0.04 ~ 0.08 for the external test sets in males and females, respectively). Other than the case of the female external test set, the MLP showed slightly better performance than the single layer perceptron (SLP). With both MAE and RMSE, the external test set results were higher than those of the internal test sets in all sexes and models. All the MAE and RMSE are shown in Table <a href="tab1">1</a> and Fig. <a href="fig1">1</a>.
+                When comparing the mean absolute error (MAE), the conventional methods were marginally better than the
+                DM models in all sexes and test sets other than the multilayer perceptron (MLP) in the male external
+                test set. The differences between the conventional and DM models for the internal test sets in MAE were
+                0.12 –0.19&nbsp;years in males and 0.17 ~ 0.21&nbsp;years in females. For the external test sets, the
+                differences were smaller (0.001 – 0.05&nbsp;years in males, 0.05 –0.09&nbsp;years in females). In
+                addition, the root mean square error (RMSE) had slightly lower values with the conventional method with
+                small differences (0.17– 0.24, 0.2 –0.24 for the internal test sets, 0.03 ~ 0.07, 0.04 ~ 0.08 for the
+                external test sets in males and females, respectively). Other than the case of the female external test
+                set, the MLP showed slightly better performance than the single layer perceptron (SLP). With both MAE
+                and RMSE, the external test set results were higher than those of the internal test sets in all sexes
+                and models. All the MAE and RMSE are shown in Table <a href="tab1">1</a> and Fig. <a href="fig1">1</a>.
               </p>
               <div class="article-table" id="table-1">
                 <figure class="article-table__figure">
@@ -247,7 +345,7 @@
                     <b id="tab1">Table 1 MAE and RMSE of conventional regression and data mining regression models.</b>
                   </figcaption>
                   <div class="link-right">
-                    <a href="">
+                    <a class="article__pill-button" href="./pages/table-1/table-1.html">
                       <span>Full size table</span>
                       <i class="fa-solid fa-angle-right"></i>
                     </a>
@@ -261,11 +359,13 @@
                   </figcaption>
                   <div class="article-figure__content">
                     <a href=""><img src="./public/figure/fig1.webp" alt="figure 1"></a>
-                    <p class="article-figure__description">MAE and RMSE of conventional regression and data mining regression models. MAE mean absolute error, RMSE root mean square error, SLP single layer perceptron, MLP multilayer perceptron, CM conventional method.</p>
+                    <p class="article-figure__description">MAE and RMSE of conventional regression and data mining
+                      regression models. MAE mean absolute error, RMSE root mean square error, SLP single layer
+                      perceptron, MLP multilayer perceptron, CM conventional method.</p>
                   </div>
                   <div class="link-right">
-                    <a href="">
-                      <span>Full size table</span>
+                    <a class="article__pill-button" href="./pages/figures-1/figures-1.html">
+                      <span>Full size image</span>
                       <i class="fa-solid fa-angle-right"></i>
                     </a>
                   </div>
@@ -274,62 +374,193 @@
             </div>
           </section>
           <section class="article-section main-content__discussion">
-            <h2 class="article-section__title" id="Sec6">Discussion</h2>
+            <h2 class="article-section__title" id="Sec4">Discussion</h2>
             <div class="article-section__content">
-              <p>The first step of this study was to compare the accuracy of dental age estimation by seven DM models with that derived from conventional regression. Both MAE and RMSE were assessed in the internal test sets for both sexes, and the differences between the conventional methods and DM models were 44 ~ 77 days with MAE and 62 ~ 88 days with RMSE. Although the conventional methods were slightly more accurate in this study, it is difficult to conclude whether such a small difference is clinically or practically meaningful. These results imply that dental age estimation by DM models can be performed with almost the same accuracy as the conventional method. Direct comparison with the results of previous studies is difficult because there are no studies comparing the accuracy of DM models with conventional statistical approaches using the same tooth registration technique for the same age span, as was done in this study. Galibourg et al.24 compared the MAE and RMSE between two conventional methods (Demirjian’s method25 and Willems’ method29) and ten DM models in a French population aged 2 to 24 years. They reported that all the DM models proved more accurate than conventional methods, with differences of 0.20 and 0.38 years in MAE, and 0.25 and 0.47 years in RMSE, with Willems and Demirjian’s methods, respectively. Considering the many reports30,31,32,33 that Demirjian's method inaccurately estimates dental age in populations other than French Canadian, on which the study was based, the difference between the DM models and conventional methods shown in Galibourg's study is quite similar to that observed in this study. Tao et al.34 used the MLP algorithm to predict the dental age of 1636 Chinese orthopantomograms, and they also compared the accuracy with the results using Demirjian’s and Willems methods. They reported greater accuracy with MLP than with conventional methods. The differences between DM and conventional methods were < 0.32 years for Demirjian’s method and 0.28 years for Willems’ method, with similar results as this study. The results of these previous studies24,34 are also consistent with the results of this study, in that the age estimation accuracy with DM models and conventional methods are similar. However, based on the present results, we can only cautiously conclude that age estimation using the DM model can replace the existing method, as there is currently a lack of comparative and referenceable previous studies. Subsequent studies using more samples are warranted to confirm the results observed in this study.</p>
-              <p>Among the studies testing the accuracy of dental age estimation with DM, some studies demonstrated higher accuracy than our study. Štepanovský et al.35 applied 22 DM models to panoramic radiographs of 976 members of a Czech population aged 2.7 to 20.5 years and verified the accuracy between each model. They evaluated the development of a total of 16 upper and lower left permanent teeth using the classification criteria proposed by Moorrees et al36. The MAE was 0.64 to 0.94 years, and the RMSE was 0.85 to 1.27 years, which is more accurate than the two DM models used in this study. Shen et al.23 estimated the dental age of seven permanent teeth in the left mandible for Eastern Chinese aged 5 to 13 years using the Cameriere method, which was compared with age estimated by linear regression, SVM, and RF. They showed that all the three DM models had greater accuracy compared to the traditional Cameriere formula. The MAE and RMSE in Shen’s study were lower than those of the DM models in this study. The reason for this increased accuracy in the studies of Štepanovský et al.35 and Shen et al.23 may be the inclusion of younger subjects in their study samples. Since the age estimation of a participant with developing teeth becomes more accurate as the number of teeth increase during development, when the study participants are younger, the accuracy of the age estimation method derived from it could be higher37. In addition, the error in the estimated age with MLP was slightly smaller than that with SLP, which means greater accuracy with MLP than with SLP. MLP was considered slightly more suitable for age estimation, and this may be due to the hidden layer in MLP38. However, there is an exception in the case of the female external test set (1.45 for SLP, 1.49 for MLP). Concluding that MLP is more accurate than SLP in estimating age requires more retrospective studies.</p>
-              <p>The classification performance of the 18-year threshold was also compared between the DM models and conventional methods. All the tested DM models and conventional methods for the internal test sets showed a practically acceptable discrimination level for the 18-year samples. The sensitivity was greater than 87.7% and 94.9%, and the specificity was greater than 89.3% and 84.7% in males and females, respectively. The AUROC was also greater than 0.925 in all the tested models. To the best of our knowledge, there is no study that tested the performance of a DM model for the 18-year classification according to teeth maturity. We can compare the results of this study with the classification performance of deep learning models with panoramic radiographs. Guo et al.15 calculated the classification performance for a certain threshold age of a CNN-based deep learning model compared with a manual method based on the Demirjian method. The sensitivity and specificity of the manual method were 87.7% and 95.5%, and those of the CNN model were over 89.2% and 86.6%, respectively. They concluded that a deep learning model could replace or be superior to the manual estimation in the classification of the legal age threshold. The results of this study show similar classification performance; it is thought that classification using the DM models can substitute for age estimation with conventional statistical approaches. Among the DM models, LR was the best model in terms of sensitivity for the male internal test set and with regard to sensitivity and specificity for the female set. LR was the second most accurate in specificity for males. In addition, LR was regarded as one of the more user-friendly DM models35 and was less complex and sophisticated in treating data. Based on these results, LR is considered the optimal model for classification performance with the 18-year threshold in the Korean population.</p>
-              <p>Overall, the accuracy of age estimation or classification performance of the external test set was less accurate or lower compared with results of the internal test set. Several reports indicate that the accuracy or classification performance deteriorates when the age estimation based on Korean population data is applied to the Japanese population5,39, and a similar pattern was found in this study. This deterioration tendency was observed in DM models also. Therefore, for accurate age estimation, even when DM is applied in the analysis process, the method derived from own population data should be used as first choice, like the conventional approaches5,39,40,41,42. Since it is still not clear whether similar tendencies can be shown with deep learning models, a study comparing accuracy and classification performance by applying conventional method, DM models, and deep learning models to the same samples is necessary to confirm whether AI can overcome the limits of ethnic differences in age estimation.</p>
+              <p>The first step of this study was to compare the accuracy of dental age estimation by seven DM models
+                with that derived from conventional regression. Both MAE and RMSE were assessed in the internal test
+                sets for both sexes, and the differences between the conventional methods and DM models were 44 ~ 77
+                days with MAE and 62 ~ 88 days with RMSE. Although the conventional methods were slightly more accurate
+                in this study, it is difficult to conclude whether such a small difference is clinically or practically
+                meaningful. These results imply that dental age estimation by DM models can be performed with almost the
+                same accuracy as the conventional method. Direct comparison with the results of previous studies is
+                difficult because there are no studies comparing the accuracy of DM models with conventional statistical
+                approaches using the same tooth registration technique for the same age span, as was done in this study.
+                Galibourg et al.24 compared the MAE and RMSE between two conventional methods (Demirjian’s method25 and
+                Willems’ method29) and ten DM models in a French population aged 2 to 24 years. They reported that all
+                the DM models proved more accurate than conventional methods, with differences of 0.20 and 0.38 years in
+                MAE, and 0.25 and 0.47 years in RMSE, with Willems and Demirjian’s methods, respectively. Considering
+                the many reports30,31,32,33 that Demirjian's method inaccurately estimates dental age in populations
+                other than French Canadian, on which the study was based, the difference between the DM models and
+                conventional methods shown in Galibourg's study is quite similar to that observed in this study. Tao et
+                al.34 used the MLP algorithm to predict the dental age of 1636 Chinese orthopantomograms, and they also
+                compared the accuracy with the results using Demirjian’s and Willems methods. They reported greater
+                accuracy with MLP than with conventional methods. The differences between DM and conventional methods
+                were < 0.32 years for Demirjian’s method and 0.28 years for Willems’ method, with similar results as
+                  this study. The results of these previous studies24,34 are also consistent with the results of this
+                  study, in that the age estimation accuracy with DM models and conventional methods are similar.
+                  However, based on the present results, we can only cautiously conclude that age estimation using the
+                  DM model can replace the existing method, as there is currently a lack of comparative and
+                  referenceable previous studies. Subsequent studies using more samples are warranted to confirm the
+                  results observed in this study.</p>
+                  <p>Among the studies testing the accuracy of dental age estimation with DM, some studies demonstrated
+                    higher accuracy than our study. Štepanovský et al.35 applied 22 DM models to panoramic radiographs
+                    of 976 members of a Czech population aged 2.7 to 20.5 years and verified the accuracy between each
+                    model. They evaluated the development of a total of 16 upper and lower left permanent teeth using
+                    the classification criteria proposed by Moorrees et al36. The MAE was 0.64 to 0.94 years, and the
+                    RMSE was 0.85 to 1.27 years, which is more accurate than the two DM models used in this study. Shen
+                    et al.23 estimated the dental age of seven permanent teeth in the left mandible for Eastern Chinese
+                    aged 5 to 13 years using the Cameriere method, which was compared with age estimated by linear
+                    regression, SVM, and RF. They showed that all the three DM models had greater accuracy compared to
+                    the traditional Cameriere formula. The MAE and RMSE in Shen’s study were lower than those of the DM
+                    models in this study. The reason for this increased accuracy in the studies of Štepanovský et al.35
+                    and Shen et al.23 may be the inclusion of younger subjects in their study samples. Since the age
+                    estimation of a participant with developing teeth becomes more accurate as the number of teeth
+                    increase during development, when the study participants are younger, the accuracy of the age
+                    estimation method derived from it could be higher37. In addition, the error in the estimated age
+                    with MLP was slightly smaller than that with SLP, which means greater accuracy with MLP than with
+                    SLP. MLP was considered slightly more suitable for age estimation, and this may be due to the hidden
+                    layer in MLP38. However, there is an exception in the case of the female external test set (1.45 for
+                    SLP, 1.49 for MLP). Concluding that MLP is more accurate than SLP in estimating age requires more
+                    retrospective studies.</p>
+                  <p>The classification performance of the 18-year threshold was also compared between the DM models and
+                    conventional methods. All the tested DM models and conventional methods for the internal test sets
+                    showed a practically acceptable discrimination level for the 18-year samples. The sensitivity was
+                    greater than 87.7% and 94.9%, and the specificity was greater than 89.3% and 84.7% in males and
+                    females, respectively. The AUROC was also greater than 0.925 in all the tested models. To the best
+                    of our knowledge, there is no study that tested the performance of a DM model for the 18-year
+                    classification according to teeth maturity. We can compare the results of this study with the
+                    classification performance of deep learning models with panoramic radiographs. Guo et al.15
+                    calculated the classification performance for a certain threshold age of a CNN-based deep learning
+                    model compared with a manual method based on the Demirjian method. The sensitivity and specificity
+                    of the manual method were 87.7% and 95.5%, and those of the CNN model were over 89.2% and 86.6%,
+                    respectively. They concluded that a deep learning model could replace or be superior to the manual
+                    estimation in the classification of the legal age threshold. The results of this study show similar
+                    classification performance; it is thought that classification using the DM models can substitute for
+                    age estimation with conventional statistical approaches. Among the DM models, LR was the best model
+                    in terms of sensitivity for the male internal test set and with regard to sensitivity and
+                    specificity for the female set. LR was the second most accurate in specificity for males. In
+                    addition, LR was regarded as one of the more user-friendly DM models35 and was less complex and
+                    sophisticated in treating data. Based on these results, LR is considered the optimal model for
+                    classification performance with the 18-year threshold in the Korean population.</p>
+                  <p>Overall, the accuracy of age estimation or classification performance of the external test set was
+                    less accurate or lower compared with results of the internal test set. Several reports indicate that
+                    the accuracy or classification performance deteriorates when the age estimation based on Korean
+                    population data is applied to the Japanese population5,39, and a similar pattern was found in this
+                    study. This deterioration tendency was observed in DM models also. Therefore, for accurate age
+                    estimation, even when DM is applied in the analysis process, the method derived from own population
+                    data should be used as first choice, like the conventional approaches5,39,40,41,42. Since it is
+                    still not clear whether similar tendencies can be shown with deep learning models, a study comparing
+                    accuracy and classification performance by applying conventional method, DM models, and deep
+                    learning models to the same samples is necessary to confirm whether AI can overcome the limits of
+                    ethnic differences in age estimation.</p>
             </div>
           </section>
           <section class="article-section main-content__conclusions">
-            <h2 class="article-section__title" id="Sec7">Conclusions</h2>
+            <h2 class="article-section__title" id="Sec5">Conclusions</h2>
             <div class="article-section__content">
-              <p>We confirmed that the conventional method could be replaced by a DM model-based age estimation in forensic practice for age estimation of Koreans. We also found the possibility of introducing ML for forensic age estimation. However, there were also clear limitations, such as an insufficient number of participants in this study to finalize the findings, and a lack of previous studies to compare and verify the results of this study. In future, it will be necessary to conduct DM studies with more samples and in more diverse populations to improve its practical applicability compared to conventional methods. To confirm the possibility of multi-populational use of AI in age estimation, future studies comparing the accuracy and classification performance of DM and deep learning models with conventional methods with the same sample are also needed.</p>
+              <p>We confirmed that the conventional method could be replaced by a DM model-based age estimation in
+                forensic practice for age estimation of Koreans. We also found the possibility of introducing ML for
+                forensic age estimation. However, there were also clear limitations, such as an insufficient number of
+                participants in this study to finalize the findings, and a lack of previous studies to compare and
+                verify the results of this study. In future, it will be necessary to conduct DM studies with more
+                samples and in more diverse populations to improve its practical applicability compared to conventional
+                methods. To confirm the possibility of multi-populational use of AI in age estimation, future studies
+                comparing the accuracy and classification performance of DM and deep learning models with conventional
+                methods with the same sample are also needed.</p>
             </div>
           </section>
           <section class="article-section main-content__method">
-            <h2 class="article-section__title" id="Sec8">Materials and methods</h2>
+            <h2 class="article-section__title" id="Sec6">Materials and methods</h2>
             <div class="article-section__content">
               <h3 class="article-section__sub-title">Data collection</h3>
-              <p> This study was conducted with 2657 orthopantomograms, which were collected from Korean and Japanese populations, aged 15 to 23 years. The radiographs from the Koreans were subdivided into a training set of 900 (19.42 ± 2.65 years) and an internal test set of 900 (19.52 ± 2.59 years). The training set was collected from single institution (Seoul St. Mary’s Hospital), and the internal test set was collected from two institutions (Seoul National University Dental Hospital and Yonsei University Dental Hospital). We also collected 857 radiographs from other population data (Iwate Medical University, Japan) for external testing. The radiographs from the Japanese were set as an external test set (19.31 ± 2.60 years). The data were collected retrospectively to analyze the developmental stages of the teeth from panoramic radiographs taken during dental treatment. All the collected data were anonymized, other than sex, date of birth, and the date the radiographs were taken. The inclusion and exclusion criteria were the same as those in previously published studies4,5. The chronological age of the samples was calculated by subtracting the date of birth from the date the radiographs were taken. The sample group was classified into nine age groups. The age and sex distribution are shown in Table 3. This study was conducted in compliance with the Declaration of Helsinki and approved by the Institutional Review Board (IRB) of Seoul St. Mary’s Hospital, the Catholic University of Korea (KC22WISI0328). Since this study has a retrospective design, it is impossible to obtain informed consent from all patients who had radiographs for treatment purposes. The requirement for informed consent was waived by the IRB of Seoul St. Mary’s Hospital, the Catholic University of Korea.</p>
+              <p> This study was conducted with 2657 orthopantomograms, which were collected from Korean and Japanese
+                populations, aged 15 to 23 years. The radiographs from the Koreans were subdivided into a training set
+                of 900 (19.42 ± 2.65 years) and an internal test set of 900 (19.52 ± 2.59 years). The training set was
+                collected from single institution (Seoul St. Mary’s Hospital), and the internal test set was collected
+                from two institutions (Seoul National University Dental Hospital and Yonsei University Dental Hospital).
+                We also collected 857 radiographs from other population data (Iwate Medical University, Japan) for
+                external testing. The radiographs from the Japanese were set as an external test set (19.31 ± 2.60
+                years). The data were collected retrospectively to analyze the developmental stages of the teeth from
+                panoramic radiographs taken during dental treatment. All the collected data were anonymized, other than
+                sex, date of birth, and the date the radiographs were taken. The inclusion and exclusion criteria were
+                the same as those in previously published studies4,5. The chronological age of the samples was
+                calculated by subtracting the date of birth from the date the radiographs were taken. The sample group
+                was classified into nine age groups. The age and sex distribution are shown in Table 3. This study was
+                conducted in compliance with the Declaration of Helsinki and approved by the Institutional Review Board
+                (IRB) of Seoul St. Mary’s Hospital, the Catholic University of Korea (KC22WISI0328). Since this study
+                has a retrospective design, it is impossible to obtain informed consent from all patients who had
+                radiographs for treatment purposes. The requirement for informed consent was waived by the IRB of Seoul
+                St. Mary’s Hospital, the Catholic University of Korea.</p>
             </div>
           </section>
           <section class="article-section main-content__data-availability">
-            <h2 class="article-section__title" id="Sec9">Data availability</h2>
+            <h2 class="article-section__title" id="Sec7">Data availability</h2>
             <div class="article-section__content">
-              <p> The authors confirm that the data supporting the findings of this study are available within the article and its Supplementary material. The datasets generated and/or analyzed during the study can be available from the corresponding author upon reasonable request.</p>
+              <p> The authors confirm that the data supporting the findings of this study are available within the
+                article and its Supplementary material. The datasets generated and/or analyzed during the study can be
+                available from the corresponding author upon reasonable request.</p>
             </div>
           </section>
           <section class="article-section main-content__references">
-            <h2 class="article-section__title" id="Sec10">Data availability</h2>
+            <h2 class="article-section__title" id="Sec8">References</h2>
             <div class="article-section__content">
               <ol class="reference-list">
-                <li><p>Ritz-Timme, S. et al. Age estimation: The state of the art in relation to the specific demands of forensic practise. Int. J. Legal Med. 113, 129–136 (2000).</p></li>
-                <li><p>Schmeling, A., Reisinger, W., Geserick, G. & Olze, A. The current state of forensic age estimation of live subjects for the purpose of criminal prosecution. Forensic Sci. Med. Pathol. 1, 239–246 (2005).</p></li>
-                <li><p>Pan, J. et al. A modified dental age assessment method for 5- to 16-year-old eastern Chinese children. Clin. Oral Investig. 25, 3463–3474 (2021).</p></li>
-                <li><p>Lee, S. S. et al. The chronology of second and third molar development in Koreans and its application to forensic age estimation. Int. J. Legal Med. 124, 659–665 (2010).</p></li>
-                <li><p>Oh, S., Kumagai, A., Kim, S. Y. & Lee, S. S. Accuracy of age estimation and assessment of the 18-year threshold based on second and third molar maturity in Koreans and Japanese. PLoS ONE 17, e0271247 (2022).</p></li>
-                <li><p>Kim, J. Y. et al. Machine learning-based preoperative datamining can predict the therapeutic outcome of sleep surgery in OSA subjects. Sci. Rep. 11, 14911 (2021).</p></li>
+                <li>
+                  <p>Ritz-Timme, S. et al. Age estimation: The state of the art in relation to the specific demands of
+                    forensic practise. Int. J. Legal Med. 113, 129–136 (2000).</p>
+                </li>
+                <li>
+                  <p>Schmeling, A., Reisinger, W., Geserick, G. & Olze, A. The current state of forensic age estimation
+                    of live subjects for the purpose of criminal prosecution. Forensic Sci. Med. Pathol. 1, 239–246
+                    (2005).</p>
+                </li>
+                <li>
+                  <p>Pan, J. et al. A modified dental age assessment method for 5- to 16-year-old eastern Chinese
+                    children. Clin. Oral Investig. 25, 3463–3474 (2021).</p>
+                </li>
+                <li>
+                  <p>Lee, S. S. et al. The chronology of second and third molar development in Koreans and its
+                    application to forensic age estimation. Int. J. Legal Med. 124, 659–665 (2010).</p>
+                </li>
+                <li>
+                  <p>Oh, S., Kumagai, A., Kim, S. Y. & Lee, S. S. Accuracy of age estimation and assessment of the
+                    18-year threshold based on second and third molar maturity in Koreans and Japanese. PLoS ONE 17,
+                    e0271247 (2022).</p>
+                </li>
+                <li>
+                  <p>Kim, J. Y. et al. Machine learning-based preoperative datamining can predict the therapeutic
+                    outcome of sleep surgery in OSA subjects. Sci. Rep. 11, 14911 (2021).</p>
+                </li>
               </ol>
             </div>
           </section>
         </div>
       </div>
     </div>
-    <div class="side-bar">
-      <button>Download</button>
-      <div class="side-bar__menu">
-        <div class="side-bar__menu-title">Section</div>
-        <ul class="side-bar__menu-list">
-          <li class="side-bar__menu-item"><a href="#Sec1" style="padding-top: 200px;">Abstract</a></li>
-          <li class="side-bar__menu-item">Introduction</li>
-          <li class="side-bar__menu-item">Result</li>
-          <li class="side-bar__menu-item">Discussion</li>
-          <li class="side-bar__menu-item">Conclusions</li>
-          <li class="side-bar__menu-item">Materials and methods</li>
-          <li class="side-bar__menu-item">Data availability</li>
-        </ul>
+
+    <div class="side-bar-area">
+      <div class="side-bar">
+        <div class="pdf-download">
+          <a class="download-btn">
+            <span>Download PDF</span>
+            <span><i class="fa-solid fa-download"></i></span>
+          </a>
+        </div>
+        <div class="side-bar__menu">
+          <div class="side-bar__menu-title">
+            <h4>Section</h4>
+          </div>
+          <ul class="side-bar__menu-list">
+            <li class="side-bar__menu-item"><a href="#Sec1">Abstract</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec2">Introduction</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec3">Result</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec4">Discussion</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec5">Conclusions</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec6">Materials and methods</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec7">Data availability</a></li>
+            <li class="side-bar__menu-item"><a href="#Sec8">References</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </main>
