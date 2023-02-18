@@ -18,10 +18,15 @@
   line-height: 18px;
   text-size-adjust: 100%;
 }
+
+.side-bar_list {
+  display: flex;
+  flex-direction: column;
+  color: var(--color1);
+}
 .side-bar__item {
-  width: 100%;
-  display: inline-block;
-  padding: 0 0 0.5em 2em;
+  margin-left: 2em;
+  padding-bottom: 0.5em;
   position: relative;
 }
 
