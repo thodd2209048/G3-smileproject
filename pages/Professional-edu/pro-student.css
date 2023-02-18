@@ -67,8 +67,8 @@
 }
 .slogan {
     
-    padding-top: 100px;
-    text-align: center;
+    padding-top: 128px;
+    text-align: left;
     color: #fff;
 }
 
@@ -77,7 +77,7 @@
         flex-direction: column;
     }
     .slogan {
-        padding-top: 10px;
+        padding: 10px;
     }
 
     .banner-container {
@@ -113,6 +113,11 @@
 .student-card-title {
     font-size: 40px;
     color: var(--color1);
+    margin-bottom: 15px;
+}
+
+.student-text {
+    font-size: 15px;
 }
 .student-card-img {
     width: 100%;
@@ -127,8 +132,8 @@
 }
 
 .student-card-info {
-    padding: 10px;
-    text-align: center;
+    padding-left: 30px;
+    text-align: left;
 }
 
 .more {
@@ -175,7 +180,7 @@
 
 .resour-small {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 .resour-img img{
     width: 300px;

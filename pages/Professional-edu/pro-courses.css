@@ -67,8 +67,8 @@
 }
 .slogan {
     
-    padding-top: 100px;
-    text-align: center;
+    padding-top: 125px;
+    text-align: left;
     color: #fff;
 }
 
@@ -77,7 +77,7 @@
         flex-direction: column;
     }
     .slogan {
-        padding-top: 10px;
+        padding: 10px;
     }
 
     .banner-container {
@@ -181,7 +181,7 @@
 }
 
 .card-body {
-    text-align: center;
+    text-align: left;
 }
 
 .card-title {

@@ -67,8 +67,8 @@
 }
 .slogan {
     
-    padding-top: 100px;
-    text-align: center;
+    padding-top: 125px;
+    text-align: left;
     color: #fff;
 }
 
@@ -123,9 +123,11 @@
 
 .faculty-card-info {
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
-
+.faculty-card-title {
+    color: var(--color1);
+}
 .more {
    margin-top: 60px;
    
@@ -164,7 +166,7 @@
 
 .resour-small {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 .resour-img img{
     width: 300px;
