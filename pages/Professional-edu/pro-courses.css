@@ -198,6 +198,7 @@
 
 .card-text {
     color: #56585d;
+    margin-bottom: 30px;
 }
 
 .btn-card {
@@ -205,14 +206,14 @@
     margin-bottom: 10px;
 }
 .btn-card a {
-    color: var(--color1);
-    text-decoration: underline;
-
+    border-radius: 50px;
+    color: #fff;
+    background-color: var(--color1);
+    padding: 10px 20px 10px 20px;
 }
 
 .btn-card a:hover{
-    color: var(--color3);
-    
+    background-color: var(--color3);
 }
 
 @media (max-width:1050px) {

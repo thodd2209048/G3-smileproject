@@ -198,7 +198,9 @@
     .resour-small {
         flex-direction: column;
     }
-
+    .resour-img img{
+        width: 100%;
+    }
     .resour-body {
         padding-left: 0;
     }
