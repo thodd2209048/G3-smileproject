@@ -1,0 +1,197 @@
+.patientEdu-article-main {
+  --color-facebook: #4267b2;
+  --color-twitter: #1d9bf0;
+  --color-pinterest: #cb2027;
+
+  display: grid;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  grid-template: auto auto / 10% 1fr;
+  grid-template-areas:
+    'articleHeader articleHeader '
+    'sideBar articleBody';
+  column-gap: 4em;
+}
+
+.patientEdu-article-content {
+  grid-area: articleContent;
+}
+
+.article-header {
+  grid-area: articleHeader;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--sub-text-color);
+}
+
+.article-identifiers {
+  display: flex;
+  font-size: 0.8em;
+}
+.article-identifiers li {
+  margin-right: 8px;
+  padding-right: 8px;
+  border-right: 1px solid var(--sub-text-color);
+}
+
+.article-identifiers li:last-child {
+  border-right: none;
+}
+
+.article-title {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  color: var(--color1);
+}
+
+.article-authors {
+  margin-bottom: 16px;
+  font-size: 0.8em;
+}
+
+/* SIDE BAR */
+
+.side-bar-wrapper {
+  position: sticky;
+  top: 280px;
+  right: 0;
+}
+
+.side-bar-social-media {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0 0.5em;
+}
+
+.side-bar-social-media li {
+  display: flex;
+  float: left;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.side-bar-social-media a {
+  position: relative;
+  width: 1.3em;
+  height: 1.3em;
+  padding: 5px;
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: var(--border-radius-small);
+}
+.side-bar-facebook {
+  color: var(--color-facebook);
+}
+.side-bar-facebook:hover {
+  background-color: var(--color-facebook);
+  color: #fff;
+}
+.side-bar-twitter {
+  color: var(--color-twitter);
+}
+.side-bar-twitter:hover {
+  background-color: var(--color-twitter);
+  color: #fff;
+}
+.side-bar-pinterest {
+  color: var(--color-pinterest);
+}
+.side-bar-pinterest:hover {
+  background-color: var(--color-pinterest);
+  color: #fff;
+}
+
+/* BODY */
+
+.article-body {
+  grid-area: articleBody;
+}
+
+.article-section__title {
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--sub-text-color);
+  margin: 1em 0;
+  font-size: 1.75em;
+  color: var(--color1);
+}
+
+.article-section__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-top: 8px;
+  margin-bottom: 20px;
+}
+
+.article-section__content p {
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.article-section__content ul {
+  /* list-style-type: disc; */
+  padding: 0 2em;
+}
+
+.article-section__content li {
+  list-style-type: disc;
+}
+
+.article-section__content img {
+  display: block;
+  margin: 0 auto 1.5em;
+  max-width: 100%;
+  border-radius: var(--border-radius-big);
+}
+
+.article-table,
+.article-figure {
+  margin-bottom: 24px;
+  padding: 20px 10px;
+  border: 2px solid var(--sub-text-color);
+}
+
+.article-table figcaption,
+.article-figure figcaption {
+  margin-bottom: 16px;
+}
+
+/* RESPONSIVE */
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+  .patientEdu-article-main {
+    grid-template: auto auto auto / 1fr;
+    grid-template-areas:
+      'articleHeader'
+      'sideBar'
+      'articleBody';
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+
+  .side-bar-social-media {
+    flex-direction: row;
+  }
+
+  .side-bar-social-media li {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .side-bar-social-media a {
+    height: 0.7em;
+    width: 0.7em;
+  }
+
+  .side-bar-social-media i {
+    font-size: 0.8em;
+  }
+
+  .article-header {
+    margin-bottom: 1em;
+  }
+}
