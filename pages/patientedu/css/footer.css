@@ -72,7 +72,7 @@ footer {
   display: none;
 }
 
-.footer__thanks h {
+.footer__thanks  {
   padding: 2px;
   font-size: 2rem;
   font-family: 'Dancing Script', cursive;
