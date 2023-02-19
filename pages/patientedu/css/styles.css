@@ -40,6 +40,11 @@ li {
   padding: 0 15px;
 }
 
+
 .container-fluid {
   width: 100%;
+}
+.color__display:hover{
+  color: var(--color1);
+
 }

@@ -18,13 +18,14 @@
   display: flex;
  }
  .container__patEdu{
-  margin: 0 var(--margin-width);
-  margin-top: 80px;
-  margin-left:15%;
-  width: 70%;
+  
+  margin-top: 12px;
+  width: 100%;
+  
   
 }
   /*filter */
+
   .filterDiv {
   float: left;
   width: 100px;
@@ -37,17 +38,24 @@
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color: #f1f1f1;
+    background-color: #fff;
     cursor: pointer;
+    border-radius: 9999px;
+    border: 1px solid var(--color1);
+    color: var(--color1);
+    
   }
   
   .btn:hover {
-    background-color: #ddd;
+    background-color: var(--color1);
+    color: #fff;
+    transition: all 0.2s ease-in;
   }
   
   .btn.active {
-    background-color: #666;
-    color: white;
+    background-color: #fff;
+    color: var(--color1);
+    border-radius: 9999px;
   }
   
   /*card*/
@@ -57,14 +65,14 @@
 
 }*/
 .post__img{
-   width: 300px;
+   width: 280px;
    border-radius: var(--border-radius);
 }
 .card {
    --border-radius: 0.75rem;
    --primary-color: #7257fa;
    --secondary-color: #3c3852;
-   width: 300px;
+   width: 280px;
    font-family: "Arial";
    padding: 1rem;
    cursor: pointer;
@@ -72,9 +80,12 @@
    background: #f1f1f3;
    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
    position: relative;
-   margin-top: 50px;
+   margin-top: 20px;
    margin-bottom: 50px;
-   margin-left: 40px;
+   margin-left: 20px;
+   
+   
+   
    
    
  }
@@ -101,7 +112,7 @@
  
  .card .card__arrow {
    position: absolute;
-   background: var(--primary-color);
+   background: var(--color1);
    padding: 0.4rem;
    border-top-left-radius: var(--border-radius);
    border-bottom-right-radius: var(--border-radius);
@@ -112,14 +123,14 @@
    justify-content: center;
    align-items: center;
  }
- 
+
  .card svg {
    transition: 0.2s;
  }
  
  /* hover */
  .card:hover .card__title {
-   color: var(--primary-color);
+   
    text-decoration: underline;
  }
  
@@ -151,6 +162,46 @@
   }
 }
 
+@media only screen and (max-width: 540px){
+  .container__patEdu{
+    margin-top: 12px;
+  }
+  .btn{
+    vertical-align: 15px;
+  }
+}
 
+@media only screen and (min-width: 768px){
+  .btn{
+    vertical-align: 17px;
+  }
+}
  
+@media only screen and (max-width: 393px){
+  .btn{
+    vertical-align: 20px;
+  }
+}
 
+@media only screen and (width: 1024px){
+  .card {
+    --border-radius: 0.75rem;
+    --primary-color: #7257fa;
+    --secondary-color: #3c3852;
+    width: 270px;
+    font-family: "Arial";
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    background: #f1f1f3;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+.post__img{
+  width: 270px;
+  border-radius: var(--border-radius);
+}
+}
