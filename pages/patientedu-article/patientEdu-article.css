@@ -37,6 +37,7 @@
 .article-title {
   margin-top: 8px;
   margin-bottom: 16px;
+  color: var(--color1);
 }
 
 .article-authors {
@@ -50,7 +51,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 1rem 0 1rem;
+  margin: 1em 0 1em;
 }
 
 .side-bar-social-media li {
@@ -95,16 +96,23 @@
 .article-section__title {
   padding-bottom: 5px;
   border-bottom: 2px solid var(--sub-text-color);
+  margin: 1em 0;
+  font-size: 1.75em;
+  color: var(--color1);
 }
 
 .article-section__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
   padding-top: 8px;
   margin-bottom: 20px;
 }
 
 .article-section__content p {
   line-height: 1.5em;
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
 }
 
 .article-section__content ul {
@@ -114,6 +122,13 @@
 
 .article-section__content li {
   list-style-type: disc;
+}
+
+.article-section__content img {
+  display: block;
+  margin: 0 auto 1.5em;
+  max-width: 100%;
+  border-radius: var(--border-radius-big);
 }
 
 .article-table,
@@ -126,4 +141,40 @@
 .article-table figcaption,
 .article-figure figcaption {
   margin-bottom: 16px;
+}
+
+/* RESPONSIVE */
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+  .patientEdu-article-main {
+    grid-template: auto auto auto / 1fr;
+    grid-template-areas:
+      'articleHeader'
+      'sideBar'
+      'articleBody';
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+
+  .side-bar-social-media {
+    flex-direction: row;
+  }
+
+  .side-bar-social-media li {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .side-bar-social-media a {
+    height: 10px;
+    width: 10px;
+  }
+
+  .side-bar-social-media i {
+    font-size: 0.8em;
+  }
+
+  .article-header {
+    margin-bottom: 1em;
+  }
 }
