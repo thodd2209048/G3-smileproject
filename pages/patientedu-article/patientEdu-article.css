@@ -1,4 +1,8 @@
 .patientEdu-article-main {
+  --color-facebook: #4267b2;
+  --color-twitter: #1d9bf0;
+  --color-pinterest: #cb2027;
+
   display: grid;
   margin-top: 32px;
   margin-bottom: 32px;
@@ -47,11 +51,16 @@
 
 /* SIDE BAR */
 
+.side-bar-wrapper {
+  position: sticky;
+  top: 280px;
+  right: 0;
+}
+
 .side-bar-social-media {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 1em 0 1em;
+  margin: 0.5em 0 0.5em;
 }
 
 .side-bar-social-media li {
@@ -61,30 +70,38 @@
   margin-bottom: 10px;
 }
 
-.side-bar-social-media a:hover {
-  background-color: #fff;
-  color: var(--color1);
-  border: 1px solid var(--color1);
-}
-
 .side-bar-social-media a {
   position: relative;
-  width: 20px;
-  height: 20px;
-  padding: 8px;
+  width: 1.3em;
+  height: 1.3em;
+  padding: 5px;
   display: flex;
-  background-color: var(--color2);
+  background-color: transparent;
   align-items: center;
   justify-content: center;
-  border: 1px solid transparent;
-  border-radius: 49999px;
-  color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  border-radius: var(--border-radius-small);
 }
-
-.footer__social-logo-wrapper i {
-  background-color: transparent;
-  color: white;
+.side-bar-facebook {
+  color: var(--color-facebook);
+}
+.side-bar-facebook:hover {
+  background-color: var(--color-facebook);
+  color: #fff;
+}
+.side-bar-twitter {
+  color: var(--color-twitter);
+}
+.side-bar-twitter:hover {
+  background-color: var(--color-twitter);
+  color: #fff;
+}
+.side-bar-pinterest {
+  color: var(--color-pinterest);
+}
+.side-bar-pinterest:hover {
+  background-color: var(--color-pinterest);
+  color: #fff;
 }
 
 /* BODY */
@@ -166,8 +183,8 @@
   }
 
   .side-bar-social-media a {
-    height: 10px;
-    width: 10px;
+    height: 0.7em;
+    width: 0.7em;
   }
 
   .side-bar-social-media i {
