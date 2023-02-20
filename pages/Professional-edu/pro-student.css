@@ -168,10 +168,10 @@
 
 @media (max-width:870px) {
     
-    .student-card-info {
+    /* .student-card-info {
         padding-left: 25px;
         padding-right: 15px;
-    }
+    } */
 
     /* .student-card-info {
         padding-left: -10px;
@@ -181,10 +181,10 @@
         align-items: center;
     } */
 
-    .student-card-img a {
+    /* .student-card-img a {
         padding-left: 20px;
         padding-right: 20px;
-    }
+    } */
 
     /* .student-card-link img {
         padding-left: 0;
@@ -195,6 +195,15 @@
 }
 
 @media (max-width:700px) {
+    .student-card-info {
+        padding-left: 25px;
+        padding-right: 15px;
+    }
+
+    .student-card-img a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .student-card {
         flex-direction: column;
     }

@@ -86,11 +86,18 @@
     color: var(--color3);
 }
 
+@media (max-width:1015px) {
+    .slogan {
+        font-size: 17px;
+    }
+}
+
 @media (max-width: 900px) {
     .banner {
         flex-direction: column;
     }
     .slogan {
+        
         padding: 20px;
     }
 
