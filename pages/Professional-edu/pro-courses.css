@@ -71,7 +71,7 @@
   color: black;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 640px) {
   .lab {
     display: flex;
     flex-direction: column;
