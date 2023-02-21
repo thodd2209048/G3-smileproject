@@ -111,6 +111,9 @@
    color: #6e6b80;
    font-size: 0.8rem;
  }
+ .display__title:hover{
+  color: var(--color1);
+ }
  
  .card .card__arrow {
    position: absolute;
@@ -228,12 +231,12 @@
 
 @media only screen and (width: 912px){
   .card{
-    width: 200px;
+    width: 230px;
     margin-right: 5px;
     margin-top: 20px;
   }
   .post__img{
-    width: 200px;
+    width: 230px;
   }
 }
 
@@ -251,5 +254,65 @@
   }
   .post__img{
     width: 230px;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 969px){
+  .card{
+    width: 200px;
+  }
+  .post__img{
+    width: 200px;
+  }
+  .list__post{
+    width: 100%;
+    margin-left: 20px;
+  }
+}
+@media only screen and (width: 820px){
+  .card{
+    width: 200px;
+  }
+  .post__img{
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 642px) and (max-width: 892px){
+  .card{
+    width: 200px;
+  }
+  .post__img{
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 612px) and (max-width: 787px){
+  .card{
+    width: 390px;
+  }
+  .post__img{
+    width: 390px;
+  }
+}
+@media only screen and (min-width: 820px) and (max-width: 968px){
+  .card{
+width: 240px;
+  }
+  .post__img{
+    width: 240px;
+  }
+}
+@media only screen and (min-width: 820px) and (max-width: 879px){
+  .card{
+    width: 230px;
+  }
+  .post__img{
+    width: 230px;
+  }
+}
+@media only screen and (min-width: 820px) and (max-width: 857px){
+  .card{
+    width: 200px;
+  }
+  .post__img{
+    width: 200px;
   }
 }
