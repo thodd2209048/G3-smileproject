@@ -27,5 +27,116 @@ app.controller('searchAppCtrl', function ($scope) {
         'Ademir Franco, Lucas Porto, Dennis Heng, Jared Murray, Anna Lygate, Raquel Franco, Juliano Bueno, Marilia Sobania, Márcio M. Costa, Luiz R. Paranhos, Scheila Manica & André Abade',
       link: '/pages/research-article/article-0002/article-0002.html',
     },
+    {
+      date: '2023-01-13',
+      title:
+        'Boosting algorithm improves the accuracy of juvenile forensic dental age estimation in southern China population',
+      subject: 'research',
+      tag: 'diagnostic',
+      img: '/pages/research-article/article-0003/public/figure/fig1.webp',
+      des: 'The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.',
+      author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
+      link: '/pages/research-article/article-0003/article-0001.html',
+    },
+    // FAKE
+    {
+      date: '2023-01-13',
+      title:
+        'Boosting algorithm improves the accuracy of juvenile forensic dental age estimation in southern China population',
+      subject: 'research',
+      tag: 'diagnostic',
+      img: '/pages/research-article/article-0003/public/figure/fig1.webp',
+      des: 'The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.',
+      author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
+      link: '/pages/research-article/article-0003/article-0001.html',
+    },
+    {
+      date: '2023-01-13',
+      title:
+        'Boosting algorithm improves the accuracy of juvenile forensic dental age estimation in southern China population',
+      subject: 'research',
+      tag: 'diagnostic',
+      img: '/pages/research-article/article-0003/public/figure/fig1.webp',
+      des: 'The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.',
+      author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
+      link: '/pages/research-article/article-0003/article-0001.html',
+    },
+    {
+      date: '2023-01-13',
+      title:
+        'Boosting algorithm improves the accuracy of juvenile forensic dental age estimation in southern China population',
+      subject: 'research',
+      tag: 'diagnostic',
+      img: '/pages/research-article/article-0003/public/figure/fig1.webp',
+      des: 'The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.',
+      author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
+      link: '/pages/research-article/article-0003/article-0001.html',
+    },
+    {
+      date: '2023-01-13',
+      title:
+        'Boosting algorithm improves the accuracy of juvenile forensic dental age estimation in southern China population',
+      subject: 'research',
+      tag: 'diagnostic',
+      img: '/pages/research-article/article-0003/public/figure/fig1.webp',
+      des: 'The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.',
+      author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
+      link: '/pages/research-article/article-0003/article-0001.html',
+    },
+    {
+      date: '2023-01-13',
+      title:
+        'Boosting algorithm improves the accuracy of juvenile forensic dental age estimation in southern China population',
+      subject: 'research',
+      tag: 'diagnostic',
+      img: '/pages/research-article/article-0003/public/figure/fig1.webp',
+      des: 'The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.',
+      author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
+      link: '/pages/research-article/article-0003/article-0001.html',
+    },
+    {
+      date: '2023-01-13',
+      title:
+        'Boosting algorithm improves the accuracy of juvenile forensic dental age estimation in southern China population',
+      subject: 'research',
+      tag: 'diagnostic',
+      img: '/pages/research-article/article-0003/public/figure/fig1.webp',
+      des: 'The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.',
+      author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
+      link: '/pages/research-article/article-0003/article-0001.html',
+    },
+    {
+      date: '2023-01-13',
+      title:
+        'Boosting algorithm improves the accuracy of juvenile forensic dental age estimation in southern China population',
+      subject: 'research',
+      tag: 'diagnostic',
+      img: '/pages/research-article/article-0003/public/figure/fig1.webp',
+      des: 'The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.',
+      author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
+      link: '/pages/research-article/article-0003/article-0001.html',
+    },
+    {
+      date: '2023-01-13',
+      title:
+        'Boosting algorithm improves the accuracy of juvenile forensic dental age estimation in southern China population',
+      subject: 'research',
+      tag: 'diagnostic',
+      img: '/pages/research-article/article-0003/public/figure/fig1.webp',
+      des: 'The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.',
+      author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
+      link: '/pages/research-article/article-0003/article-0001.html',
+    },
+    {
+      date: '2023-01-13',
+      title:
+        'Boosting algorithm improves the accuracy of juvenile forensic dental age estimation in southern China population',
+      subject: 'research',
+      tag: 'diagnostic',
+      img: '/pages/research-article/article-0003/public/figure/fig1.webp',
+      des: 'The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.',
+      author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
+      link: '/pages/research-article/article-0003/article-0001.html',
+    },
   ];
 });

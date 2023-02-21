@@ -208,7 +208,7 @@
   <main class="search-page container" ng-app="searchApp" ng-controller="searchAppCtrl">
     <div class="search-page__search">
       <div class="search-page__search-col">
-        <input class="search-page-input" type="text" ng-model="searchInput" />
+        <input class="search-page-input" type="text" placeholder="Search in 32smiles.com" ng-model="searchInput" />
         <button class="search-btn" ng-click="handleSearch(searchInput)">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
@@ -218,12 +218,20 @@
       <h2 class="search-page__result-title">Result</h2>
       <ul class="search-page__result-list">
         <li ng-repeat="post in articles | filter: {title:searchValue}">
-          <div class="search-page__result-item-img">
-            <img ng-src="{{post.img}}" alt="Image for {{ post.title }}" />
+          <!-- <a ng-href="{{ $location.protocol() + '://' + $location.host() + ':' + $location.port() + '/~' }}">Link to Home Page</a> -->
+
+          <a ng-href="{{post.link}}" class="search-page__result-item-img">
+            <!-- <a> -->
+            <img ng-src=" {{post.img}}" alt="Image for {{ post.title }}" />
+          </a>
+
+
+          <h3 class="search-page__result-item-title"><a ng-href="{{post.link}}">{{post.title}}</a></h3>
+          <p class="search-page__result-item-description"><a ng-href="{{post.link}}">{{post.des}}</a></p>
+          <div class="search-page__result-item-info">
+            <button class="search-page__result-btn">{{post.subject}}</button>
+            <button class="search-page__result-btn">{{post.tag}}</button>
           </div>
-          <h3 class="search-page__result-item-title">{{post.title}}</h3>
-          <p class="search-page__result-item-description">{{post.des}}</p>
-          <div class="search-page__result-item-info"></div>
         </li>
       </ul>
     </div>
