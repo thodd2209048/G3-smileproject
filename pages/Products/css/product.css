@@ -109,6 +109,13 @@
     background-color:#15ABDB;
     transform: scale(0.9);
 }
+.item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+
 /* Mobile: width < 740px*/
 @media (max-width: 1070px) {
     
