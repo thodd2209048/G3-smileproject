@@ -1,0 +1,222 @@
+.research-article {
+  margin: 2em 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+h2 {
+  font-size: 26px;
+  margin-top: 2rem;
+  padding-bottom: 5px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color1);
+}
+/* .overview-content {
+  padding-bottom: 10px;
+  line-height: 30px;
+  margin-bottom: 20px;
+} */
+/* p {
+  margin-top: 25px;
+  font-size: 18px;
+} */
+.latest-research {
+  margin-top: 2em;
+}
+.latest-tags {
+  display: flex;
+  margin-top: 1em;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.latest-tags > a {
+  margin: 0.6rem 1rem 0.7rem 0;
+  padding: 1vw 2vw;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  background-color: var(--color1);
+  font-weight: 300;
+  line-height: 10px;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-size-adjust: 100%;
+  border-radius: 999px;
+}
+.latest-tags > a:hover {
+  background-color: var(--color1-hover);
+}
+.latest-tags > a > span {
+  align-items: center;
+  color: var(--header-background-color);
+  font-size: 1rem;
+  font-weight: 550;
+  line-height: 20px;
+  word-spacing: 2px;
+}
+.latest-bio {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  min-width: 33.33%;
+}
+.clinical-content {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  min-width: 33.33%;
+  column-gap: 25px;
+  row-gap: 25px;
+  padding-top: 40px;
+}
+.card > img {
+  max-height: 185px;
+  width: 100%;
+  border-radius: var(--border-radius-small);
+  object-fit: cover;
+}
+
+.card > img:hover {
+  opacity: 0.8;
+}
+.content-card {
+  margin-top: 15px;
+  line-height: 22px;
+}
+.content-card > span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.content-card > span:hover {
+  color: var(--color1-hover);
+  opacity: 0.8;
+}
+.content-card > p {
+  margin-top: 4px;
+  font-size: 14px;
+  width: auto;
+}
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .latest-bio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    max-width: 95%;
+  }
+  .clinical-content {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .latest-bio {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 95%;
+    height: 100%;
+  }
+  .latest-tags {
+    display: flex;
+    margin-top: 1em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .clinical-content {
+    display: grid;
+    position: relative;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+  h2 {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .latest-research {
+    margin-top: 3em;
+  }
+  .latest-bio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 355px);
+    max-width: 95%;
+    height: 100%;
+  }
+  .latest-tags {
+    display: flex;
+    margin-top: 1em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .latest-tags > a {
+    margin: 0.4rem 0.3rem;
+  }
+  .clinical-content {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 355px);
+    max-width: 100%;
+    width: 100%;
+    row-gap: 10px;
+  }
+  .card p {
+    line-height: 1.5;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    margin-top: 1rem;
+    font-size: 20px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .latest-bio {
+    grid-template-columns: repeat(1, 1fr);
+    min-width: 100%;
+  }
+  .card > img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .main-card {
+    margin-top: 13px;
+    padding-bottom: 8px;
+  }
+  .latest-tags {
+    display: flex;
+    margin-top: 1em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .latest-tags > a {
+    margin: 0.3rem 0.2rem;
+  }
+  .latest-tags > a > span {
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 20px;
+    word-spacing: 1px;
+  }
+  .clinical-content {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
