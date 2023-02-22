@@ -1,9 +1,7 @@
-var app = angular.module('searchApp', []);
-app.controller('searchAppCtrl', function ($scope) {
-  $scope.handleSearch = function (input) {
-    $scope.searchValue = input;
-  };
-
+var searchApp = angular.module('SearchApp', []);
+searchApp.controller('searchAppCtrl', function ($scope) {
+  $scope.filteredPosts = [];
+  $scope.searchInput = '';
   $scope.articles = [
     {
       date: '2013-01-13',
@@ -37,6 +35,18 @@ app.controller('searchAppCtrl', function ($scope) {
       des: 'The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.',
       author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
       link: '/pages/research-article/article-0003/article-0001.html',
+    },
+
+    {
+      date: '2021-08-17',
+      title:
+        'Population affinity and variation of sexual dimorphism in three-dimensional facial forms: comparisons between Turkish and Japanese populations',
+      subject: 'research',
+      tag: 'data-mining',
+      img: '/pages/research-article/article-0004/public/figure/fig1.webp',
+      des: 'The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.',
+      author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
+      link: '/pages/research-article/article-0004/article-0001.html',
     },
     // FAKE
     {
@@ -127,16 +137,25 @@ app.controller('searchAppCtrl', function ($scope) {
       author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
       link: '/pages/research-article/article-0003/article-0001.html',
     },
-    {
-      date: '2023-01-13',
-      title:
-        'Boosting algorithm improves the accuracy of juvenile forensic dental age estimation in southern China population',
-      subject: 'research',
-      tag: 'diagnostic',
-      img: '/pages/research-article/article-0003/public/figure/fig1.webp',
-      des: 'The classification performance of the 18-year threshold was also similar between the conventional method and the data mining models. Thus, conventional methods can be replaced by data mining models in forensic age estimation using second and third molar maturity of Korean juveniles and young adults.',
-      author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
-      link: '/pages/research-article/article-0003/article-0001.html',
-    },
   ];
+
+  $scope.pageSize = 10;
+  $scope.currentPage = 1;
+  $scope.numberOfPages = 1;
+  $scope.isVisible = false;
+  $scope.handleSearch = async function () {
+    var searchText = $scope.searchInput.toLowerCase();
+    $scope.filteredPosts = [];
+    $scope.isVisible = true;
+    angular.forEach($scope.articles, function (article) {
+      if (article.title.toLowerCase().indexOf(searchText) !== -1) {
+        $scope.filteredPosts.push(article);
+      }
+    });
+    await $scope.filteredPosts;
+    console.log($scope.filteredPosts);
+    $scope.numberOfPages = Math.ceil($scope.filteredPosts.length / $scope.pageSize);
+    console.log($scope.numberOfPages);
+    $scope.$apply();
+  };
 });

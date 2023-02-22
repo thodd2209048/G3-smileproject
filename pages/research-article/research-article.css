@@ -163,7 +163,7 @@ img {
 .download-btn {
   display: flex;
   padding: 13px 20px;
-  height: 20px;
+  /* height: 20px; */
   width: 100%;
   background-color: var(--color1);
   color: #fff;
