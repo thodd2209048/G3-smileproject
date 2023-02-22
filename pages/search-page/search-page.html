@@ -208,12 +208,12 @@
   <main class="search-page container" id="searchApp" ng-controller="searchAppCtrl">
     <div class="search-page__search">
       <div class="search-page__search-row">
-        <div class="search-page__search-col">
+        <form class="search-page__search-col">
           <input class="search-page-input" type="text" placeholder="Search in 32smiles.com" ng-model="searchInput" />
-          <button class="search-btn" ng-click="handleSearch()">
+          <button class="search-btn" type="submit" ng-click="handleSearch()">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-        </div>
+        </form>
       </div>
 
     </div>
