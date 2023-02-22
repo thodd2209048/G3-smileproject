@@ -31,7 +31,6 @@ footer {
 /* COLUMN 1 */
 
 .footer__col-1 {
-  padding-right: 20px;
   float: left;
   flex: 1;
 }
@@ -140,7 +139,7 @@ footer {
   position: relative;
   width: 20px;
   height: 20px;
-  padding: 8px;
+  padding: 14px;
   display: flex;
   background-color: var(--color2);
   align-items: center;
