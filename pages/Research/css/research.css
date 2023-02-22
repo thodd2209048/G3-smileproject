@@ -1,5 +1,5 @@
 .research-article {
-  margin: 50px 0;
+  margin: 2em 0;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h2 {
   font-size: 18px;
 } */
 .latest-research {
-  margin-top: 4em;
+  margin-top: 2em;
 }
 .latest-tags {
   display: flex;
@@ -57,86 +57,90 @@ h2 {
   word-spacing: 2px;
 }
 .latest-bio {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 25px;
-    min-width: 33.33%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  min-width: 33.33%;
 }
-.clinical-content{
-    display: grid;
-    position: relative;
-    grid-template-columns:repeat(3, 1fr);
-    min-width: 33.33%;
-    column-gap: 25px;
-    row-gap: 25px;
-    padding-top: 40px;
+.clinical-content {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  min-width: 33.33%;
+  column-gap: 25px;
+  row-gap: 25px;
+  padding-top: 40px;
 }
-.card > img{
-    max-height: 185px;
-    width: 100%;
-    border-radius: var(--border-radius-small);
-    object-fit: cover;
+.card > img {
+  max-height: 185px;
+  width: 100%;
+  border-radius: var(--border-radius-small);
+  object-fit: cover;
 }
-.content-card{
-    margin-top: 15px;
-    line-height: 22px;
+
+.card > img:hover {
+  opacity: 0.8;
 }
-.content-card > span{
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.content-card {
+  margin-top: 15px;
+  line-height: 22px;
 }
-.content-card > span:hover{
-    color: var(--color1-hover);
-    opacity: 0.8;
+.content-card > span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
-.content-card > p{
-    margin-top: 4px;
-    font-size: 14px;
-    width: auto;
-} 
+.content-card > span:hover {
+  color: var(--color1-hover);
+  opacity: 0.8;
+}
+.content-card > p {
+  margin-top: 4px;
+  font-size: 14px;
+  width: auto;
+}
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
-    .latest-bio {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .card{
-      max-width: 95%;
-    }
-    .clinical-content{
-        display: grid;
-        position: relative;
-        grid-template-columns:repeat(2, 1fr);
-    }
+  .latest-bio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    max-width: 95%;
+  }
+  .clinical-content {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* Tablet */
 @media only screen and (min-width: 600px) and (max-width: 800px) {
-    .latest-bio {
-      grid-template-columns: repeat(2, 1fr);
-      max-width: 95%;
-      height: 100%;
-    }
-    .latest-tags {
-      display: flex;
-      margin-top: 1em;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    }
-   .clinical-content{
-        display: grid;
-        position: relative;
+  .latest-bio {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 95%;
+    height: 100%;
+  }
+  .latest-tags {
+    display: flex;
+    margin-top: 1em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .clinical-content {
+    display: grid;
+    position: relative;
 
-        grid-template-columns:repeat(2, 1fr);
-    }
-    h2{
-      margin-top: 1rem;
-    }
+    grid-template-columns: repeat(2, 1fr);
+  }
+  h2 {
+    margin-top: 1rem;
+  }
 }
 @media only screen and (min-width: 480px) and (max-width: 600px) {
-  
   .latest-research {
     margin-top: 3em;
-  }.latest-bio {
+  }
+  .latest-bio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 355px);
@@ -150,9 +154,9 @@ h2 {
     flex-wrap: wrap;
   }
   .latest-tags > a {
-     margin: 0.4rem 0.3rem;
+    margin: 0.4rem 0.3rem;
   }
-  .clinical-content{
+  .clinical-content {
     display: grid;
     position: relative;
     grid-template-columns: repeat(2, 1fr);
@@ -161,9 +165,9 @@ h2 {
     width: 100%;
     row-gap: 10px;
   }
-.card p {
-  line-height: 1.5;
-}
+  .card p {
+    line-height: 1.5;
+  }
   h1 {
     font-size: 26px;
   }
@@ -175,44 +179,44 @@ h2 {
 
 /* For mobile screens */
 @media (max-width: 480px) {
-  h1{
+  h1 {
     font-size: 24px;
   }
-  h2{
+  h2 {
     font-size: 22px;
   }
   .latest-bio {
     grid-template-columns: repeat(1, 1fr);
     min-width: 100%;
   }
-  .card > img{
+  .card > img {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-.main-card {
+  .main-card {
     margin-top: 13px;
     padding-bottom: 8px;
-}
-.latest-tags {
-  display: flex;
-  margin-top: 1em;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-.latest-tags > a {
-  margin: 0.3rem 0.2rem;
-}
-.latest-tags > a > span {
-  flex-wrap: wrap;
-  font-size: 14px;
-  font-weight: 550;
-  line-height: 20px;
-  word-spacing: 1px;
-}
-  .clinical-content{
+  }
+  .latest-tags {
+    display: flex;
+    margin-top: 1em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .latest-tags > a {
+    margin: 0.3rem 0.2rem;
+  }
+  .latest-tags > a > span {
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 20px;
+    word-spacing: 1px;
+  }
+  .clinical-content {
     display: grid;
     position: relative;
-    grid-template-columns:repeat(1, 1fr);
-}
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
