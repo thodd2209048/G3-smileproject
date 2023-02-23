@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/1fb8bb996b.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/header.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="../pro-course/css/pro-course.css">
+
+
+  <link rel="icon" href="../../public/images/favicon.jpg">
+
+
+  <script src="../../js/header-footer.js"></script>
+  <title>Course 001</title>
+</head>
+
+
+<body>
+  <header class="container-fluid">
+    <input type="checkbox" class="nav__input" id="nav-mobile-input">
+    <div class="logo-search-login container" id="logo-search-login-1">
+      <div class="logo">
+        <img src="../../public/images/logo.svg" alt="Logo" />
+      </div>
+      <div class="search-group">
+        <input type="text" class="search-input" placeholder="Search in 32SMILES" aria-label="Search"
+          aria-describedby="basic-addon1" />
+        <span class="search-group-icon" id="basic-addon1">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
+      <div class="login">
+        <a href="../../pages/Signin-Signup/signIn-signUp.html" class="login_login">Sign in</a>
+        <label for="nav-mobile-input" class="nav-mobile__menu-btn"><i class="fa-solid fa-bars"></i></label>
+      </div>
+    </div>
+
+    <div class="logo-search-login-small container" id="logo-search-login-2">
+      <div class="logo">
+        <img src="../../public/images/logo.svg" alt="Logo" />
+      </div>
+      <ul class="nav-bar container" id="smallNav">
+        <li class="nav-bar__item-1">
+          <a href="" class="nav-bar__link-1">HOME</a>
+          <ul class="nav-bar__list-2">
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          </ul>
+        </li>
+        <li class="nav-bar__item-1">
+          <a href="" class="nav-bar__link-1">PROFESSIONAL EDUCATION</a>
+          <ul class="nav-bar__list-2">
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          </ul>
+        </li>
+        <li class="nav-bar__item-1">
+          <a href="" class="nav-bar__link-1">PATIENTS EDUCATION</a>
+          <ul class="nav-bar__list-2">
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          </ul>
+        </li>
+        <li class="nav-bar__item-1">
+          <a href="" class="nav-bar__link-1">RESEARCH</a>
+          <ul class="nav-bar__list-2">
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          </ul>
+        </li>
+        <li class="nav-bar__item-1">
+          <a href="" class="nav-bar__link-1">PRODUCTS</a>
+          <ul class="nav-bar__list-2">
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          </ul>
+        </li>
+        <li class="nav-bar__item-1">
+          <a href="" class="nav-bar__link-1">CONTACT US</a>
+          <ul class="nav-bar__list-2">
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+            <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="login">
+        <a href="../../pages/Signin-Signup/signIn-signUp.html" class="login_login">Sign in</a>
+        <label for="nav-mobile-input" class="nav-mobile__menu-btn"><i class="fa-solid fa-bars"></i></label>
+      </div>
+    </div>
+    <ul class="nav-bar container" id="mainNav">
+      <li class="nav-bar__item-1">
+        <a href="" class="nav-bar__link-1">HOME</a>
+        <ul class="nav-bar__list-2">
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+        </ul>
+      </li>
+      <li class="nav-bar__item-1">
+        <a href="" class="nav-bar__link-1">PROFESSIONAL EDUCATION</a>
+        <ul class="nav-bar__list-2">
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+        </ul>
+      </li>
+      <li class="nav-bar__item-1">
+        <a href="" class="nav-bar__link-1">PATIENTS EDUCATION</a>
+        <ul class="nav-bar__list-2">
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+        </ul>
+      </li>
+      <li class="nav-bar__item-1">
+        <a href="" class="nav-bar__link-1">RESEARCH</a>
+        <ul class="nav-bar__list-2">
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+        </ul>
+      </li>
+      <li class="nav-bar__item-1">
+        <a href="" class="nav-bar__link-1">PRODUCTS</a>
+        <ul class="nav-bar__list-2">
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+        </ul>
+      </li>
+      <li class="nav-bar__item-1">
+        <a href="" class="nav-bar__link-1">CONTACT US</a>
+        <ul class="nav-bar__list-2">
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+          <li class="nav-bar__item-2"><a href="" class="nav-bar__link-2">Link1</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+
+    <label for="nav-mobile-input" class="nav__overlay"></label>
+
+    <di class="nav-mobile">
+      <label for="nav-mobile-input" class="nav-mobile-close"><i class="fa-solid fa-xmark"></i></label>
+      <div class="nav-mobile__search">
+        <div class="nav-mobile__search-wrapper">
+          <span class="nav-mobile__search-icon" id="basic-addon1">
+            <i class="fas fa-search"></i>
+          </span>
+          <input type="text" class="nav-mobile__search-input" placeholder="Search in 32SMILES" aria-label="Search"
+            aria-describedby="basic-addon1" />
+        </div>
+      </div>
+      <ul class="nav-mobile__list-1">
+        <li class="nav-mobile__item-1">
+          <a href="" class="nav-mobile__link-1">HOME</a>
+        </li>
+        <li class="nav-mobile__item-1">
+          <a href="" class="nav-mobile__link-1">PROFESSIONAL EDUCATION</a>
+        </li>
+        <li class="nav-mobile__item-1">
+          <a href="" class="nav-mobile__link-1">PATIENTS EDUCATION</a>
+        </li>
+        <li class="nav-mobile__item-1">
+          <a href="" class="nav-mobile__link-1">RESEARCH</a>
+        </li>
+        <li class="nav-mobile__item-1">
+          <a href="" class="nav-mobile__link-1">PRODUCTS</a>
+        </li>
+        <li class="nav-mobile__item-1">
+          <a href="" class="nav-mobile__link-1">CONTACT US</a>
+        </li>
+      </ul>
+    </di>
+  </header>
+  <main class="container">
+    <div class="course-content">
+      <span class="course-img">
+        <img src="../pro-course/public/562.webp" alt="">
+      </span>
+      <div class="course-info">
+        <div class="course__lists-info">
+          <div class="course__info-content">
+            <h1 class="course-name">A Clinician’s Guide to Clinical Endodontics</h1>
+            <p class="course-id">COURSE NUMBER: 56</p>
+            <p class="course-author">James Bahcall, DMD, MS, FICD, FAC  </p>
+            <p class="credit-hours">Credit Hours:  2 Hour(s)</p>
+          </div>
+          <div class="action-icon">
+            <a download="" class="icon-item download">
+              <i class="fa-solid fa-download " style="color: rgb(24,171,219);"></i>
+              <p>PDF</p>
+            </a>
+
+            <a class="icon-item share">
+              <i class="fa-solid fa-share-from-square " style="color: rgb(24,171,219);"></i>
+              <p>SHARE</p>
+            </a>
+
+          </div>
+        </div>
+        <div class="course-title">
+          <p>The clinical advances and changes in thought within the field of endodontics during the last few years have been significant. 
+              Unfortunately, these changes have led to difficulties for the general dentist in keeping up in everyday practice...</p>
+        </div>
+        <div class="lists-button">
+          <a class="create-button" href="#">
+             Create Assignment
+          </a>
+          <a class="start-button" href="#">
+             Start Course
+          </a>
+      </div>
+      </div>
+    </div>
+    <div class="about-course">
+      <div class="bio__about-course">
+        <div class="overview">
+          <h1 id="add1" class="section-title" >Overview</h1>
+          <div class="overview-content">
+            <p>The clinical advances and changes in thought within the field of endodontics during the last 
+              few years have been significant. Unfortunately, these changes have led to difficulties for the 
+              general dentist in keeping up in everyday practice. This course will encompass diagnosis, local 
+              anesthesia, instrumentation/obturation, and pain medications and antibiotics in clinical endodontic treatment.
+            </p>
+            <div class="lists-overview">
+              <li>
+                <div class="overview__name-item">
+                  <p>Intended Audience:</p>
+                </div>
+                <div class="overview__content-item">
+                  <p>Dentists, Dental Hygienists, Dental Assistants, Dental Students, Dental Hygiene Students, Dental Assisting Students</p>
+                </div>
+              </li>
+              <li>
+                <div class="overview__name-item">
+                  <p>Date Course Online:</p>
+                </div>
+                <div class="overview__content-item">
+                  <p>Sep 1, 2018</p>
+                </div>
+              </li>
+              <li>
+                <div class="overview__name-item">
+                  <p>Last Revision Date:</p>
+                </div>
+                <div class="overview__content-item">
+                  <p>Nov 1, 2021</p>
+                </div>
+              </li>
+              <li>
+                <div class="overview__name-item">
+                  <p>Course Expiration Date: </p>
+                </div>
+                <div class="overview__content-item">
+                  <p>Oct 31, 2024</p>
+                </div>
+              </li>
+              <li>
+                <div class="overview__name-item">
+                  <p>Cost: </p>
+                </div>
+                <div class="overview__content-item">
+                  <p>Free</p>
+                </div>
+              </li>
+              <li>
+                <div class="overview__name-item">
+                  <p>Method: </p>
+                </div>
+                <div class="overview__content-item">
+                  <p>Self-instructional</p>
+                </div>
+              </li>
+              <li>
+                <div class="overview__name-item">
+                  <p>AGD Subject Code(s):  </p>
+                </div>
+                <div class="overview__content-item">
+                  <p>70</p>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div  class="learning-object">
+          <h1 id="add2" class="section-title">Learning Objectives</h1>
+          <div class="learning-content">
+            <p>Upon completion of this course, the dental professional should be able to:</p>
+            <br>
+            <ul>
+              <li>
+                Describe the clinical tests needed to obtain a pretreatment pulpal and periradicular diagnosis.
+              </li>
+              <li>
+                Describe the correct pulpal and periradicular diagnosis terms in endodontics.
+              </li>
+              <li>
+                Explain how to objectively test for pulp anesthesia.
+              </li>
+              <li>
+                Explain how to integrate supplemental anesthesia techniques.
+              </li>
+              <li>
+                Describe the modified crown-down filing technique.
+              </li>
+              <li>
+                Explain the importance of removing residual canal debris.
+              </li>
+              <li>
+                Discuss the current recommended NSAIDs for postoperative pain after conventional endodontic treatment.
+              </li>
+              <li>
+                Discuss the current antibiotic recommendations for endodontic therapy.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="disclaimers">
+          <h1 id="add3" class="section-title">Disclaimers</h1>
+          <div class="disclaimer-content">
+            <ul>
+              <li>
+                P&G is providing these resource materials to dental professionals. We do not own this content nor are we responsible for any material herein.
+              </li>
+              <li>
+                Participants must always be aware of the hazards of using limited knowledge in integrating new techniques or procedures into their practice.  Only sound evidence-based dentistry should be used in patient therapy.
+              </li>
+            </ul>
+            <p>
+              <strong>Note:</strong>
+              &nbsp; Registration is required to take test.
+            </p>
+          </div>    
+        </div>
+        <div class="author">
+          <h1 id="add4" class="section-title">Author(s)</h1>
+          <div class="author-content">
+            <div class="author-info">
+              <div class="author-img">
+                <img src="../pro-course/public/james-bahcall.webp" alt="james-bahcall">
+              </div>
+              <div class="author-about">
+                <div class="author-name">James Bahcall</div>
+                <div class="author-job">DMD, MS, FICD, FACD</div>
+              </div>
+            </div>
+            <div class="author-career">
+              <p>Dr. Bahcall is Clinical Associate Professor in the Department of Endodontics, University of Illinois-Chicago 
+                College of Dentistry, Chicago, Illinois. He earned his DMD from the Tufts University School of Dental Medicine, 
+                a Certificate in End...</p>
+                <a href="#">View More</a><!-- liên kết tới trang profile bác sĩ nha khoa -->
+            </div>
+          </div>
+        </div>
+        <div class="recognition">
+          <h1 id="add5" class="section-title" >Recognition</h1>
+          <div class="recognition-content">
+            <div class="organization">
+              <div class="organization-logo">
+                <img src="../pro-course/public/ada_cerp_logo.webp" alt="ADA">
+              </div>
+              <div class="organization-about">
+                <h3 class="organization-name">ADA CERP Recognized Provider</h3>
+                <p>The Procter & Gamble Company is an ADA CERP Recognized Provider.</p>
+                <p>ADA CERP is a service of the American Dental Association to assist dental professionals in identifying quality providers of 
+                  continuing dental education. ADA CERP does not approve or endorse individual courses or instructors, nor does it imply acceptance 
+                  of credit hours by boards of dentistry.</p>
+              </div>
+            </div>
+            <div class="organization">
+              <div class="organization-logo">
+                <img src="../pro-course/public/agd_pace_logo.webp" alt="Approved-PACE-Program-Provider">
+              </div>
+              <div class="organization-about">
+                <h3 class="organization-name">Approved PACE Program Provider</h3>
+                <p>THE PROCTER & GAMBLE COMPANY</p>
+                <p>Nationally Approved PACE Program Provider for FAGD/MAGD credit.</p>
+                <p>Approval does not imply acceptance by any regulatory authority or AGD endorsement. </p>
+              </div>
+            </div>
+            <div class="organization">
+              <div class="organization-logo">
+                <img src="../pro-course/public/aadhlogo202312219_jpg.webp" alt="AADH">
+              </div>
+              <div class="organization-about">
+                <h3 class="organization-name">AADH Approved Program Provider</h3>
+                <p>Procter & Gamble is designated as an approved Provider by the American Academy of Dental Hygiene, Inc. 
+                  #AADHPGC (January 1, 2022-December 31, 2023). Approval does not imply acceptance by a state or provincial 
+                  Board of Dentistry. Licensee should maintain this document in the event of an audit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side-bar">
+        <div class="side-bar__title-wrapper">
+          <h3 class="side-bar__title">IN THIS ARTICLE</h3>
+        </div>
+    
+        <ul class="side-bar_list">
+          <li class="side-bar__item"><a href="#add1">Overview</a></li>
+          <li class="side-bar__item"><a href="#add2">Learning Objectives</a></li>
+          <li class="side-bar__item"><a href="#add3">Disclaimers</a></li>
+          <li class="side-bar__item"><a href="#add4">Author(s)</a></li>
+          <li class="side-bar__item"><a href="#add5">Recognition</a></li>
+        </ul>
+    
+      </div>
+    </div>
+</main>
+  <footer>
+    <div class="footer-area container">
+      <div class="footer__info">
+        <div class="row footer__info-row">
+          <div class="col footer__col-1">
+            <div class="footer_subscribe-wrapper" ng-app="myApp" ng-controller="myCtrl">
+              <div class="footer__subscribe-title">
+                <p>Subscribe</p>
+              </div>
+              <form name="subscribeForm">
+                <div class="footer__subscribe-input-field">
+                  <input ng-model="emailInput" class="footer__input-subscribe" type="email"
+                    placeholder="Enter your email">
+                  <button ng-click="validateEmail()" class="footer__sign-up-button" type="submit">Sign up</button>
+
+                </div>
+                <p class="footer__subscribe-error"> {{errorMessage}}</p>
+              </form>
+              <div class="footer__thanks">
+                <span>Thank you for subscribe</span>
+              </div>
+            </div>
+
+            <ul class="footer__social-media">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col footer__col-2">
+            <ul>
+              <li><a href="">Patient education</a></li>
+              <li><a href="">Professional education</a></li>
+              <li><a href="">Research</a></li>
+              <li><a href="">Product</a></li>
+            </ul>
+          </div>
+          <div class="col footer__col-3">
+            <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Site map</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script type="text/babel" src="subscribe.js"></script> -->
+</body>
+
+</html>
