@@ -36,7 +36,6 @@ li {
 .container {
   max-width: 1000px;
   margin: auto;
-  margin-bottom: 5rem;
   padding: 0 15px;
   background-color: var(--background-color);
 }
@@ -267,12 +266,15 @@ li {
 .author-career > a:hover {
   color: var(--color1-hover);
 }
+.recognition{
+  margin-bottom: 5rem;
+}
 .recognition-content {
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 30px;
 }
 .organization {
-  margin-top: 30px;
+  margin-top: 4rem ;
   display: grid;
   grid-template-columns: 25% 1fr;
   grid-column: 20px;
@@ -385,7 +387,7 @@ li {
   width: 85%;
 }
 .author-career{
-  margin-left: 70px;
+  margin-left: 5rem;
 }
 .author-career > p > a {
   font-size: 14px;
@@ -401,7 +403,7 @@ li {
 }
 @media only screen and (min-width: 600px) and (max-width: 800px) {
   .container {
-    padding: 0px 12px;
+    padding: 0px 15px;
   }
   .course-content{
     display: grid;
@@ -433,7 +435,7 @@ li {
   }
   .lists-button > a {
     min-width: 90px;
-    width: 220px;
+    width: 17rem;
     padding: 15px 10px;
     font-size: 14px;
 
@@ -484,15 +486,12 @@ li {
 .overview__name-item > p {
   font-size: 14px;
 }
-.author-img{
+.author-img > img{
   width: 95%;
 }
 .organization-name{
   font-size: 14px;
   font-weight: 550;
-}
-.organization-name{
-  font-size: 14px;
 }
 }
 @media only screen and (min-width: 480px) and (max-width: 600px) {
@@ -580,15 +579,18 @@ li {
 .overview__name-item > p {
   font-size: 14px;
 }
-.author-img{
-  width: 95%;
+.author-img > img{
+  width: 80%;
+}
+.author-career{
+  margin-left: 4rem;
+}
+.organization{
+  margin-top: 2rem;
 }
 .organization-name{
   font-size: 14px;
   font-weight: 550;
-}
-.organization-name{
-  font-size: 14px;
 }
 }
 @media (max-width: 480px) {
@@ -682,11 +684,11 @@ li {
 .author-career{
   margin-left: 1.2rem;
 }
-.organization-name{
-  font-size: 14px;
-  font-weight: 550;
+.organization{
+  margin-top: 1rem;
 }
 .organization-name{
   font-size: 14px;
+  font-weight: 550;
 }
 }
