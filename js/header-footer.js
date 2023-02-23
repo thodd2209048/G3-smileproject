@@ -20,8 +20,8 @@ function scrollFunction() {
 
 // Subscribe
 
-var app = angular.module('myApp', []);
-app.controller('myCtrl', function ($scope, $window) {
+var footerSubscribeApp = angular.module('FooterSubscribeApp', []);
+footerSubscribeApp.controller('myCtrl', function ($scope, $window) {
   var emails = [];
   var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 

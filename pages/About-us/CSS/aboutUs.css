@@ -1,15 +1,12 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"); */
-.about-main {
-  /* align-content: flex-start; */
-  width: 100%;
-}
 
 .about-article {
   position: relative;
   display: grid;
   grid-template-columns: 30% 1fr;
-  column-gap: 8%;
+  column-gap: 3em;
   grid-template-areas: 'sidebar content';
+  padding: 10px;
 }
 .about-menu {
   grid-area: sidebar;
@@ -57,9 +54,21 @@
   text-decoration-line: underline;
   text-decoration-style: solid;
 }
+
+/* Conent */
+
 .about-content {
   grid-area: content;
   display: block;
+}
+
+.about-content a {
+  text-decoration: underline;
+  color: var(--color1);
+}
+
+.about-content a:hover {
+  color: var(--color3);
 }
 .content {
   margin-top: 32px;
@@ -77,10 +86,15 @@
   line-height: 28px;
 }
 .name-item {
-  margin: 48px 0 16px 0;
+  margin: 1.5em 0 0.5em 0;
   font-size: 32px;
   font-weight: 600;
-  line-height: 42px;
+}
+
+.name-item-sub {
+  margin: 2em 0 0.5em 0;
+  font-size: 20px;
+  font-weight: bold;
 }
 .medical-members {
   margin-top: 48px;
@@ -95,17 +109,16 @@
 
   display: grid;
   grid-template-columns: 33% 1fr;
-  column-gap: 25px;
+  column-gap: 0.5em;
 }
 .member-img > img {
-  max-width: 100%;
+  width: 100%;
   max-height: 100%;
   border-radius: 6px;
 }
 .member-info > .name {
   font-size: 22px;
   font-weight: 600;
-  line-height: 28px;
 }
 .member-info > .job {
   margin-top: 8px;
@@ -120,21 +133,4 @@
   margin-top: 10px;
   font-size: 18px;
   line-height: 28px;
-}
-h4 {
-  margin: 37px 0 16px 0;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 32px;
-}
-#mail {
-  margin-bottom: 0px;
-  padding-left: 0px;
-  font-size: 18px;
-  color: #0f55a6;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-}
-#mail:hover {
-  color: #4949ea;
 }
