@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <footer>
+    <div class="footer-area container">
+      <div class="footer__info">
+        <div class="row footer__info-row">
+          <div class="col footer__col-1">
+            <div class="footer_subscribe-wrapper" id="footerSubscribe" ng-controller="myCtrl">
+              <div class="footer__subscribe-title">
+                <p>Subscribe</p>
+              </div>
+              <form name="subscribeForm">
+                <div class="footer__subscribe-input-field">
+                  <input ng-model="emailInput" class="footer__input-subscribe" type="email"
+                    placeholder="Enter your email">
+                  <button ng-click="validateEmail()" class="footer__sign-up-button" type="submit">Sign up</button>
+
+                </div>
+                <p class="footer__subscribe-error"> {{errorMessage}}</p>
+              </form>
+              <div class="footer__thanks">
+                <span>Thank you for subscribe</span>
+              </div>
+            </div>
+
+            <ul class="footer__social-media">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col footer__col-2">
+            <ul>
+              <li><a href="">Patient education</a></li>
+              <li><a href="">Professional education</a></li>
+              <li><a href="">Research</a></li>
+              <li><a href="">Product</a></li>
+            </ul>
+          </div>
+          <div class="col footer__col-3">
+            <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Site map</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    angular.bootstrap(document.getElementById('footerSubscribe'), ['FooterSubscribeApp']);
+  </script>
+</body>
+
+</html>
