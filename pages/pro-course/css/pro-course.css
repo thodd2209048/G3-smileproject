@@ -272,9 +272,6 @@
   color: var(--color1-hover);
 }
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
-  .container {
-    padding: 0px 12px;
-  }
   .course__lists-info {
     column-gap: 0;
     grid-template-columns: 1fr 20% 20%;
@@ -382,7 +379,6 @@
 @media only screen and (min-width: 480px) and (max-width: 600px) {
   .course-content {
     grid-template-columns: 1fr;
-    padding-bottom: 5vw;
   }
   .course-img > img {
     width: 100%;
@@ -480,7 +476,6 @@
 }
 @media (max-width: 480px) {
   .course-content {
-    padding-bottom: 5vw;
     grid-template-columns: 1fr;
   }
   .course-img > img {
