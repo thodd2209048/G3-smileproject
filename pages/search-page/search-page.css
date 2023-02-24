@@ -70,6 +70,7 @@
 
 .search-page__result {
   min-height: 45vh;
+  width: 100%;
   margin-top: 1em;
 }
 
