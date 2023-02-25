@@ -1,0 +1,290 @@
+.course-content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    column-gap: 2vw;
+    padding-bottom: 48px;
+    border-bottom: 1.5px solid var(--color2);
+  }
+  .course-img > img {
+    display: block;
+    max-width: 100%;
+    border-radius: var(--border-radius-big);
+  }
+  .course__lists-info {
+    display: grid;
+    grid-template-columns: auto 17%;
+    column-gap: 0.5em;
+  }
+  .action-icon {
+    display: flex;
+    flex-direction: row;
+  }
+  .icon-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 3em;
+  } 
+  .icon-item > p{ font-size: 14px;}
+  .lists-button {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 18px;
+  }
+  .lists-button > a {
+    display: inline-flex;
+    justify-content: center;
+    width: 15em;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 40px;
+  } 
+  .create-button,
+  .start-button:hover {
+  color: var(--color1);
+  border: 2px solid var(--color1);
+  background-color: #fff;
+ }
+ .start-button,
+ .create-button:hover {
+    color:#fff;
+    background-color: var(--color1);
+    border: 2px solid var(--color1);
+  }
+  .about-course {
+    margin-top: 3rem;
+    margin-bottom: 5rem ;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    column-gap: 2.5vw;
+  }
+  .course-section{
+    margin-top: 30px;
+    padding-top: 35px;
+    border-top: 1px solid var(--color1);
+  }
+  .main-title {
+    font-size: 24.5px;
+    font-weight: 550;
+  }
+  .section-content{
+    font-size: 16px;
+    word-wrap: normal;
+    position: relative;
+  }
+  .section-content p{
+    margin-top: 1rem;
+    line-height: 1.6em;
+  }
+  .lists-overview > li {
+    display: flex;
+    padding: 0 10px 10px 10px;
+  }
+  .lists-overview li:nth-child(odd) {
+    background-color: rgb(225 235 244);
+  }
+  .overview__name-item > p {
+    display: block;
+    text-align: left;
+    white-space: nowrap;
+  }.overview__content-item > p {
+    margin-left: 14px;
+    font-weight: 600;
+    text-align: left;
+  }
+  .section-content> ul > li {
+    display: list-item;
+    position: relative;
+    text-align: left;
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
+  .author-content__info{
+    display: grid;
+    grid-template-columns: 13% 1fr;
+  }
+  .author-img > img {
+    width: 4.5em;
+    height: 5em;
+    object-fit: cover;
+    border-radius: 400px;
+  } 
+  .author-about {
+    padding-top:1.5em ;
+  }
+  .bold-p{
+    font-weight: 550;
+    font-size: 16px;
+  }
+  .recognition-content {
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 30px;
+  }
+  .organization {
+    margin-top: 2.8em;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    column-gap: 1.5em;
+  }
+  .organization-logo > img {
+    max-width: 12em;
+  }
+  .side-bar {
+    position: sticky;
+    top: 180px;
+    border-left: 7px solid var(--color1);
+    border-radius: 10px;
+    border-top: 1px solid var(--color1);
+    border-right: 1px solid var(--color1);
+    border-bottom: 1px solid var(--color1);
+  }
+  .side-bar__title-wrapper {
+    display: block;
+    padding: 1em 0 1em 1em;
+  }
+  .side-bar__title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-size-adjust: 100%;
+  }
+  .side-bar_list {
+    display: flex;
+    flex-direction: column;
+    color: var(--color1);
+  }
+  .side-bar__item {
+    padding: 0 1em 0.5em;
+    position: relative;
+    font-size: 1.2em;
+  }
+  .side-bar__item a {
+    font-weight: 500;
+    line-height: 0.8vw;
+    font-size: 0.9em;
+    color: var(--color1);
+    text-decoration-line: underline;
+  }
+  .side-bar__item a:hover {
+    color: var(--color1-hover);
+  }
+  @media only screen and (min-width: 800px) and (max-width: 1024px) {
+    .organization-logo > img{
+        max-width: 10em;
+    }
+    .section-content p,
+    .section-content li{
+    margin-top: 0.7rem;
+    }
+    .course__lists-info{
+        grid-template-columns: auto 20%;
+    }
+  }
+  @media  (max-width: 800px){
+    .section-content > p{
+        margin-top: 0.4rem;
+        font-size: 15px;
+    }
+    .main-title{
+        font-size: 17.5px;
+    }
+    .bold-p{ font-size: 15px;}
+    .course-content {
+        grid-template-columns: 1fr;
+    }
+    .course-img > img {
+         object-fit: cover;
+        margin: 0 auto;
+    }
+    .course__lists-info {
+        margin-top: 1.5em;
+        row-gap: 1.7vw;
+        grid-template-columns: 1fr;
+    }
+    .course__info-content{
+        margin: 0 auto;
+    }
+    .about-course {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr;
+        row-gap: 20px;
+      }
+      .bio__about-course {
+        grid-area: 2 / 1 / 3 / 2;
+        max-width: 100%;
+        margin-top: 1.5em;
+      }
+      .author-content__info{
+        display: grid;
+        grid-template-columns: 15% 1fr;
+      }
+      .author-img {
+        width: 4rem;
+      } 
+      .organization {
+        margin: 5vw 2vw 0 2vw;
+        grid-template-columns: 1fr;
+      }
+      .side-bar__title {
+        font-size: 16px;
+      }  
+  }
+  @media only screen and (min-width: 600px) and (max-width: 800px){
+    .lists-button{
+        justify-content: center;
+    }
+  }
+  @media (max-width: 600px){
+    .lists-button {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 2em;
+    }
+    .lists-button > a {
+        display: flex;
+        margin: 0 auto;
+        max-width: 90em;
+        padding: 13px 9px;
+    }
+  }
+  @media (max-width: 480px){
+    .section-content ,
+    .overview__name-item p{
+        margin-top: 0.2rem;
+        font-size: 14px;
+    }
+    .icon-item p{font-size: 12px;}
+    .main-title{
+        font-size: 16.5px;
+    }
+    .bold-p,
+    .overview__content-item p{ 
+        font-size: 14px;
+        margin-top: 0.2rem;
+        font-weight: 550;}
+    .lists-overview > li {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .author-content__info{
+        display: grid;
+        grid-template-columns: 17% 1fr;
+      }
+    .author-img {
+        display: block;
+        max-width: 3.4em;
+    }
+    .author-img > img {width: 100%;}
+    .side-bar__item {
+        padding: 0 0.5em 0.3em;
+      }
+      .side-bar__item a {
+        font-size: 0.7em;
+      }
+  }
