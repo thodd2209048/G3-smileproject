@@ -1,0 +1,106 @@
+.patient-edu-main {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.patient-edu__title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.tag-list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tag-btn {
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem 1rem 0.5rem 0;
+  color: #fff;
+  background-color: var(--color1);
+  border: none;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+.tag-btn:hover {
+  background-color: var(--color3);
+}
+
+/* CARD LIST */
+
+.patient-edu__card-list-latest-news h2 {
+  font-size: 26px;
+  margin-top: 2rem;
+  padding-bottom: 5px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color1);
+}
+
+.patient-edu__card-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  padding-top: 40px;
+}
+
+.patient-edu__card > img {
+  max-height: 185px;
+  width: 100%;
+  border-radius: var(--border-radius-small);
+}
+
+.patient-edu__card > img:hover {
+  opacity: 0.8;
+}
+
+.patient-edu__card > img:hover {
+  opacity: 0.8;
+}
+.patient-edu__card-content {
+  margin-top: 15px;
+  line-height: 22px;
+}
+.patient-edu__card-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.patient-edu__card-content h4:hover {
+  color: var(--color1-hover);
+  opacity: 0.8;
+}
+.patient-edu__card-content p {
+  margin-top: 4px;
+  font-size: 14px;
+  width: auto;
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+  .tag-btn {
+    padding: 3px 8px;
+    margin: 3px 6px 3px 0;
+    font-weight: 400;
+  }
+
+  .patient-edu__card-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  .patient-edu__card-list {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding-top: 20px;
+  }
+}
