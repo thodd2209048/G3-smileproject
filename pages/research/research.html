@@ -13,12 +13,14 @@
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/header.css" />
   <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="./research.css">
 
   <link rel="icon" href="/public/images/favicon.jpg">
 
-
+  <script src="research.js"></script>
   <script src="/js/header-footer.js"></script>
-  <script src="/js/include.js"></script>
+  <script src="/js/data.js"></script>
+
   <title>Research</title>
 </head>
 
@@ -26,9 +28,47 @@
 <body>
   <div id="includeHeader"></div>
 
-  <main></main>
+  <main class="container patient-edu-main" id="researchApp" ng-controller="researchCtrl">
+
+    <h1 class="patient-edu__title">Research</h1>
+    <ul class="tag-list">
+      <li class="tag-btn" ng-click="handleFilter('')">All</li>
+      <li class="tag-btn" ng-repeat="tag in tagArray" ng-click="handleFilter(tag.tag)">{{tag.tag}}</li>
+    </ul>
+
+    <section class="patient-edu__card-latest-news">
+      <div class="patient-edu__card-latest-news-title">
+        <h2>Latest research</h2>
+      </div>
+      <ul class="patient-edu__card-list">
+        <a href={{article.link}}
+          ng-repeat="article in researchArticles | filter : researchFilter | limitTo: pageSize :(currentPage -1) * pageSize"
+          class="patient-edu__card ">
+          <img src={{article.img}} alt="">
+          <div class="patient-edu__card-content">
+            <span class="patient-edu__card-tag">{{article.tag}}</span>
+            <h4>{{article.title}}</h4>
+          </div>
+        </a>
+      </ul>
+
+      <div class="movePage-wrapper">
+        <button class="movePage-btn" ng-disabled="currentPage == 1"
+          ng-click="currentPage = currentPage - 1">Prev</button>
+        <span class="movePage-pageOf">Page {{currentPage}} of {{numberOfPages}}</span>
+        <button class="movePage-btn" ng-disabled="currentPage == numberOfPages"
+          ng-click="currentPage = currentPage + 1">Next</button>
+      </div>
+    </section>
+
+
+  </main>
 
   <div id="includeFooter"></div>
 </body>
+<script src="/js/include.js"></script>
+<script type="text/javascript">
+  angular.bootstrap(document.getElementById('researchApp'), ['ResearchApp'])
+</script>
 
 </html>
