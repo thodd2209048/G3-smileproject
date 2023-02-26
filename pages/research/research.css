@@ -1,6 +1,6 @@
 .patient-edu-main {
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .patient-edu__title {
@@ -94,6 +94,7 @@
 .patient-edu__card-tag {
   padding: 3px 5px;
   color: #fff;
+  font-size: 0.8em;
   background-color: var(--color1);
   border-radius: 9999px;
 }
@@ -113,9 +114,11 @@
 
 .movePage-wrapper {
   display: flex;
-  margin: 10px 0;
+  margin: 20px 0 10px 0;
+  padding-top: 10px;
   align-items: center;
   justify-content: center;
+  border-top: 1px solid var(--color1);
 }
 
 .movePage-pageOf {
