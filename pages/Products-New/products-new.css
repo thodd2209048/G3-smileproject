@@ -1,0 +1,120 @@
+.banner-content {
+    width: 50%;
+}
+
+.banner-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+.banner-products {
+    background: url(./public/prodcts-banner-new.png);
+    padding-top: 100px;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 0 50px 0 50px;
+  color: #fff;
+}
+
+
+.products-content {
+    margin-top: 100px;
+}
+
+.content-header {
+    color: var(--color3);
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color3);
+}
+
+.content-title {
+    margin-bottom: 10px;
+}
+
+
+.content-element {
+    margin-bottom: 70px;
+}
+
+.list-card-rcm {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .card-rcm {
+    width: 30%;
+    /* border: 1px solid #14ABD9;
+      box-shadow: 8px 8px 8px -8px #14ABD9; */
+    box-shadow: 5px 5px 10px 0 rgba(15, 85, 166, 0.75);
+    border: 1px solid transparent;
+    /* box-shadow: 5px 5px 10px 0 rgba(15, 85, 166, 0.75); */
+    /* display: flex;
+      flex-direction: column;
+      align-items: center; */
+    border-radius: 30px;
+  }
+  
+  .card-info_rcm {
+    margin-top: 25px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 25px;
+    color: #4a4a4a;
+  }
+  
+  .card-rcm_img {
+    border-bottom: 1px solid var(--color3);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .card-rcm_img img {
+    width: 100%;
+    border-radius: 30px;
+  }
+  
+  .card-info_title {
+    font-size: 30px;
+    color: var(--color3);
+    margin-bottom: 25px;
+  }
+  
+  .card-info_branch {
+    font-size: 16px;
+  }
+  
+  .card-info_main {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .card-rcm:hover {
+    /* box-shadow: -5px -5px 10px 0 rgba(15, 85, 166, 0.75); */
+    /* box-shadow: none;
+      border: 2px solid var(--color3); */
+    /* box-shadow: 8px 8px 8px -8px rgba(19, 168, 217, 0.5), 8px -8px 8px -8px rgba(19, 168, 217, 0.5); */
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: 5px 5px 10px 0 rgba(15, 85, 166, 0.75);
+      border: 2px solid var(--color3); */
+    border: 0.5px solid #0f55a6;
+    box-shadow: 5px 5px 25px 0px #0f55a6;
+  }
+  @media (max-width: 570px) {
+    /* card */
+    .list-card-rcm {
+      flex-direction: column;
+    }
+  
+    .card-rcm {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+  }
