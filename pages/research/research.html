@@ -41,8 +41,7 @@
         <h2>Latest research</h2>
       </div>
       <ul class="patient-edu__card-list">
-        <a href={{article.link}}
-          ng-repeat="article in researchArticles | filter : researchFilter | limitTo: pageSize :(currentPage -1) * pageSize"
+        <a href={{article.link}} ng-repeat="article in filteredArticles| limitTo: pageSize :(currentPage -1) * pageSize"
           class="patient-edu__card ">
           <img src={{article.img}} alt="">
           <div class="patient-edu__card-content">

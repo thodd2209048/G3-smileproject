@@ -7,26 +7,35 @@ researchApp.controller('researchCtrl', function ($scope) {
       $scope.researchArticles.push(article);
     }
   });
-  console.log($scope.researchArticles);
+  console.log('research:', $scope.researchArticles);
+  $scope.filteredArticles = $scope.researchArticles;
   const tagCounts = {};
-  $scope.researchArticles.forEach((article) => {
-    if (tagCounts[article.tag]) {
-      tagCounts[article.tag]++;
-    } else {
-      tagCounts[article.tag] = 1;
-    }
-  });
   $scope.tagArray = [];
+  $scope.pageSize = 11;
+  $scope.currentPage = 1;
+  // TAG
+  $scope.researchArticles.forEach((article) => {
+    tagCounts[article.tag] ? tagCounts[article.tag]++ : (tagCounts[article.tag] = 1);
+  });
   for (const [tag, count] of Object.entries(tagCounts)) {
     $scope.tagArray.push({ tag, count });
   }
 
-  console.log($scope.tagArray);
-
+  // FILTER
+  console.log('tag', $scope.tagArray);
   $scope.handleFilter = function (x) {
-    $scope.researchFilter = x;
+    $scope.filteredArticles = [];
+    if (x === '') {
+      $scope.filteredArticles = $scope.researchArticles;
+    } else {
+      angular.forEach($scope.researchArticles, function (article) {
+        if (article.tag === x) {
+          $scope.filteredArticles.push(article);
+        }
+      });
+    }
+
+    $scope.numberOfPages = Math.ceil($scope.filteredArticles.length / $scope.pageSize);
   };
-  $scope.pageSize = 11;
-  $scope.currentPage = 1;
-  $scope.numberOfPages = Math.ceil($scope.researchArticles.length / $scope.pageSize);
+  $scope.handleFilter('');
 });
