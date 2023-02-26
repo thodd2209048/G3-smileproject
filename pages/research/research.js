@@ -24,6 +24,7 @@ researchApp.controller('researchCtrl', function ($scope) {
   // FILTER
   console.log('tag', $scope.tagArray);
   $scope.handleFilter = function (x) {
+    $scope.selectedTag = x;
     $scope.filteredArticles = [];
     if (x === '') {
       $scope.filteredArticles = $scope.researchArticles;

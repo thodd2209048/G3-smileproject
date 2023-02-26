@@ -27,7 +27,8 @@
   cursor: pointer;
 }
 
-.tag-btn:hover {
+.tag-btn:hover,
+.activeTag {
   background-color: var(--color3);
 }
 
