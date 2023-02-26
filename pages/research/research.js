@@ -8,11 +8,12 @@ researchApp.controller('researchCtrl', function ($scope) {
     }
   });
   console.log('research:', $scope.researchArticles);
-  $scope.filteredArticles = $scope.researchArticles;
+  // $scope.filteredArticles = $scope.researchArticles;
   const tagCounts = {};
   $scope.tagArray = [];
   $scope.pageSize = 11;
-  $scope.currentPage = 1;
+  // $scope.currentPage = 1;
+
   // TAG
   $scope.researchArticles.forEach((article) => {
     tagCounts[article.tag] ? tagCounts[article.tag]++ : (tagCounts[article.tag] = 1);
@@ -26,6 +27,7 @@ researchApp.controller('researchCtrl', function ($scope) {
   $scope.handleFilter = function (x) {
     $scope.selectedTag = x;
     $scope.filteredArticles = [];
+    $scope.currentPage = 1;
     if (x === '') {
       $scope.filteredArticles = $scope.researchArticles;
     } else {
