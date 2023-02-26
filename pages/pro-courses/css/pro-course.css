@@ -28,6 +28,9 @@
     width: 100%;
     height: 3em;
   } 
+  .icon-item:hover{
+    color: var(--color1-hover);
+  }
   .icon-item > p{ font-size: 14px;}
   .lists-button {
     margin-top: 30px;
