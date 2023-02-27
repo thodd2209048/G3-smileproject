@@ -33,7 +33,7 @@
     <h1 class="patient-edu__title">Research</h1>
     <ul class="tag-list">
       <li class="tag-btn" ng-click="handleFilter('')" ng-class="{activeTag: selectedTag === ''}">All</li>
-      <li class="tag-btn" ng-repeat="tag in tagArray" ng-click="handleFilter(tag.tag)"
+      <li class="tag-btn" ng-repeat="tag in tagArray | orderBy:'-count'" ng-click="handleFilter(tag.tag)"
         ng-class="{activeTag: selectedTag === tag.tag}">{{tag.tag}}</li>
     </ul>
 

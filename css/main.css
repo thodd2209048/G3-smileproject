@@ -362,6 +362,11 @@
   grid-gap: 3vw;
 }
 
+.research-list {
+  padding: 10px 0;
+  /* height: 400px; */
+}
+
 .research-lists a {
   width: 100%;
 }
@@ -376,6 +381,8 @@
 
 .research-lists a img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: var(--border-radius-big);
 }
 
@@ -386,6 +393,9 @@
 
 .research-lists__item-content {
   font-size: 0.9rem;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
 }
 
 /* Tablet and mobile: width <1024px  */
