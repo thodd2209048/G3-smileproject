@@ -6,28 +6,26 @@
 }
 .profile-sidebar{
     padding-bottom: 1rem;
-    position: sticky;
-    top: 180px;
+    background-color: #fbfbfb ;
+    height: 50%;
 }
 .profile-img{
-    height: 23rem;
-    background-color: #163876 ;
+    height: 25rem;
     border-radius: 2% 2% 0 0;
 }
 .dentist-img{
     display: block;
-    width: 10rem;
+    width: 15rem;
     margin: 0 auto;
 }
 .dentist-img > img{
     width: 100%;
-    border-radius: 50%;
     margin-top: 2rem ;
+    border-radius: 2%;
 }
 .dentist_name{
     margin-top: 1rem;
     text-align: center;
-    color: #fff;
     letter-spacing: 1px;
 }
 .dentist_name > h3{
@@ -65,7 +63,7 @@
     background-color: #fff;
 }
 .dentist-info__section{
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .dentist-info__title{
     margin-bottom: 1.2rem;
@@ -84,7 +82,7 @@
 }
 .personal-info__item-content{
     font-size: 16px;
-    margin-left: 14px;
+    margin-left: 0.5rem;
     text-align: left;
 }
 .career-info__content{
