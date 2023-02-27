@@ -6,10 +6,10 @@
 }
 .profile-sidebar{
     padding-bottom: 1rem;
-    background-color: #fbfbfb ;
     height: 50%;
 }
 .profile-img{
+    background-color: #fbfbfb;
     height: 25rem;
     border-radius: 2% 2% 0 0;
 }
@@ -43,7 +43,7 @@
 }
 .about-contact > h2{
     text-align: center;
-    margin-top: 2rem;
+    padding-top: 2rem;
 }
 .contact-lists{
     margin-top: 1.5rem;
@@ -132,10 +132,15 @@
         margin-left: 2rem;
     }
     .profile-img{
-        height: 20rem;
+        height: 25rem;
     }
     .dentist-info__title{
-        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+    .about-contact h2{
+        margin-top: 0;
+        padding-top: 1rem;
     }
     .about-contact h2,
     .dentist-info__title h2{
@@ -153,7 +158,6 @@
         position: static;
     }
     .about-contact h2{
-        margin-top: 1rem;
         font-size: 16px;
         font-size: 550;
     }
