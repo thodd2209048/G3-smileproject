@@ -138,9 +138,17 @@
         display: flex;
         align-items: center;
     }
+    .contact-lists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
     .about-contact h2{
-        margin-top: 0;
+        text-align: center;
         padding-top: 1rem;
+    }
+    .contact-item{
+        margin-left: 0;
     }
     .about-contact h2,
     .dentist-info__title h2{
@@ -171,6 +179,19 @@
         font-size: 18px;
         font-weight: 550;
     }
+    .contact-lists{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        }
+        .about-contact h2{
+            text-align: center;
+            padding-top: 1rem;
+        }
+        .contact-item{
+            margin-left: 0;
+        }
     .personal-info__item-title p,
     .personal-info__item-content p,
     .career-info__content p,
