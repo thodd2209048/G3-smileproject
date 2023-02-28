@@ -38,27 +38,27 @@
 
     <div class="top-news container">
       <div class="row">
-        <div class="featured">
+        <a class="highlight" href={{highlightArticle.link}}>
           <div class="img-placeholder">
-            <a href={{highlightArticle.link}}> <img ng-src={{highlightArticle.img}} alt=""></a>
+            <img ng-src={{highlightArticle.img}} alt="">
           </div>
           <div class="card-content">
-            <a href={{highlightArticle.link}} class="card__title">
-              <h2 class="card__title-text" href="#">{{highlightArticle.title}}</h2>
-            </a>
+            <div class="card__title">
+              <h5 class="card__title-text" href="#">{{highlightArticle.title}}</h5>
+            </div>
             <div class="card__byline-block">
               <span class="card__byline">By {{highlightArticle.author}}</span>
             </div>
             <p>{{highlightArticle.des}}</p>
           </div>
 
-        </div>
+        </a>
         <div class="top-news__latest-news">
           <h2 class="latest-news__title">Latest news</h2>
           <div class="card-list">
-            <a ng-repeat="article in notHighlightArticles|limitTo: 4" href={{article.link}} class="card-list-item">
+            <a ng-repeat="article in notHighlightArticles|limitTo: 5" href={{article.link}} class="card-list-item">
               <div class="card__content">
-                <span class="card__title">{{article.title}}</span>
+                <h4 class="card__content-title">{{article.title}}</h4>
                 <div class="card__byline">
                   <div class="card__time-stamp">
                     <span class="card__byline-text">{{article.date}}</span>
@@ -104,15 +104,16 @@
       <div class="section__title">
         <h2>PATIENT EDUCATION</h2>
         <div class="see-more">
-          <a href="" class="see-more-link">View all <i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a href="/pages/patientEdu/patientEdu.html" class="see-more-link">View all <i
+              class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
       </div>
       <ul class="patient-edu__lists">
         <li ng-repeat="article in patientEduArticles|limitTo: 4" class="patient-edu__item">
           <a class="patient-edu__item-link" href={{article.link}}>
-
-            <img class="patient-edu__item-pic-img" ng-src={{article.img}} alt="">
-
+            <div class="patient-edu__item-pic">
+              <img class="patient-edu__item-pic-img" ng-src={{article.img}} alt="">
+            </div>
             <div class="patient-edu__item-text">
               <div class="patient-edu__item-title">{{article.title}}</div>
               <div class="patient-edu__item-content">{{article.des}}</div>
@@ -126,7 +127,8 @@
       <div class="section__title">
         <h2>PRO-EDU</h2>
         <div class="see-more">
-          <a href="" class="see-more-link">View all <i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a href="/pages/Professional-edu/pro-courses.html" class="see-more-link">View all <i
+              class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
       </div>
       <ul class="pro-edu__list">
@@ -169,7 +171,8 @@
       <div class="section__title">
         <h2>RESEARCH</h2>
         <div class="see-more">
-          <a href="" class="see-more-link">View all <i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a href="/pages/research/research.html" class="see-more-link">View all <i
+              class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
       </div>
       <div class="research-tags">

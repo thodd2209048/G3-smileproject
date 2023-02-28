@@ -48,25 +48,43 @@
   column-gap: 2rem;
 }
 
-.top-news .row img {
-  width: 100%;
-  height: auto;
-  border-radius: var(--border-radius-big);
-}
-
-.top-news .featured {
+.highlight {
   grid-area: featured;
 }
 
-.card__title {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: black;
+.highlight .img-placeholder {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 400px;
+  border-radius: var(--border-radius-big);
 }
 
-.card__title:hover {
+.highlight img {
+  max-width: 100%;
+  /* width: 100%; */
+  height: 100%;
+  border-radius: var(--border-radius-big);
+  object-fit: cover;
+}
+
+.highlight:hover .card__title-text {
   color: var(--color1);
-  text-decoration: underline;
+}
+
+.highlight:hover img {
+  transform: scale(1.03);
+  transition: 0.5s ease;
+}
+
+.card-content {
+  margin-top: 10px;
+}
+
+.card__title {
+  font-size: 2em;
+  margin-bottom: 0.5rem;
+  color: black;
 }
 
 .card__byline {
@@ -105,12 +123,8 @@
   padding-top: 1.5rem;
 }
 
-.card__title {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 1.375rem;
+.card-list-item:hover .card__content-title {
+  color: var(--color1);
 }
 
 .card__title-text {
@@ -122,7 +136,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  height: 1.2em;
+  height: 1.4em;
   overflow: hidden;
 }
 
@@ -229,35 +243,46 @@
 .patient-edu__lists {
   margin-top: 1rem;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2em;
 }
 
 .patient-edu__item {
-  display: flex;
   position: relative;
-  width: calc(50% - 15px);
   margin: 1.5rem 0;
 }
 
 .patient-edu__item-link {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  column-gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.patient-edu__item-pic {
   display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--border-radius-small);
+  /* height: 100%; */
+}
+
+.patient-edu__item-pic-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-small);
 }
 
 .patient-edu__item-link:hover .patient-edu__item-title {
   color: var(--color3);
-  opacity: 0.8;
 }
 
-.patient-edu__item-link:hover {
-  opacity: 0.7;
-}
-
-.patient-edu__item-pic-img {
-  max-width: 50%;
-  object-fit: cover;
-  border-radius: var(--border-radius-small);
+.patient-edu__item-link:hover .patient-edu__item-pic-img {
+  transform: scale(1.05);
+  transition: 0.5s ease;
 }
 
 .patient-edu__item-text {
@@ -273,7 +298,7 @@
 }
 
 .patient-edu__item-content {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   margin-top: 1.5rem;
 }
 
@@ -373,7 +398,7 @@
 
 .research-list {
   padding: 10px 0;
-  height: 400px;
+  height: 408px;
   overflow: hidden;
 }
 
@@ -474,9 +499,9 @@
   }
 
   .card__title-text {
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-weight: 600;
-    line-height: 0.5;
+    line-height: 1.5em;
   }
 
   .pro-edu__list {
