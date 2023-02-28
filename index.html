@@ -40,82 +40,31 @@
       <div class="row">
         <div class="featured">
           <div class="img-placeholder">
-            <a href="#"> <img
-                src="https://www.health.com/thmb/EyqqXVwWpoV3m1va6gLZ2IupoPk=/1000x666/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Health-GettyImages-1246598739-42ac91710db04afa9d905faeeef3514a.jpg"
-                alt=""></a>
+            <a href={{highlightArticle.link}}> <img src={{highlightArticle.img}} alt=""></a>
           </div>
           <div class="card-content">
-            <a href="#" class="card__title">
-              <span class="card__title-text" href="#">Why You Shouldn't Use Tap Water in Humidifiers, Neti Pots, or
-                Other
-                Home
-                Medical Devices</span>
+            <a href={{highlightArticle.link}} class="card__title">
+              <h2 class="card__title-text" href="#">{{highlightArticle.title}}</h2>
             </a>
             <div class="card__byline-block">
-              <span class="card__byline">By Kaitlin Sullivan</span>
+              <span class="card__byline">By {{highlightArticle.author}}</span>
             </div>
+            <p>{{highlightArticle.des}}</p>
           </div>
 
         </div>
         <div class="top-news__latest-news">
           <h2 class="latest-news__title">Latest news</h2>
           <div class="card-list">
-            <a href="#" class="card-list-item">
+            <a ng-repeat="article in notHighlightArticles|limitTo: 4" href={{article.link}} class="card-list-item">
               <div class="card__content">
-                <span class="card__title">EzriCare Eye Drops Recalled as CDC Investigates Link to Drug-Resistant
-                  Bacterial
-                  Infections</span>
+                <span class="card__title">{{article.title}}</span>
                 <div class="card__byline">
                   <div class="card__time-stamp">
-                    <span class="card__byline-text">2 days ago</span>
+                    <span class="card__byline-text">{{article.date}}</span>
                   </div>
                   <div class="card__author">
-                    <span class="card__byline-text">By Julia Landwehr</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="card-list-item">
-              <div class="card__content">
-                <span class="card__title">EzriCare Eye Drops Recalled as CDC Investigates Link to Drug-Resistant
-                  Bacterial
-                  Infections</span>
-                <div class="card__byline">
-                  <div class="card__time-stamp">
-                    <span class="card__byline-text">2 days ago</span>
-                  </div>
-                  <div class="card__author">
-                    <span class="card__byline-text">By Julia Landwehr</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="card-list-item">
-              <div class="card__content">
-                <span class="card__title">EzriCare Eye Drops Recalled as CDC Investigates Link to Drug-Resistant
-                  Bacterial
-                  Infections</span>
-                <div class="card__byline">
-                  <div class="card__time-stamp">
-                    <span class="card__byline-text">2 days ago</span>
-                  </div>
-                  <div class="card__author">
-                    <span class="card__byline-text">By Julia Landwehr</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="card-list-item">
-              <div class="card__content">
-                <span class="card__title">EzriCare Eye Drops Recalled as CDC Investigates Link to Drug-Resistant
-                  Bacterial
-                  Infections</span>
-                <div class="card__byline">
-                  <div class="card__time-stamp">
-                    <span class="card__byline-text">2 days ago</span>
-                  </div>
-                  <div class="card__author">
-                    <span class="card__byline-text">By Julia Landwehr</span>
+                    <span class="card__byline-text">By {{article.author}}</span>
                   </div>
                 </div>
               </div>
@@ -153,78 +102,23 @@
 
     <div class="patient-edu container">
       <div class="section__title">
-        <h2>patient-edu</h2>
+        <h2>PATIENT EDUCATION</h2>
         <div class="see-more">
           <a href="" class="see-more-link">View all <i class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
       </div>
       <ul class="patient-edu__lists">
-        <li class="patient-edu__item">
-          <a class="patient-edu__item-link" href="">
+        <li ng-repeat="article in patientEduArticles|limitTo: 4" class="patient-edu__item">
+          <a class="patient-edu__item-link" href={{article.link}}>
 
-            <img class="patient-edu__item-pic-img"
-              src="https://post.healthline.com/wp-content/uploads/2023/02/child-backpack-rearview-1296x728-header-1296x729.jpg"
-              alt="" />
+            <img class="patient-edu__item-pic-img" src={{article.img}} alt="">
 
             <div class="patient-edu__item-text">
-
-              <div class="patient-edu__item-title">How Poverty, Stress, and Trauma Can Change the Brain Structure in
-                Children
-              </div>
-
-              <div class="patient-edu__item-content">Racial inequities can produce stressors that can lead to changes
-                in
-                brain structure.
-              </div>
+              <div class="patient-edu__item-title">{{article.title}}</div>
+              <div class="patient-edu__item-content">{{article.des}}</div>
             </div>
           </a>
         </li>
-        <li class="patient-edu__item">
-          <a class="patient-edu__item-link" href="#">
-
-            <img class="patient-edu__item-pic-img"
-              src="https://post.healthline.com/wp-content/uploads/2021/01/Male_Heartburn_1296x728-header-1296x729.jpg"
-              alt="">
-
-            <div class="patient-edu__item-text">
-              <div class="patient-edu__item-title">The Difference Between Heartburn and Indigestion</div>
-              <div class="patient-edu__item-content">Heartburn and indigestion are common gastrointestinal (GI) problems
-                that are often discussed interchangeably. While they may occasionally occur at the same time, these are
-                considered separate GI issues.</div>
-            </div>
-          </a>
-        </li>
-        <li class="patient-edu__item">
-          <a class="patient-edu__item-link" href="#">
-
-            <img class="patient-edu__item-pic-img"
-              src="https://post.healthline.com/wp-content/uploads/2023/02/child-backpack-rearview-1296x728-header-1296x729.jpg"
-              alt="">
-
-            <div class="patient-edu__item-text">
-              <div class="patient-edu__item-title">How Poverty, Stress, and Trauma Can Change the Brain Structure in
-                Children</div>
-              <div class="patient-edu__item-content">Racial inequities can produce stressors that can lead to changes in
-                brain structure.</div>
-            </div>
-          </a>
-        </li>
-        <li class="patient-edu__item">
-          <a class="patient-edu__item-link" href="#">
-
-            <img class="patient-edu__item-pic-img"
-              src="https://www.health.com/thmb/ptfCfaDE2xeh-H4sJ9Im-gN_vBk=/500x333/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-2408821-56d35af23df78cfb37d2da23.jpg"
-              alt="">
-
-            <div class="patient-edu__item-text">
-              <div class="patient-edu__item-title">How Poverty, Stress, and Trauma Can Change the Brain Structure in
-                Children</div>
-              <div class="patient-edu__item-content">Racial inequities can produce stressors that can lead to changes in
-                brain structure.</div>
-            </div>
-          </a>
-        </li>
-
       </ul>
     </div>
 

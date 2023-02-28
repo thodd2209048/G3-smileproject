@@ -113,8 +113,17 @@
   line-height: 1.375rem;
 }
 
+.card__title-text {
+  line-height: 1.5em;
+}
+
 .card__byline {
   display: inline;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  height: 1.2em;
+  overflow: hidden;
 }
 
 .card__time-stamp {

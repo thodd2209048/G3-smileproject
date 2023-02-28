@@ -1,5 +1,6 @@
 const articles = [
   {
+    id: 1,
     date: '2013-01-13',
     title:
       'Validation of data mining models by comparing with conventional methods for dental age estimation in Korean juveniles and young adults',
@@ -11,6 +12,7 @@ const articles = [
     link: '/pages/research-article/article-0001/article-0001.html',
   },
   {
+    id: 2,
     date: '2022-10-14',
     title: 'Diagnostic performance of convolutional neural networks for dental sexual dimorphism',
     subject: 'research',
@@ -22,6 +24,7 @@ const articles = [
     link: '/pages/research-article/article-0002/article-0002.html',
   },
   {
+    id: 3,
     date: '2023-01-13',
     title:
       'Boosting algorithm improves the accuracy of juvenile forensic dental age estimation in southern China population',
@@ -34,6 +37,7 @@ const articles = [
   },
 
   {
+    id: 4,
     date: '2021-08-17',
     title:
       'Population affinity and variation of sexual dimorphism in three-dimensional facial forms: comparisons between Turkish and Japanese populations',
@@ -44,8 +48,9 @@ const articles = [
     author: 'Akiko Kumagai, Seoi Jeong, Daeyoun Kim, Hyoun-Joong Kong, Sehyun Oh & Sang-Seob Lee',
     link: '/pages/research-article/article-0004/article-0001.html',
   },
-  // FAKE
+
   {
+    id: 5,
     date: '2023-01-13',
     title: 'The use of anterior gold basket crowns among remote Amazonian communities',
     subject: 'research',
@@ -56,6 +61,7 @@ const articles = [
     link: '/pages/research-article/article-0005/article-0001.html',
   },
   {
+    id: 6,
     date: '2023-01-13',
     title:
       'The reciprocal jaw-muscle reflexes elicited by anterior- and back-tooth-contacts—a perspective to explain the control of the masticatory muscles',
@@ -67,6 +73,7 @@ const articles = [
     link: '/pages/research-article/article-0006/article-0001.html',
   },
   {
+    id: 7,
     date: '2023-01-13',
     title: 'Case report: A medieval case of molar-incisor-hypomineralisation',
     subject: 'research',
@@ -77,6 +84,7 @@ const articles = [
     link: '/pages/research-article/article-0007/article-0001.html',
   },
   {
+    id: 8,
     date: '2017-11-24',
     title: 'Teeth as pearls of wisdom',
     subject: 'research',
@@ -87,6 +95,7 @@ const articles = [
     link: '/pages/research-article/article-0008/article-0001.html',
   },
   {
+    id: 9,
     date: '2017-11-24',
     title:
       'Upper anterior tooth dimensions in a young-adult Indian population in the UK: implications for aesthetic dentistry',
@@ -98,6 +107,7 @@ const articles = [
     link: '/pages/research-article/article-0009/article-0001.html',
   },
   {
+    id: 10,
     date: '2015-06-26',
     title: 'Reduction of temporomandibular joint dislocation: an ancient technique that has stood the test of time',
     subject: 'research',
@@ -108,6 +118,7 @@ const articles = [
     link: '/pages/research-article/article-0010/article-0001.html',
   },
   {
+    id: 11,
     date: '2023-01-13',
     title:
       'A highly elastic absorbable monofilament suture fabricated from poly(3-hydroxybutyrate-co-4-hydroxybutyrate)',
@@ -119,6 +130,7 @@ const articles = [
     link: '/pages/research-article/article-0011/article-0001.html',
   },
   {
+    id: 12,
     date: '2023-02-25',
     title: 'Effects of tongue right positioner use on tongue pressure: a pilot study',
     subject: 'research',
@@ -130,6 +142,7 @@ const articles = [
     link: '/pages/research-article/article-0012/article-0001.html',
   },
   {
+    id: 13,
     date: '2021-05-05',
     title: 'Does Vitamin C and Caffeine Affect Local Anesthesia Before a Dental Procedure?',
     subject: 'patientEdu',
@@ -140,6 +153,7 @@ const articles = [
     link: '/pages/patientedu-article/article-0002/patientedu-0001.html',
   },
   {
+    id: 14,
     date: '2022-12-22',
     title: 'You May One Day Listen With Your Mouth',
     subject: 'patientEdu',
@@ -150,6 +164,7 @@ const articles = [
     link: '/pages/patientedu-article/article-0001/patientedu-0001.html',
   },
   {
+    id: 15,
     date: '2022-08-17',
     title: 'What Are Salivary Stones—Sialoliths?',
     subject: 'patientEdu',
@@ -160,6 +175,7 @@ const articles = [
     link: '/pages/patientedu-article/article-0001/patientedu-0001.html',
   },
   {
+    id: 16,
     date: '2023-02-11',
     title: '13 Reasons Your Tooth Hurts',
     subject: 'patientEdu',
@@ -170,6 +186,7 @@ const articles = [
     link: '/pages/patientedu-article/article-0004/patientedu-0001.html',
   },
   {
+    id: 17,
     date: '2023-11-06',
     title: 'The 10 Best Mouthwashes of 2023',
     subject: 'patientEdu',
@@ -180,6 +197,7 @@ const articles = [
     link: '/pages/patientedu-article/article-0005/patientedu-0001.html',
   },
   {
+    id: 18,
     date: '2022-11-14',
     title: 'What Causes a White Tongue? Here’s What Dentists Want You To Know',
     subject: 'patientEdu',
@@ -190,6 +208,7 @@ const articles = [
     link: '/pages/patientedu-article/article-0006/patientedu-0001.html',
   },
   {
+    id: 19,
     date: '2023-01-20',
     title: 'What Is Palatal Petechiae?',
     subject: 'patientEdu',
@@ -200,6 +219,7 @@ const articles = [
     link: '/pages/patientedu-article/article-0007/patientedu-0001.html',
   },
   {
+    id: 20,
     date: '2021-01-11',
     title: 'Searing Toothache Misdiagnosed by Doctors, Turns Out to Be Cancer',
     subject: 'patientEdu',
@@ -210,6 +230,7 @@ const articles = [
     link: '/pages/patientedu-article/article-0008/patientedu-0001.html',
   },
   {
+    id: 21,
     date: '2020-01-08',
     title: "Black Hairy Tongue Is a Legitimate Condition–but It's Not as Scary as It Looks",
     subject: 'patientEdu',
@@ -220,6 +241,7 @@ const articles = [
     link: '/pages/patientedu-article/article-0009/patientedu-0001.html',
   },
   {
+    id: 22,
     date: '2018-05-02',
     title: 'Why Your Breath Might Start to Smell Worse as You Get Older',
     subject: 'patientEdu',
