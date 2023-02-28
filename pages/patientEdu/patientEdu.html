@@ -44,7 +44,7 @@
       <div class="patient-edu__card-list">
         <a ng-repeat="article in filteredArticle | orderBy:'-date' | limitTo: pageSize : (currentPage - 1) * pageSize"
           href={{article.link}} class="patient-edu__card">
-          <img src={{article.img}} />
+          <img ng-src={{article.img}} />
           <span class="patient-edu__card-tag">{{article.tag}}</span>
           <div class="patient-edu__card-content">
             <h4>{{article.title}}</h4>
