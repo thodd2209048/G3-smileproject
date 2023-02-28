@@ -37,7 +37,7 @@
 
 
 .content-element {
-    margin-bottom: 70px;
+    margin-bottom: 6vw;
 }
 
 .list-card-rcm {
@@ -47,7 +47,7 @@
   }
 
   .list-card-2 {
-    padding-top: 50px;
+    padding-top: 40px;
   }
   
   .card-rcm {
@@ -64,7 +64,9 @@
     /* border: 1px solid var(--color3); */
     /* margin-right: 2vw; */
     margin: 0 1vw;
-    border: 0.5px solid #0f55a6;
+    /* border: 0.5px solid #0f55a6; */
+    box-shadow: 5px 5px 10px 0 rgba(15, 85, 166, 0.75);
+  border: 1px solid transparent;
   }
   
   .card-info_rcm {
@@ -112,9 +114,18 @@
       border: 2px solid var(--color3); */
      /* border: 0.5px solid #0f55a6;
     box-shadow: 5px 5px 25px 0px #0f55a6;  */
+
     transition: all 0.3s ease-in-out;
-    box-shadow: 5px 5px 25px 0px #0f55a6;
-    transform: scale(0.9);
+    border: 0.5px solid #0f55a6;
+    box-shadow: 5px 5px 15px 0px #0f55a6;
+    
+    /* box-shadow: 5px 5px 25px 0px #0f55a6; */
+    /* transform: scale(0.9); */
+  }
+
+  .glider.draggable {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
   }
 
   
@@ -128,6 +139,7 @@
     .card-rcm {
       width: 100%;
       margin-bottom: 30px;
+      margin-right: 2vw;
     }
 
     .banner-content {
