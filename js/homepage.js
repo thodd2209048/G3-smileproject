@@ -29,7 +29,6 @@ homepageApp.controller('homepageAppCtrl', function ($scope) {
     }
   });
 
-  console.log('patientEduArticles', $scope.patientEduArticles);
   // TAG
   $scope.researchArticles.forEach((article) => {
     tagCounts[article.tag] ? tagCounts[article.tag]++ : (tagCounts[article.tag] = 1);
