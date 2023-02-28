@@ -40,7 +40,7 @@
       <div class="row">
         <div class="featured">
           <div class="img-placeholder">
-            <a href={{highlightArticle.link}}> <img src={{highlightArticle.img}} alt=""></a>
+            <a href={{highlightArticle.link}}> <img ng-src={{highlightArticle.img}} alt=""></a>
           </div>
           <div class="card-content">
             <a href={{highlightArticle.link}} class="card__title">
@@ -111,7 +111,7 @@
         <li ng-repeat="article in patientEduArticles|limitTo: 4" class="patient-edu__item">
           <a class="patient-edu__item-link" href={{article.link}}>
 
-            <img class="patient-edu__item-pic-img" src={{article.img}} alt="">
+            <img class="patient-edu__item-pic-img" ng-src={{article.img}} alt="">
 
             <div class="patient-edu__item-text">
               <div class="patient-edu__item-title">{{article.title}}</div>
@@ -180,7 +180,7 @@
       <div class="research-lists">
         <a ng-repeat="article in researchArticles| orderBy:'-date' | limitTo:3" class="research-list"
           href={{article.link}}>
-          <img src={{article.img}} alt={{article.title}} />
+          <img ng-src={{article.img}} alt={{article.title}} />
           <h3 class="research-lists__item-title">{{article.title}}</h3>
           <p class="research-lists__item-content">{{article.des}}</p>
         </a>
