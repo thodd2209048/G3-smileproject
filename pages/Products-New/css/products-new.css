@@ -27,6 +27,7 @@
 
 .content-header {
     color: var(--color3);
+    padding-top: 2vw;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--color3);
 }
