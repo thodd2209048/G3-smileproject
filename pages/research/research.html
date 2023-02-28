@@ -33,7 +33,7 @@
     <h1 class="patient-edu__title">Research</h1>
     <ul class="tag-list">
       <li class="tag-btn" ng-click="handleFilter('')" ng-class="{activeTag: selectedTag === ''}">All</li>
-      <li class="tag-btn" ng-repeat="tag in tagArray" ng-click="handleFilter(tag.tag)"
+      <li class="tag-btn" ng-repeat="tag in tagArray | orderBy:'-count'" ng-click="handleFilter(tag.tag)"
         ng-class="{activeTag: selectedTag === tag.tag}">{{tag.tag}}</li>
     </ul>
 
@@ -42,9 +42,10 @@
         <h2>Latest research</h2>
       </div>
       <ul class="patient-edu__card-list">
-        <a href={{article.link}} ng-repeat="article in filteredArticles| limitTo: pageSize :(currentPage -1) * pageSize"
+        <a href={{article.link}}
+          ng-repeat="article in filteredArticles| orderBy : '-date' | limitTo: pageSize :(currentPage -1) * pageSize"
           class="patient-edu__card ">
-          <img src={{article.img}} alt="">
+          <img ng-src={{article.img}} alt="">
           <div class="patient-edu__card-content">
             <span class="patient-edu__card-tag">{{article.tag}}</span>
             <h4>{{article.title}}</h4>
