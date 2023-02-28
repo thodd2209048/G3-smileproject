@@ -279,8 +279,9 @@
         </div>
       </div>
       <div class="research-tags">
-        <a ng-repeat="tag in tagArray | orderBy : '-count'" href="/pages/research/research.html"
-          class="button">{{tag.tag}}</a>
+        <a ng-repeat="tag in tagArray | orderBy : '-count'" ng-click="saveFilterValue(tag.tag)"
+          href="/pages/research/research.html" class="button">
+          {{tag.tag}}</a>
       </div>
       <div class="research-lists">
         <a ng-repeat="article in researchArticles| orderBy:'-date' | limitTo:3" class="research-list"

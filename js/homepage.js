@@ -19,4 +19,9 @@ homepageApp.controller('homepageAppCtrl', function ($scope) {
   for (const [tag, count] of Object.entries(tagCounts)) {
     $scope.tagArray.push({ tag, count });
   }
+
+  // save filter value to localstorage
+  $scope.saveFilterValue = (tagName) => {
+    localStorage.setItem('filterValue', tagName);
+  };
 });

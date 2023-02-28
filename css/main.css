@@ -364,7 +364,8 @@
 
 .research-list {
   padding: 10px 0;
-  /* height: 400px; */
+  height: 400px;
+  overflow: hidden;
 }
 
 .research-lists a {
@@ -389,13 +390,6 @@
 .research-lists__item-title {
   padding: 1rem 0 0;
   margin-bottom: 0.5rem;
-}
-
-.research-lists__item-content {
-  font-size: 0.9rem;
-  /* overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; */
 }
 
 /* Tablet and mobile: width <1024px  */

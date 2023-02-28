@@ -13,12 +13,13 @@
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/header.css" />
   <link rel="stylesheet" href="/css/footer.css" />
-  <link rel="stylesheet" href="./css/research.css">
+  <link rel="stylesheet" href="./css/patientEdu.css">
 
   <link rel="icon" href="/public/images/favicon.jpg">
 
   <script src="/js/header-footer.js"></script>
-
+  <script src="patientEdu.js"></script>
+  <script src="/js/data.js"></script>
   <title>News</title>
 </head>
 
@@ -26,94 +27,38 @@
 <body>
   <div id="includeHeader"></div>
 
-  <main class="container patient-edu-main">
+  <main class="container patient-edu-main" ng-controller="patientEduCtrl" id="patientEduApp">
 
     <h1 class="patient-edu__title">News</h1>
-    <div class="tag-list">
-      <a href="" class="tag-btn">Biomaterials</a>
-      <a href="" class="tag-btn">Teledentistry</a>
-      <a href="" class="tag-btn">Cosmetic dentistry</a>
-      <a href="" class="tag-btn">Endodontics</a>
-      <a href="" class="tag-btn">Periodontics</a>
-      <a href="" class="tag-btn">Prosthodontics</a>
-      <a href="" class="tag-btn">Orthodontics</a>
-      <a href="" class="tag-btn">Oral and maxillofacial surgery</a>
-      <a href="" class="tag-btn">Pediatric dentistry</a>
-      <a href="" class="tag-btn">Geriatric dentistry</a>
-    </div>
+    <ul class="tag-list">
+      <li class="tag-btn" ng-click="handleFilter('')" ng-class="{activeTag: filterValue === ''}">All</li>
+      <li class="tag-btn" ng-repeat="tag in tagArray | orderBy:'-count'" ng-click="handleFilter(tag.tag)"
+        ng-class="{activeTag: filterValue === tag.tag}">{{tag.tag}}
+      </li>
+    </ul>
 
     <section class="patient-edu__card-latest-news">
       <div class="patient-edu__card-latest-news-title">
         <h2>Latest news</h2>
       </div>
       <div class="patient-edu__card-list">
-        <a href="#" class="patient-edu__card">
-          <img src="./public/clinical-trials-cropped.jpg" alt="">
+        <a ng-repeat="article in filteredArticle | orderBy:'-date' | limitTo: pageSize : (currentPage - 1) * pageSize"
+          href={{article.link}} class="patient-edu__card">
+          <img src={{article.img}} />
+          <span class="patient-edu__card-tag">{{article.tag}}</span>
           <div class="patient-edu__card-content">
-            <h4>Why should I participate in a clinical trial?</h4>
-            <p>It’s your involvement that helps researchers to ultimately uncover better ways to treat, prevent,
-              diagnose and understand human disease.</p>
-          </div>
-        </a>
-        <a href="#" class="patient-edu__card">
-          <img src="./public/clinical-trials-cropped.jpg" alt="">
-          <div class="patient-edu__card-content">
-            <h4>Why should I participate in a clinical trial?</h4>
-            <p>It’s your involvement that helps researchers to ultimately uncover better ways to treat, prevent,
-              diagnose and understand human disease.</p>
-          </div>
-        </a> <a href="#" class="patient-edu__card">
-          <img src="./public/clinical-trials-cropped.jpg" alt="">
-          <div class="patient-edu__card-content">
-            <h4>Why should I participate in a clinical trial?</h4>
-            <p>It’s your involvement that helps researchers to ultimately uncover better ways to treat, prevent,
-              diagnose and understand human disease.</p>
-          </div>
-        </a> <a href="#" class="patient-edu__card">
-          <img src="./public/clinical-trials-cropped.jpg" alt="">
-          <div class="patient-edu__card-content">
-            <h4>Why should I participate in a clinical trial?</h4>
-            <p>It’s your involvement that helps researchers to ultimately uncover better ways to treat, prevent,
-              diagnose and understand human disease.</p>
-          </div>
-        </a> <a href="#" class="patient-edu__card">
-          <img src="./public/clinical-trials-cropped.jpg" alt="">
-          <div class="patient-edu__card-content">
-            <h4>Why should I participate in a clinical trial?</h4>
-            <p>It’s your involvement that helps researchers to ultimately uncover better ways to treat, prevent,
-              diagnose and understand human disease.</p>
-          </div>
-        </a> <a href="#" class="patient-edu__card">
-          <img src="./public/clinical-trials-cropped.jpg" alt="">
-          <div class="patient-edu__card-content">
-            <h4>Why should I participate in a clinical trial?</h4>
-            <p>It’s your involvement that helps researchers to ultimately uncover better ways to treat, prevent,
-              diagnose and understand human disease.</p>
-          </div>
-        </a> <a href="#" class="patient-edu__card">
-          <img src="./public/clinical-trials-cropped.jpg" alt="">
-          <div class="patient-edu__card-content">
-            <h4>Why should I participate in a clinical trial?</h4>
-            <p>It’s your involvement that helps researchers to ultimately uncover better ways to treat, prevent,
-              diagnose and understand human disease.</p>
-          </div>
-        </a> <a href="#" class="patient-edu__card">
-          <img src="./public/clinical-trials-cropped.jpg" alt="">
-          <div class="patient-edu__card-content">
-            <h4>Why should I participate in a clinical trial?</h4>
-            <p>It’s your involvement that helps researchers to ultimately uncover better ways to treat, prevent,
-              diagnose and understand human disease.</p>
-          </div>
-        </a> <a href="#" class="patient-edu__card">
-          <img src="./public/clinical-trials-cropped.jpg" alt="">
-          <div class="patient-edu__card-content">
-            <h4>Why should I participate in a clinical trial?</h4>
-            <p>It’s your involvement that helps researchers to ultimately uncover better ways to treat, prevent,
-              diagnose and understand human disease.</p>
+            <h4>{{article.title}}</h4>
+            <p>{{article.des}}</p>
           </div>
         </a>
       </div>
-
+      <div class="movePage-wrapper">
+        <button class="movePage-btn" ng-disabled="currentPage == 1"
+          ng-click="currentPage = currentPage - 1">Prev</button>
+        <span class="movePage-pageOf">Page {{currentPage}} of {{numberOfPages}}</span>
+        <button class="movePage-btn" ng-disabled="currentPage == numberOfPages"
+          ng-click="currentPage = currentPage + 1">Next</button>
+      </div>
     </section>
 
 
@@ -122,5 +67,8 @@
   <div id="includeFooter"></div>
 </body>
 <script src="/js/include.js"></script>
+<script type="text/javascript">
+  angular.bootstrap(document.getElementById('patientEduApp'), ['PatientEduApp'])
+</script>
 
 </html>
