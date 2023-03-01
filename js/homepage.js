@@ -67,7 +67,7 @@ homepageApp.controller('homepageAppCtrl', function ($scope, $interval) {
   };
 
   $scope.counterItemShow = false;
-  $scope.scrollPosition = 350;
+  $scope.scrollPosition = 400;
   $scope.onScroll = function () {
     var currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
     $scope.counterItemShow = currentScrollPosition >= $scope.scrollPosition;
