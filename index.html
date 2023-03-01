@@ -38,7 +38,7 @@
 
     <div class="top-news container">
       <div class="row">
-        <div class="featured">
+        <div class="highlightArticle">
           <div class="img-placeholder">
             <a href={{highlightArticle.link}}> <img ng-src={{highlightArticle.img}} alt=""></a>
           </div>
@@ -49,14 +49,14 @@
             <div class="card__byline-block">
               <span class="card__byline">By {{highlightArticle.author}}</span>
             </div>
-            <p>{{highlightArticle.des}}</p>
+            <p class="highlightArticle-des">{{highlightArticle.des}}</p>
           </div>
 
         </div>
         <div class="top-news__latest-news">
           <h2 class="latest-news__title">Latest news</h2>
           <div class="card-list">
-            <a ng-repeat="article in notHighlightArticles|limitTo: 4" href={{article.link}} class="card-list-item">
+            <a ng-repeat="article in notHighlightArticles|limitTo: 5" href={{article.link}} class="card-list-item">
               <div class="card__content">
                 <span class="card__title">{{article.title}}</span>
                 <div class="card__byline">
@@ -104,7 +104,8 @@
       <div class="section__title">
         <h2>PATIENT EDUCATION</h2>
         <div class="see-more">
-          <a href="" class="see-more-link">View all <i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a href="/pages/patientEdu/patientEdu.html" class="see-more-link">View all <i
+              class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
       </div>
       <ul class="patient-edu__lists">
@@ -126,7 +127,7 @@
       <div class="section__title">
         <h2>PRO-EDU</h2>
         <div class="see-more">
-          <a href="" class="see-more-link">View all <i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a href="" class="see-more-link">View allXXX <i class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
       </div>
       <ul class="pro-edu__list">
