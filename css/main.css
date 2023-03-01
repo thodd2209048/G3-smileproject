@@ -247,11 +247,10 @@
 
 .patient-edu__item-link:hover .patient-edu__item-title {
   color: var(--color3);
-  opacity: 0.8;
 }
 
-.patient-edu__item-link:hover {
-  opacity: 0.7;
+.patient-edu__item-link:hover img {
+  opacity: 0.8;
 }
 
 .patient-edu__item-pic-img {
