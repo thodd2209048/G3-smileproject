@@ -100,6 +100,48 @@
       </div>
     </div>
 
+    <!-- COUNT -->
+
+    <div class="counter container">
+      <div class="counter-item" ng-show="counterItemShow">
+        <div class="counter-img">
+          <i class="fa-solid fa-newspaper"></i>
+        </div>
+        <div class="counter-number">
+          <p>{{counterArticle| number:0}}</p>
+        </div>
+        <div class="counter-measure">
+          Articles
+        </div>
+      </div>
+      <div class="counter-item" ng-show="counterItemShow">
+
+        <div class="counter-img">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <div class="counter-number">
+          <p>{{counterUser | number:0}}</p>
+        </div>
+        <div class="counter-measure">
+          Users
+        </div>
+      </div>
+      <div class="counter-item" ng-show="counterItemShow">
+
+        <div class="counter-img">
+          <i class="fa-solid fa-user-doctor"></i>
+        </div>
+        <div class="counter-number">
+          <p>{{counterDoctor | number:0}}</p>
+        </div>
+        <div class="counter-measure">
+          Doctors
+        </div>
+      </div>
+
+
+    </div>
+
     <div class="patient-edu container">
       <div class="section__title">
         <h2>PATIENT EDUCATION</h2>
