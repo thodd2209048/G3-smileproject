@@ -2,3 +2,9 @@
     background: url(./public/product-banner-element.png);
     
 }
+
+.desc-img {
+    background: url(../public-item/io8-card-fix.png);
+    background-size: cover;
+  background-position: center center;
+}

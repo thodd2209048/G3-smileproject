@@ -2,3 +2,9 @@
     background: url(./public-003/product-banner-003.png);
     
 }
+
+.desc-img {
+    background: url(../public-item/electric03-fix.png);
+    background-size: cover;
+  background-position: center center;
+}

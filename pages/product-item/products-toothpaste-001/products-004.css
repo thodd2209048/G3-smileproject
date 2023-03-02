@@ -2,3 +2,9 @@
     background: url(./public-004/product-banner-004.png);
     
 }
+
+.desc-img {
+    background: url(../public-item/detoxify-fix.png);
+    background-size: cover;
+  background-position: center center;
+}

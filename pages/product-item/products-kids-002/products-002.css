@@ -2,3 +2,8 @@
     background: url(./public-002/product-banner-002.png);
     
 }
+.desc-img {
+    background: url(../public-item/junior6-fix.png);
+    background-size: cover;
+  background-position: center center;
+}
