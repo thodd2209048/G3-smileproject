@@ -73,26 +73,31 @@
         </div>
         <div class="promo">
           <div class="promo__video">
-            <video autoplay loop playsinline muted
-              src="https://www.health.com/thmb/WkfWoRLgvLMe_j0cz7PWEnWyATk=/1000x1000/filters:gifv(webm)/Health_WIWIK_HIV-cf9fd2d7c5554fd3a56fa4cb42e84c8e.gif"></video>
+            <!-- <video autoplay loop playsinline muted
+              src="https://www.health.com/thmb/WkfWoRLgvLMe_j0cz7PWEnWyATk=/1000x1000/filters:gifv(webm)/Health_WIWIK_HIV-cf9fd2d7c5554fd3a56fa4cb42e84c8e.gif">
+            </video> -->
+            <iframe src="https://www.youtube.com/embed/PwMeo4GAkNc?controls=0&amp;start=5&amp;autoplay=1&amp;mute=1"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
           </div>
           <div class="promo_title">
-            <span>
-              What I Wish I Knew About HIV
-            </span>
+            <a href="https://www.youtube.com/watch?v=PwMeo4GAkNc&ab_channel=Health">
+              6 Ways to Keep Your Smile Healthy
+            </a>
           </div>
         </div>
         <div class="trending-topics">
           <div class="trending-topics__title">Trending Helth Topics</div>
           <div class="trending-topics__tags">
-            <a href="#" class="button">
-              <span>Weight Loss Foods</span>
+            <a href="/pages/patientEdu/patientEdu.html" ng-click="saveFilterValue('symptom')" class="button">
+              <span>symptom</span>
             </a>
-            <a href="#" class="button">
-              <span>Weight Loss Foods</span>
+            <a href="/pages/patientEdu/patientEdu.html" ng-click="saveFilterValue('advice')" class="button">
+              <span>advice</span>
             </a>
-            <a href="#" class="button">
-              <span>Weight Loss Foods</span>
+            <a href="/pages/research/research.html" ng-click="saveFilterValue('data-mining')" class="button">
+              <span>data-mining</span>
             </a>
 
           </div>
@@ -212,7 +217,8 @@
       <div class="section__title">
         <h2>RESEARCH</h2>
         <div class="see-more">
-          <a href="" class="see-more-link">View all <i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a href="/pages/research/research.html" class="see-more-link">View all <i
+              class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
       </div>
       <div class="research-tags">

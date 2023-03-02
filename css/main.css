@@ -175,9 +175,9 @@
 .promo__video {
   display: flex;
 }
-.promo video {
+.promo iframe {
   width: 100%;
-  height: 100%;
+  height: 200px;
   border-top-left-radius: var(--border-radius-big);
   border-top-right-radius: var(--border-radius-big);
 }
@@ -194,10 +194,14 @@
   border-bottom-right-radius: var(--border-radius-big);
 }
 
-.promo_title span {
+.promo_title a {
   color: #fff;
   font-size: 1.375rem;
   line-height: 1.75rem;
+}
+
+.promo_title a:hover {
+  text-decoration: underline;
 }
 
 .trending-topics {
