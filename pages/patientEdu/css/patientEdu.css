@@ -24,6 +24,7 @@
   border: none;
   border-radius: 9999px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .tag-btn:hover,
@@ -56,11 +57,7 @@
   border-radius: var(--border-radius-small);
 }
 
-.patient-edu__card > img:hover {
-  opacity: 0.8;
-}
-
-.patient-edu__card > img:hover {
+.patient-edu__card:hover img {
   opacity: 0.8;
 }
 
@@ -80,10 +77,11 @@
   font-weight: 600;
   margin-bottom: 10px;
 }
-.patient-edu__card-content h4:hover {
-  color: var(--color1-hover);
-  opacity: 0.8;
+
+.patient-edu__card h4 {
+  color: var(--color1);
 }
+
 .patient-edu__card-content p {
   margin-top: 4px;
   font-size: 14px;
