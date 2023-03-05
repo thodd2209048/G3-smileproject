@@ -19,6 +19,12 @@
   font-size: 40px;
 }
 
+@media (max-width:720px) {
+  .product-banner {
+    display: none;
+  }
+}
+
 @media (max-width: 670px) {
   .banner-content {
     width: 65%;
@@ -82,12 +88,24 @@
   
 }
 .overview {
-  margin-top: 50px;
+  margin-top: 5vw;
   text-align: center;
   font-size: 30px;
   color: var(--color3);
 }
 
+
+/* item img */
+.item-img {
+  width: 100%;
+  text-align: center;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.item-img img {
+  width: 70%;
+}
 /* content */
 .product-content {
   margin-top: 50px;
