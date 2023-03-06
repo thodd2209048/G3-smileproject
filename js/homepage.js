@@ -1,5 +1,5 @@
 var homepageApp = angular.module('HomepageApp', []);
-homepageApp.controller('homepageAppCtrl', function ($scope) {
+homepageApp.controller('homepageAppCtrl', function ($scope, $interval) {
   $scope.articles = articles;
   $scope.researchArticles = [];
   $scope.patientEduArticles = [];
@@ -41,4 +41,41 @@ homepageApp.controller('homepageAppCtrl', function ($scope) {
   $scope.saveFilterValue = (tagName) => {
     localStorage.setItem('filterValue', tagName);
   };
+
+  // Counter
+  timeEffect = 1500;
+  endCountTime = 100;
+  countTime = 0;
+  $scope.counterArticle = 0;
+  $scope.counterUser = 0;
+  $scope.counterDoctor = 0;
+  runCounter = () => {
+    count = (endNumberArticle, endNumberUser, endNumberDoctor) => {
+      if (countTime == endCountTime) {
+        $interval.cancel(counter);
+      } else {
+        $scope.counterArticle += endNumberArticle / endCountTime;
+        $scope.counterUser += endNumberUser / endCountTime;
+        $scope.counterDoctor += endNumberDoctor / endCountTime;
+        countTime++;
+        // console.log($scope.counterArticle, $scope.counterUser, countTime);
+      }
+    };
+    counter = $interval(function () {
+      count(1050, 3519, 44);
+    }, timeEffect / endCountTime);
+  };
+
+  $scope.counterItemShow = false;
+  $scope.scrollPosition = 400;
+  $scope.onScroll = function () {
+    var currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    $scope.counterItemShow = currentScrollPosition >= $scope.scrollPosition;
+    if ($scope.counterItemShow) {
+      window.removeEventListener('scroll', $scope.onScroll);
+      runCounter();
+    }
+  };
+
+  window.addEventListener('scroll', $scope.onScroll);
 });

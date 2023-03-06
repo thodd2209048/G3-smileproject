@@ -66,7 +66,7 @@
   box-shadow: 0 2px 16px 0 rgb(32 33 36 / 7%), 0 26px 38px 0 rgb(32 33 36 / 9%);
 }
 
-.patient-edu__card:hover a {
+.patient-edu__card:hover h4 {
   color: var(--color1);
 }
 

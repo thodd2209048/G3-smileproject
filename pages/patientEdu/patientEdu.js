@@ -39,5 +39,6 @@ patientEduApp.controller('patientEduCtrl', function ($scope) {
     $scope.numberOfPages = Math.ceil($scope.filteredArticle.length / $scope.pageSize);
   };
 
-  $scope.handleFilter('');
+  $scope.handleFilter(localStorage.getItem('filterValue'));
+  setTimeout(localStorage.setItem('filterValue', ''), 300);
 });

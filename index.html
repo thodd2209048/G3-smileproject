@@ -38,7 +38,7 @@
 
     <div class="top-news container">
       <div class="row">
-        <div class="featured">
+        <div class="highlightArticle">
           <div class="img-placeholder">
             <a href={{highlightArticle.link}}> <img ng-src={{highlightArticle.img}} alt=""></a>
           </div>
@@ -49,14 +49,14 @@
             <div class="card__byline-block">
               <span class="card__byline">By {{highlightArticle.author}}</span>
             </div>
-            <p>{{highlightArticle.des}}</p>
+            <p class="highlightArticle-des">{{highlightArticle.des}}</p>
           </div>
 
         </div>
         <div class="top-news__latest-news">
           <h2 class="latest-news__title">Latest news</h2>
           <div class="card-list">
-            <a ng-repeat="article in notHighlightArticles|limitTo: 4" href={{article.link}} class="card-list-item">
+            <a ng-repeat="article in notHighlightArticles|limitTo: 5" href={{article.link}} class="card-list-item">
               <div class="card__content">
                 <span class="card__title">{{article.title}}</span>
                 <div class="card__byline">
@@ -73,26 +73,31 @@
         </div>
         <div class="promo">
           <div class="promo__video">
-            <video autoplay loop playsinline muted
-              src="https://www.health.com/thmb/WkfWoRLgvLMe_j0cz7PWEnWyATk=/1000x1000/filters:gifv(webm)/Health_WIWIK_HIV-cf9fd2d7c5554fd3a56fa4cb42e84c8e.gif"></video>
+            <!-- <video autoplay loop playsinline muted
+              src="https://www.health.com/thmb/WkfWoRLgvLMe_j0cz7PWEnWyATk=/1000x1000/filters:gifv(webm)/Health_WIWIK_HIV-cf9fd2d7c5554fd3a56fa4cb42e84c8e.gif">
+            </video> -->
+            <iframe src="https://www.youtube.com/embed/PwMeo4GAkNc?controls=0&amp;start=5&amp;autoplay=1&amp;mute=1"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
           </div>
           <div class="promo_title">
-            <span>
-              What I Wish I Knew About HIV
-            </span>
+            <a href="https://www.youtube.com/watch?v=PwMeo4GAkNc&ab_channel=Health">
+              6 Ways to Keep Your Smile Healthy
+            </a>
           </div>
         </div>
         <div class="trending-topics">
           <div class="trending-topics__title">Trending Helth Topics</div>
           <div class="trending-topics__tags">
-            <a href="#" class="button">
-              <span>Weight Loss Foods</span>
+            <a href="/pages/patientEdu/patientEdu.html" ng-click="saveFilterValue('symptom')" class="button">
+              <span>symptom</span>
             </a>
-            <a href="#" class="button">
-              <span>Weight Loss Foods</span>
+            <a href="/pages/patientEdu/patientEdu.html" ng-click="saveFilterValue('advice')" class="button">
+              <span>advice</span>
             </a>
-            <a href="#" class="button">
-              <span>Weight Loss Foods</span>
+            <a href="/pages/research/research.html" ng-click="saveFilterValue('data-mining')" class="button">
+              <span>data-mining</span>
             </a>
 
           </div>
@@ -100,11 +105,54 @@
       </div>
     </div>
 
+    <!-- COUNT -->
+
+    <div class="counter container" ng-show="counterItemShow">
+      <div class="counter-item">
+        <div class="counter-img">
+          <i class="fa-solid fa-newspaper"></i>
+        </div>
+        <div class="counter-number">
+          <p>{{counterArticle| number:0}}</p>
+        </div>
+        <div class="counter-measure">
+          Articles
+        </div>
+      </div>
+      <div class="counter-item">
+
+        <div class="counter-img">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <div class="counter-number">
+          <p>{{counterUser | number:0}}</p>
+        </div>
+        <div class="counter-measure">
+          Users
+        </div>
+      </div>
+      <div class="counter-item">
+
+        <div class="counter-img">
+          <i class="fa-solid fa-user-doctor"></i>
+        </div>
+        <div class="counter-number">
+          <p>{{counterDoctor | number:0}}</p>
+        </div>
+        <div class="counter-measure">
+          Doctors
+        </div>
+      </div>
+
+
+    </div>
+
     <div class="patient-edu container">
       <div class="section__title">
         <h2>PATIENT EDUCATION</h2>
         <div class="see-more">
-          <a href="" class="see-more-link">View all <i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a href="/pages/patientEdu/patientEdu.html" class="see-more-link">View all <i
+              class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
       </div>
       <ul class="patient-edu__lists">
@@ -126,7 +174,7 @@
       <div class="section__title">
         <h2>PRO-EDU</h2>
         <div class="see-more">
-          <a href="" class="see-more-link">View all <i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a href="" class="see-more-link">View allXXX <i class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
       </div>
       <ul class="pro-edu__list">
@@ -169,7 +217,8 @@
       <div class="section__title">
         <h2>RESEARCH</h2>
         <div class="see-more">
-          <a href="" class="see-more-link">View all <i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a href="/pages/research/research.html" class="see-more-link">View all <i
+              class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
       </div>
       <div class="research-tags">
@@ -191,7 +240,8 @@
       <div class="section__title">
         <h2>PRODUCT</h2>
         <div class="see-more">
-          <a href="" class="see-more-link">View all <i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a href="/pages/Products/products.html" class="see-more-link">View all <i
+              class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
       </div>
       <div class="products-list">
