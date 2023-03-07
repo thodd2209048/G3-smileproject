@@ -20,7 +20,6 @@
     <script src="./js/glider.min.js"></script>
     <script src="/js/header-footer.js"></script>
     <script src="/js/include.js"></script>
-    <script src="./js/products-new.js"></script>
     <title>Products</title>
 </head>
 
@@ -28,7 +27,7 @@
 <body>
     <div id="includeHeader"></div>
 
-    <main>
+    <main id="productMain" ng-controller="productCtrl">
 
         <div class="container">
             <div class="banner-products">
@@ -55,7 +54,8 @@
                             <div class="card-rcm">
                                 <a href="../product-item/products-electric-003/products-003.html">
                                     <div class="card-rcm_img">
-                                        <img src="./public/electric-access.png" alt="">
+                                        <img src="/pages/product-item/products-electric-003/public-003/Ultimate-fix.webp"
+                                            alt="">
                                     </div>
                                     <div class="card-info_rcm">
                                         <h3 class="card-info_title">Ultimate Clean</h3>
@@ -78,7 +78,7 @@
                             <div class="card-rcm">
                                 <a href="../product-item/products-electric-001/products-001.html">
                                     <div class="card-rcm_img">
-                                        <img src="./public/electric-brushes.png" alt="">
+                                        <img src="/pages/product-item/public-item/oralB%206.jpg" alt="">
                                     </div>
                                     <div class="card-info_rcm">
                                         <h3 class="card-info_title">iO 6</h3>
@@ -101,7 +101,7 @@
                             <div class="card-rcm">
                                 <a href="../product-item/products-electric-002/products-001.html">
                                     <div class="card-rcm_img">
-                                        <img src="./public/io8-card.png" alt="">
+                                        <img src="/pages/product-item/public-item/io8.jpg" alt="">
                                     </div>
                                     <div class="card-info_rcm">
                                         <h3 class="card-info_title">iO 8</h3>
@@ -125,9 +125,9 @@
 
                         </div>
 
-                        
+
                     </div>
-                    
+
 
                 </div>
 
@@ -144,7 +144,7 @@
                             <div class="card-rcm">
                                 <a href="../product-item/products-kids-001/products-002.html">
                                     <div class="card-rcm_img">
-                                        <img src="./public/special-for-kids.png" alt="">
+                                        <img src="/pages/product-item/public-item/kid3.webp" alt="">
                                     </div>
                                     <div class="card-info_rcm">
                                         <h3 class="card-info_title">Kids 3+</h3>
@@ -168,7 +168,7 @@
                             <div class="card-rcm">
                                 <a href="../product-item/products-kids-002/products-002-kids.html">
                                     <div class="card-rcm_img">
-                                        <img src="./public/junior6-card.png" alt="">
+                                        <img src="/pages/product-item/public-item/kid6.jpg" alt="">
                                     </div>
                                     <div class="card-info_rcm">
                                         <h3 class="card-info_title">Junior 6+</h3>
@@ -192,7 +192,7 @@
                             <div class="card-rcm">
                                 <a href="../product-item/products-kids-003/products-002-kids2.html">
                                     <div class="card-rcm_img">
-                                        <img src="./public/teens12-card.png" alt="">
+                                        <img src="/pages/product-item/public-item/kid12.webp" alt="">
                                     </div>
                                     <div class="card-info_rcm">
                                         <h3 class="card-info_title">Teens 12+</h3>
@@ -317,7 +317,7 @@
                             <div class="card-rcm">
                                 <a href="../product-item/products-toothpaste-001/products-004.html">
                                     <div class="card-rcm_img">
-                                        <img src="./public/detoxify-card.png" alt="">
+                                        <img src="/pages/product-item/public-item/CrestGumDetoxify.jpeg" alt="">
                                     </div>
                                     <div class="card-info_rcm">
                                         <h3 class="card-info_title">Crest Gum Detoxify</h3>
@@ -338,7 +338,7 @@
                             <div class="card-rcm">
                                 <a href="../product-item/products-toothpaste-002/products-004-toothpaste.html">
                                     <div class="card-rcm_img">
-                                        <img src="./public/tooth-pastes.png" alt="">
+                                        <img src="/pages/product-item/public-item/Crest%203DWhite.webp" alt="">
                                     </div>
                                     <div class="card-info_rcm">
                                         <h3 class="card-info_title">Crest 3DWhite</h3>
@@ -359,7 +359,8 @@
                             <div class="card-rcm">
                                 <a href="../product-item/products-toothpaste-003/products-004-toothpaste2.html">
                                     <div class="card-rcm_img">
-                                        <img src="./public/pro-health-card.png" alt="">
+                                        <img src="/pages/product-item/products-toothpaste-003/public-004/prohealth-fixx3.png"
+                                            alt="">
                                     </div>
                                     <div class="card-info_rcm">
                                         <h3 class="card-info_title">Crest Pro-Health</h3>
@@ -427,12 +428,12 @@
             },
             responsive: [
                 {
-                    
+
                     breakpoint: 570,
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 1,
-                       
+
                     }
                 }
             ]
@@ -450,12 +451,12 @@
             responsive: [
 
                 {
-                    
+
                     breakpoint: 570,
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 1,
-                        
+
                     }
                 }
             ]

@@ -3,6 +3,7 @@ homepageApp.controller('homepageAppCtrl', function ($scope, $interval) {
   $scope.articles = articles;
   $scope.researchArticles = [];
   $scope.patientEduArticles = [];
+  $scope.productList = [];
   highlightId = 22;
   $scope.notHighlightArticles = [];
   const tagCounts = {};
@@ -25,6 +26,9 @@ homepageApp.controller('homepageAppCtrl', function ($scope, $interval) {
         break;
       case 'patientEdu':
         $scope.patientEduArticles.push(article);
+        break;
+      case 'products':
+        $scope.productList.push(article);
         break;
     }
   });

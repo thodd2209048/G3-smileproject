@@ -244,28 +244,14 @@
               class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
       </div>
-      <div class="products-list">
-        <a class="products-list-item" href="">
-          <img
-            src="https://www.3m.com/wps/wcm/connect/466fef92-00be-4fa0-80a6-c1418c14fb99/3M_Scotchbond_Universal_Plus_vial_Lpop_etchant_450x225.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-466fef92-00be-4fa0-80a6-c1418c14fb99-nDeIvgL"
-            alt="Type 2 Diabetes" />
-          <h3 class="products-list__item-title">Adhesives</h3>
+      <ul class="products-list">
+        <a ng-repeat="product in productList|orderBy:'-date' | limitTo:3" class="products-list-item"
+          href={{product.link}}>
+          <img ng-src="{{product.img}}" alt="{{product.title}}" />
+          <h3 class="products-list__item-title">{{product.title}}</h3>
 
         </a>
-        <a class="products-list-item" href="">
-          <img
-            src="https://www.3m.com/wps/wcm/connect/b093682b-ed77-43fe-90d7-bb26434eceaf/Mouthpieces_450x225.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE-b093682b-ed77-43fe-90d7-bb26434eceaf-nDeIxaf"
-            alt="Type 2 Diabetes" />
-          <h3 class="products-list__item-title">Impression Materials</h3>
-
-        </a>
-        <a class="products-list-item" href="">
-          <img
-            src="https://www.3m.com/wps/wcm/connect/8d89e492-5a0b-4b7c-ac7e-bd1b528786d7/sealant_syringe_450x225.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-8d89e492-5a0b-4b7c-ac7e-bd1b528786d7-nDeIx-b"
-            alt="Type 2 Diabetes" />
-          <h3 class="products-list__item-title">Sealants</h3>
-        </a>
-      </div>
+      </ul>
     </div>
   </main>
 
