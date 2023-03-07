@@ -1,0 +1,10 @@
+.product-banner {
+    background: url(./public-004/product-banner-004.png);
+    
+}
+
+.desc-img {
+    background: url(../public-item/3d-fix.png);
+    background-size: cover;
+  background-position: center center;
+}

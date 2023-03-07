@@ -1,0 +1,15 @@
+.product-banner {
+    background: url(./public-002/product-banner-002.png);
+    
+}
+.desc-img {
+    background: url(../public-item/kids3.png);
+    background-size: cover;
+  background-position: center center;
+}
+/* @media (max-width:380px) {
+    .product-banner {
+        display: block;
+        background: url(../public-item/kids3.png);
+    }
+} */
