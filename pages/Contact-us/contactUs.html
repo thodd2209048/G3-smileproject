@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/1fb8bb996b.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/header.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="contactUs.css">
+
+  <link rel="icon" href="/public/images/favicon.jpg">
+
+
+  <script src="/js/header-footer.js"></script>
+  <script src="/js/include.js"></script>
+  <script src="contactUs.js"></script>
+  <title>Contact us</title>
+</head>
+
+
+<body>
+  <div id="includeHeader"></div>
+
+  <main class="contactUs-main container" id="contactUsMain" ng-controller="feedbackCtrl">
+    <div class="title">
+      <h3>Let's Start a Conversation</h3>
+    </div>
+    <div class="sub-title">
+      <p>Do you have any questions or suggestions about our website? Please contact us through the following form so
+        that we can answer and support you.</p>
+    </div>
+    <form class="feedbackForm" action="" novalidate ng-show="!submitStatus">
+      <p class="feedbackForm__guilde">Please note: all fields are required.</p>
+      <div class="feedbackForm__inputField">
+        <label for="name">Name:</label> <br>
+        <input type="text" id="name" name="name" ng-model="nameInput" required>
+        <p ng-show="errorNameShow" class="feedbackForm__error">Name is required</p>
+      </div>
+      <div class="feedbackForm__inputField">
+        <label for="email">Email:</label>
+        <br>
+        <input type="text" id="email" name="email" ng-model="emailInput" required>
+        <p class="feedbackForm__error">{{errorEmailMessage}}</p>
+      </div>
+      <div class="feedbackForm__inputField">
+        <label for="message">Message:</label> <br>
+        <textarea id="message" name="message" ng-model="messageInput" required></textarea>
+        <p ng-show="errorMessageShow" class="feedbackForm__error">Message is required</p>
+      </div>
+      <button ng-click="submitForm()" class="feedbackForm__submit" type="button">Send message</button>
+    </form>
+    <div class="thankYou">
+
+      <h1 class="thankyou" ng-show="submitStatus">Thank you for your feedback!</h1>
+    </div>
+  </main>
+
+  <div id="includeFooter"></div>
+  <script>
+    angular.bootstrap(document.getElementById('contactUsMain'), ['FeedbackForm'])
+  </script>
+</body>
+
+</html>

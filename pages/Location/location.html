@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ4W9v0XnHgNzC16zke1Mc373ULXEHARs"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
   <script src="https://kit.fontawesome.com/1fb8bb996b.js" crossorigin="anonymous"></script>
@@ -30,35 +30,26 @@
 
   <div id="includeHeader"></div>
   <!-- <body> -->
-  <div class="location container">
+  <div class="location container" id="location-main" ng-controller="locationCtrl">
 
     <div class="location-search">
       <h1>Find a clinic</h1>
     </div>
     <ul class="location-items">
-      <li class="location-item">
-        <h3 class="location-item-name">Dr. Smiles Dental Clinic</h3>
-        <p class="location-item-address">12th Main Road, Anna Nagar</p>
-        <p class="location-item-phone">+91 44 4204 2040</p>
-        <p class="location-item-city">Chennai 600040, Tamil Nadu </p>
-      </li>
-      <li class="location-item">
-        <h3 class="location-item-name">Pearl Dental Care</h3>
-        <p class="location-item-address">HSR Layout</p>
-        <p class="location-item-phone">+91 80 4343 3331</p>
-        <p class="location-item-city">Bengaluru 560102, Karnataka</p>
-      </li>
-      <li class="location-item">
-        <h3 class="location-item-name">Smilekraft Dentistry</h3>
-        <p class="location-item-address">Kalkaji</p>
-        <p class="location-item-phone">+91 11 4053 8200</p>
-        <p class="location-item-city">New Delhi 110019, Delhi</p>
+      <li class="location-item" ng-repeat="location in locations">
+        <h3 class="location-item-name">{{location.title}}</h3>
+        <p class="location-item-address">{{location.address}}</p>
+        <p class="location-item-phone">{{location.phone}}</p>
+        <p class="location-item-city">{{location.city}}</p>
       </li>
     </ul>
     <div class="map-container" id="map" style="height: 500px; width: 100%;"></div>
   </div>
 
   <div id="includeFooter"></div>
+  <script>
+    angular.bootstrap(document.getElementById('location-main'), ['LocationApp'])
+  </script>
 </body>
 
 </html>
