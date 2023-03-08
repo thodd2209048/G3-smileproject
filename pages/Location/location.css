@@ -3,7 +3,7 @@
 .location {
   display: grid;
   margin-bottom: 15px;
-  grid-template-columns: 30% 60%;
+  grid-template-columns: 30% 1fr;
   grid-template-rows: 80px auto;
   grid-template-areas:
     'search search'
@@ -17,6 +17,7 @@
 
 .location-search {
   grid-area: search;
+  color: var(--color1);
 }
 
 .location-items {
@@ -31,4 +32,13 @@
   grid-area: map;
   /* border: 1px solid blue; */
   border-radius: var(--border-radius-big);
+}
+
+.nevigationToContactUs {
+  padding: 1em 0;
+}
+
+.nevigationToContactUs a {
+  color: var(--color1);
+  text-decoration: underline;
 }
