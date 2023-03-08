@@ -106,7 +106,6 @@
 }
 
 .topbar-profile-drop {
-  display: none;
   position: absolute;
   padding: 10px;
   top: calc(100% + 10px);
@@ -115,10 +114,6 @@
   border: 1px solid var(--color1);
   border-radius: var(--border-radius-big);
   z-index: 2;
-}
-
-#profile-show:checked ~ .topbar-profile-drop {
-  display: block;
 }
 
 .topbar-profile-drop-info {

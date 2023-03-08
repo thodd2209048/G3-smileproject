@@ -20,6 +20,14 @@ function scrollFunction() {
 
 // Subscribe
 
+var headerApp = angular.module('HeaderApp', []);
+headerApp.controller('headerCtrl', function ($scope) {
+  $scope.showProfile = false;
+  $scope.toggleProfile = () => {
+    $scope.showProfile = !$scope.showProfile;
+  };
+});
+
 var footerSubscribeApp = angular.module('FooterSubscribeApp', []);
 footerSubscribeApp.controller('myCtrl', function ($scope, $window) {
   var emails = [];
