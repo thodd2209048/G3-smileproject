@@ -17,6 +17,7 @@
 
 .location-search {
   grid-area: search;
+  color: var(--color1);
 }
 
 .location-items {
@@ -31,4 +32,13 @@
   grid-area: map;
   /* border: 1px solid blue; */
   border-radius: var(--border-radius-big);
+}
+
+.nevigationToContactUs {
+  padding: 1em 0;
+}
+
+.nevigationToContactUs a {
+  color: var(--color1);
+  text-decoration: underline;
 }
