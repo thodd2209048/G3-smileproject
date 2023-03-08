@@ -76,7 +76,8 @@
             <!-- <video autoplay loop playsinline muted
               src="https://www.health.com/thmb/WkfWoRLgvLMe_j0cz7PWEnWyATk=/1000x1000/filters:gifv(webm)/Health_WIWIK_HIV-cf9fd2d7c5554fd3a56fa4cb42e84c8e.gif">
             </video> -->
-            <iframe src="https://www.youtube.com/embed/PwMeo4GAkNc?controls=0&amp;start=5&amp;autoplay=1&amp;mute=1"
+            <iframe
+              src="https://www.youtube.com/embed/PwMeo4GAkNc?rel=0&amp;controls=0&amp;start=5&amp;autoplay=1&amp;mute=1&amp;loop=1"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
@@ -149,7 +150,7 @@
 
     <div class="patient-edu container">
       <div class="section__title">
-        <h2>PATIENT EDUCATION</h2>
+        <h2>NEWS</h2>
         <div class="see-more">
           <a href="/pages/patientEdu/patientEdu.html" class="see-more-link">View all <i
               class="fa-solid fa-circle-arrow-right"></i></a>
@@ -172,44 +173,17 @@
 
     <div class="pro-edu container">
       <div class="section__title">
-        <h2>PRO-EDU</h2>
+        <h2>PROFESSIONAL EDUCATION</h2>
         <div class="see-more">
-          <a href="" class="see-more-link">View allXXX <i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a href="/pages/Professional-edu/pro-courses.html" class="see-more-link">View all <i
+              class="fa-solid fa-circle-arrow-right"></i></a>
         </div>
       </div>
       <ul class="pro-edu__list">
-        <li class="pro-edu__item">
-          <a href="">
-            <img class="pro-edu__item-pic"
-              src="https://post.healthline.com/wp-content/uploads/2022/05/pensive-person-at-the-pier-1296x728-header.jpg"
-              alt="pensive-person" />
-            <span class="pro-edu__item-title">How to Recognize and Respond to Racial Gaslighting</span>
-          </a>
-        </li>
-        <li class="pro-edu__item">
-          <a href="">
-            <img class="pro-edu__item-pic"
-              src="https://post.healthline.com/wp-content/uploads/2022/05/pensive-person-at-the-pier-1296x728-header.jpg"
-              alt="pensive-person" />
-            <span class="pro-edu__item-title">How to Recognize and Respond to Racial Gaslighting</span>
-          </a>
-        </li>
-        <li class="pro-edu__item">
-          <a href="">
-            <img class="pro-edu__item-pic"
-              src="https://post.healthline.com/wp-content/uploads/2022/05/pensive-person-at-the-pier-1296x728-header.jpg"
-              alt="pensive-person" />
-            <span class="pro-edu__item-title">How to Recognize and Respond to Racial Gaslighting</span>
-          </a>
-        </li>
-        <li class="pro-edu__item">
-          <a href="">
-            <img class="pro-edu__item-pic"
-              src="https://post.healthline.com/wp-content/uploads/2022/05/pensive-person-at-the-pier-1296x728-header.jpg"
-              alt="pensive-person" />
-            <span class="pro-edu__item-title">How to Recognize and Respond to Racial Gaslighting</span>
-          </a>
-        </li>
+        <a href={{article.link}} ng-repeat="article in courseList | limitTo: 3" class="pro-edu__item">
+          <img class="pro-edu__item-pic" ng-src="{{article.img}}" alt={{article.title}} />
+          <span class="pro-edu__item-title">{{article.title}}</span>
+        </a>
       </ul>
     </div>
 
@@ -231,7 +205,6 @@
           href={{article.link}}>
           <img ng-src={{article.img}} alt={{article.title}} />
           <h3 class="research-lists__item-title">{{article.title}}</h3>
-          <p class="research-lists__item-content">{{article.des}}</p>
         </a>
       </div>
     </div>

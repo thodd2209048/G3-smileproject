@@ -291,7 +291,7 @@
 }
 
 .patient-edu__item-link:hover .patient-edu__item-title {
-  color: var(--color3);
+  color: var(--color1);
 }
 
 .patient-edu__item-link:hover img {
@@ -329,28 +329,31 @@
 
 .pro-edu__list {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  column-gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+  column-gap: 2vw;
   margin-top: 1vw;
 }
 
 .pro-edu__item {
-}
-
-.pro-edu__item a {
+  height: 100%;
   display: flex;
-  flex-flow: column;
-  width: 100%;
-}
-
-.pro-edu__item a:hover {
-  color: var(--color3);
-  opacity: 0.8;
+  flex-direction: column;
 }
 
 .pro-edu__item-pic {
-  width: 100%;
+  max-width: 100%;
+  height: 200px;
   border-radius: var(--border-radius-big);
+  object-fit: cover;
+}
+
+.pro-edu__item:hover img {
+  opacity: 0.8;
+}
+
+.pro-edu__item:hover .pro-edu__item-title {
+  color: var(--color1);
 }
 
 .pro-edu__item-title {
@@ -412,7 +415,7 @@
 .research-lists {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3vw;
+  grid-gap: 2vw;
 }
 
 .research-list {
@@ -458,11 +461,6 @@
   .trending-topics {
     display: none;
   }
-
-  .pro-edu__list {
-    grid-template-columns: auto auto;
-    row-gap: 1.5em;
-  }
 }
 
 /* Mobile: width < 740px */
@@ -506,6 +504,7 @@
   }
   .patient-edu__item {
     width: 100%;
+    margin: 1em 0;
   }
   .patient-edu__item-link {
     flex-direction: column;
@@ -528,9 +527,23 @@
   }
 
   .pro-edu__list {
-    row-gap: 1.5em;
-    margin-top: 5px;
+    margin-top: 1em;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 3vw;
+  }
+
+  .pro-edu__item {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pro-edu__item-pic {
+    width: 100%;
+    max-width: 400px;
+    height: 40vh;
   }
 
   .research-tags {
@@ -542,7 +555,12 @@
   }
 
   .research-list {
-    padding-bottom: 3px;
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 2em;
+    margin-top: 0;
     border-bottom: 1px solid var(--color1);
   }
 
@@ -553,6 +571,10 @@
 
   .research-lists__item-title {
     padding-top: 3px;
+  }
+
+  .research {
+    margin-bottom: 0;
   }
 
   .products-list {

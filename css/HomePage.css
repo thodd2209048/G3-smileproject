@@ -10,6 +10,15 @@
   border-bottom: 1px solid var(--color1);
 }
 
+.section__title h2 {
+  width: auto;
+}
+
+.see-more {
+  width: 8em;
+  text-align: right;
+  align-items: top;
+}
 .see-more-link:hover {
   color: var(--color1);
 }
