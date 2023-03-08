@@ -57,10 +57,6 @@
   border-radius: var(--border-radius-small);
 }
 
-.patient-edu__card:hover img {
-  opacity: 0.8;
-}
-
 .patient-edu__card-tag {
   padding: 3px 5px;
   color: #fff;
@@ -78,7 +74,11 @@
   margin-bottom: 10px;
 }
 
-.patient-edu__card h4 {
+.patient-edu__card:hover img {
+  opacity: 0.8;
+}
+
+.patient-edu__card:hover h4 {
   color: var(--color1);
 }
 
