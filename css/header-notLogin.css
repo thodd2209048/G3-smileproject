@@ -93,11 +93,11 @@
 }
 
 .nav-bar__item-1:first-child {
-  align-items: start;
+  justify-content: start;
 }
 
 .nav-bar__item-1:last-child {
-  align-items: end;
+  justify-content: end;
 }
 
 .nav-bar__link-1 {
