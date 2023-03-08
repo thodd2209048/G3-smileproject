@@ -27,6 +27,7 @@
   flex-direction: column;
   width: 100%;
   height: 3em;
+  color: var(--color1);
 }
 .icon-item:hover {
   color: var(--color1-hover);
