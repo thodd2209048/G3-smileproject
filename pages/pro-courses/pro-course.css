@@ -151,6 +151,14 @@
 .organization-logo > img {
   max-width: 12em;
 }
+/* side bar */
+#add1,
+#add2,
+#add3,
+#add4,
+#add5 {
+  scroll-margin-top: 100px;
+}
 .side-bar {
   position: sticky;
   top: 180px;
