@@ -87,7 +87,7 @@
   margin-bottom: 10px;
   padding: 10px 0;
   grid-template-columns: 150px 1fr;
-  grid-template-rows: 1.5em 2.4em 3.6em;
+  grid-template-rows: 1.5em 3.6em 3.6em;
   grid-template-areas:
     'img info'
     'img title'
@@ -120,7 +120,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  height: 2.4em;
+  height: 3.4em;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -145,7 +145,7 @@
 }
 
 .search-page__result-btn {
-  padding: 0.2em 0.4em;
+  padding: 0.1em 0.4em;
   margin: 0 1rem 0 0;
   color: #fff;
   background-color: var(--color1);
