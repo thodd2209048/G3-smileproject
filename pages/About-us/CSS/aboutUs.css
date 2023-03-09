@@ -54,6 +54,16 @@
   text-decoration-line: underline;
   text-decoration-style: solid;
 }
+/* side bar */
+#mission,
+#medical-expert,
+#commitment,
+#editorial,
+#team,
+#policies,
+#connect {
+  scroll-margin-top: 100px;
+}
 
 /* Conent */
 
