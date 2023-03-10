@@ -38,8 +38,6 @@ function initMap() {
     placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4',
     fields: ['name', 'formatted_address', 'place_id', 'geometry'],
   };
-  const infowindow = new google.maps.InfoWindow();
-  const service = new google.maps.places.PlacesService(map);
 
   // directionsDisplay.setMap(map);
 
