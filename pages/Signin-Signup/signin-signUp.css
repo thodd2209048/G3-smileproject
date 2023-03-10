@@ -57,19 +57,7 @@ body, input {
     grid-template-columns: 1fr;
     z-index: 5;
 }
-.back a {
-  text-decoration: none;
-  color: var(--color3);
-}
-.back {
-  padding-top: 10px;
-  
-}
 
-.back a:hover {
-  text-decoration: underline;
-  color: var(--color1-hover);
-}
 form {
     display: flex;
     align-items: center;
@@ -80,8 +68,23 @@ form {
     overflow: hidden;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    margin-top: 20px;
-    
+}
+.back a {
+  text-decoration: none;
+  color: #15abdb;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.back {
+  margin-top: 10px;
+  /* padding: 5px; */
+  /* border: 1px solid var(--color1);
+ border-radius: 30px; */
+}
+
+.back a:hover {
+  text-decoration: underline;
+  color: var(--color1-hover);
 }
 /* hide sign up form */
 form.sign-in-form {
@@ -145,6 +148,17 @@ form.sign-up-form {
 .input-field input::placeholder {
     color: #aaa;
     font-weight: 500;
+}
+
+
+/* forgot password */
+.forgot-pw a {
+  text-decoration: none;
+  color: var(--color2);
+}
+.forgot-pw a:hover, .forgot-pw a:active {
+  text-decoration: underline;
+  color: var(--color1);
 }
 
 /* error */
