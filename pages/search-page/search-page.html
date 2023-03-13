@@ -41,9 +41,9 @@
       </div>
 
     </div>
-    <div ng-show="isVisible" class="search-page__result">
+    <div ng-show="isResultVisible" class="search-page__result">
       <h2 class="search-page__result-title">Result</h2>
-      <ul class="search-page__result-list">
+      <ul ng-show="isVisible" class="search-page__result-list">
         <li ng-repeat="post in filteredPosts | limitTo: pageSize : (currentPage - 1) * pageSize">
           <a ng-href="{{post.link}}" class="search-page__result-item-img">
             <img ng-src=" {{post.img}}" alt="Image for {{ post.title }}" />
@@ -56,7 +56,12 @@
           </div>
         </li>
       </ul>
+      <div ng-show="isNotFoundVisible" class="search-page__result-not-found">
+
+        <h2>Sorry, the page you were looking for in this website does not exist!!!</h2>
+      </div>
     </div>
+
 
     <div ng-show="isVisible" class="search-page__movePage">
       <button class="search-page__movePage-btn" ng-disabled="currentPage == 1"

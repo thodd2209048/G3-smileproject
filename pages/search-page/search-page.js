@@ -8,11 +8,16 @@ searchApp.controller('searchAppCtrl', function ($scope) {
   $scope.currentPage = 1;
   $scope.numberOfPages = 1;
   $scope.isVisible = false;
+  $scope.isNotFoundVisible = false;
+  $scope.isResultVisible = false;
   $scope.handleSearch = async function () {
     $scope.currentPage = 1;
+    $scope.isResultVisible = true;
+    $scope.isVisible = false;
+    $scope.isNotFoundVisible = false;
     var searchText = $scope.searchInput.toLowerCase();
     $scope.filteredPosts = [];
-    $scope.isVisible = true;
+
     angular.forEach($scope.articles, function (article) {
       if (article.title.toLowerCase().indexOf(searchText) !== -1) {
         $scope.filteredPosts.push(article);
@@ -21,7 +26,14 @@ searchApp.controller('searchAppCtrl', function ($scope) {
     await $scope.filteredPosts;
     console.log($scope.filteredPosts);
     $scope.numberOfPages = Math.ceil($scope.filteredPosts.length / $scope.pageSize);
-    console.log($scope.numberOfPages);
+    if ($scope.filteredPosts.length != 0) {
+      $scope.isVisible = true;
+    } else {
+      $scope.isNotFoundVisible = true;
+    }
+
     $scope.$apply();
+    console.log('visible:', $scope.isVisible);
+    console.log('not found:', $scope.isNotFoundVisible);
   };
 });

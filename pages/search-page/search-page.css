@@ -87,7 +87,7 @@
   margin-bottom: 10px;
   padding: 10px 0;
   grid-template-columns: 150px 1fr;
-  grid-template-rows: 1.5em 3.6em 3.6em;
+  grid-template-rows: 1.5em 3.6em 4.5em;
   grid-template-areas:
     'img info'
     'img title'
@@ -133,7 +133,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  height: 3.5em;
+  height: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -152,6 +152,12 @@
   border: 1px solid var(--color1);
   border-radius: 9999px;
   font-weight: 600;
+}
+
+.search-page__result-not-found {
+  padding: 5vh 0;
+  text-align: center;
+  justify-self: center;
 }
 
 /* PREV - NEXT */
