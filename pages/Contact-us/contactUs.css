@@ -12,6 +12,7 @@
 
 .sub-title {
   margin-bottom: 2em;
+  padding: 5px;
 }
 
 .feedbackForm {
@@ -82,9 +83,12 @@
   background-color: var(--color3);
 }
 
+.thankyou-wrapper {
+}
+
 .thankyou {
-  padding: 1em;
-  height: 3em;
+  padding: 0.5em 1em;
+  margin: 0 5px;
   max-width: 100%;
   color: #fff;
   background-color: var(--color1);
