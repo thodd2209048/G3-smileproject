@@ -29,7 +29,6 @@ headerApp.controller('headerCtrl', function ($scope) {
   };
   $scope.handleLogout = () => {
     $scope.isLogout = !$scope.isLogout;
-    console.log('logout');
   };
 });
 
