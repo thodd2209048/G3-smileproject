@@ -42,32 +42,42 @@ app.controller('SISU-ctrl', function ($scope) {
     $scope.errorMessageSignupPassword = '';
     $scope.isErrorSignUpConfirmPassword = false;
 
+    // Check username
     if ($scope.inputSignUpUsername == undefined) {
-      $scope.isErrorSignUpUserName = true;
       $scope.errorMessageSignupUsername = 'Username is required.';
     } else if (!regexUsername.test($scope.inputSignUpUsername)) {
-      $scope.isErrorSignUpUserName = true;
       $scope.errorMessageSignupUsername =
         'Username must contain of 3 to 16 characters including letters, numbers, underscores(_), or hyphens(-).';
     }
 
+    if ($scope.errorMessageSignupUsername != '') {
+      $scope.isErrorSignUpUserName = true;
+    }
+
+    // Check email
     if ($scope.inputSignUpEmail == undefined) {
-      $scope.isErrorSignUpEmail = true;
       $scope.errorMessageSignupEmail = 'Email is required.';
     } else if (!regexEmail.test($scope.inputSignUpEmail)) {
-      $scope.isErrorSignUpEmail = true;
       $scope.errorMessageSignupEmail = 'Email is invalid.';
     }
 
+    if ($scope.errorMessageSignupEmail != '') {
+      $scope.isErrorSignUpEmail = true;
+    }
+
+    // Check password
     if ($scope.inputSignUpPassword == undefined) {
-      $scope.isErrorSignUpPassword = true;
       $scope.errorMessageSignupPassword = 'Password is required.';
     } else if (!regexPassword.test($scope.inputSignUpPassword)) {
-      $scope.isErrorSignUpPassword = true;
       $scope.errorMessageSignupPassword =
         'Password must contain at least 6 characters, including upper and lowercase letters, numbers and not including space.';
     }
 
+    if ($scope.errorMessageSignupPassword != '') {
+      $scope.isErrorSignUpPassword = true;
+    }
+
+    // Check confirm password
     if ($scope.inputSignUpConfirmPassword != $scope.inputSignUpPassword) {
       $scope.isErrorSignUpConfirmPassword = true;
       $scope.errorMessageSignupConfirmPassword = 'The passwords you entered do not match.';
