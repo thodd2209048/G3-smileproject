@@ -23,8 +23,13 @@ function scrollFunction() {
 var headerApp = angular.module('HeaderApp', []);
 headerApp.controller('headerCtrl', function ($scope) {
   $scope.showProfile = false;
+  $scope.isLogout = false;
   $scope.toggleProfile = () => {
     $scope.showProfile = !$scope.showProfile;
+  };
+  $scope.handleLogout = () => {
+    $scope.isLogout = !$scope.isLogout;
+    console.log('logout');
   };
 });
 

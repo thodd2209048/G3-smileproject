@@ -58,7 +58,7 @@
 
 .topbar-btn {
   display: flex;
-  width: 2em;
+
   height: 2em;
   margin-left: 1rem;
   display: flex;
@@ -76,6 +76,14 @@
   color: #fff;
   border: 1px solid var(--color1);
   background-color: var(--color1);
+}
+
+.topbar-btn-search {
+  width: 2em;
+}
+
+.topbar-btn-signin {
+  padding: 0 0.5em;
 }
 
 .topbar-profile {
