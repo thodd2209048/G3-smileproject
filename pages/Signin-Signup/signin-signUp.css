@@ -434,4 +434,14 @@ form.sign-up-form {
     font-size: 30px;
     margin-bottom: 0;
   }
+  .signup {
+    height: 40px;
+    
+  }
+  .signup input {
+    font-size: 0.8rem;
+  }
+  .signup i {
+    line-height: 40px;
+  }
 }
