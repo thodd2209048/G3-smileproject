@@ -14,9 +14,9 @@
 
 <body>
     <div class="container">
-        <div class="forms-container" >
+        <div class="forms-container">
             <div class="signin-signup">
-                <form action="#" class="sign-in-form" name="myForm" ng-controller="SISU-ctrl" novalidate>
+                <form class="sign-in-form" name="myForm" ng-controller="SISU-ctrl" novalidate>
                     <div class="logo">
                         <img src="./public/images/logo.svg" alt="">
                     </div>
@@ -26,25 +26,26 @@
                         <div class="input-field">
                             <i class="fas fa-user"></i>
                             <input type="text" class="form-control" name="username" placeholder="Username"
-                                ng-model="user.username" required />
+                                ng-model="inputSignInUsername" required />
                         </div>
-                        <div class="errortext" ng-show="myForm.username.$dirty && myForm.username.$invalid">
+                        <div class="errortext" ng-show="isErrorSignInUsername">
                             <i class="fa-solid fa-circle-exclamation"></i>
-                            <span ng-show="myForm.username.$error.required">Username is required</span>
+                            <span>Username is required</span>
                         </div>
                     </div>
                     <div class="input">
                         <div class="input-field">
                             <i class="fas fa-lock"></i>
                             <input type="password" class="form-control" name="password" placeholder="Password"
-                                ng-model="user.password" required />
+                                ng-model="inputSigInPassword" required />
                         </div>
-                        <div class="errortext" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+                        <div class="errortext" ng-show="isErrorSignInPassWord">
                             <i class="fa-solid fa-circle-exclamation"></i>
-                            <span ng-show="myForm.password.$error.required">Password is required</span>
+                            <span>Password is required</span>
                         </div>
                     </div>
-                    <input type="submit" value="Login" class="btn solid" />
+                    <button ng-click="handleSubmitSignin()" class="btn solid">SIGN IN</button>
+
                     <p class="social-text">Or Sign in with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -61,60 +62,60 @@
                         </a>
                     </div>
                 </form>
-                <form action="#" class="sign-up-form" name="myForm" ng-controller="SISU-ctrl" novalidate>
-                    <div class="logo">
+                <form class="sign-up-form" name="myForm" ng-controller="SISU-ctrl" novalidate>
+                    <div class="logo signup-form">
                         <img src="./public/images/logo.svg" alt="">
                     </div>
-                    <h2 class="title">Sign up</h2>
+                    <h2 class="title signup-title">Sign up</h2>
                     <div class="input">
-                        <div class="input-field">
+                        <div class="input-field signup">
                             <i class="fas fa-user"></i>
                             <input type="text" class="form-control" name="username" placeholder="Username"
-                                ng-minlength="5" ng-maxlength="15" ng-pattern="/^[a-zA-Z0-9_]*$/"
-                                ng-model="user.username" required autofocus />
+                                ng-model="inputSignUpUsername" required autofocus />
                         </div>
-                        <div class="errortext" ng-show="myForm.username.$dirty && myForm.username.$invalid">
+                        <div class="errortext" ng-show="isErrorSignUpUserName">
                             <i class="fa-solid fa-circle-exclamation"></i>
-                            <span ng-show="myForm.username.$error.required">
-                                Username is required</span>
-                            <span ng-show="myForm.username.$error.minlength">Username must contain atleast 5
-                                characters</span>
-                            <span ng-show="myForm.username.$error.maxlength">Username should not be greater than 15
-                                characters</span>
-                            <span
-                                ng-show="myForm.username.$error.pattern && !myForm.username.$error.minlength && !myForm.username.$error.maxlength">Only
-                                letters, numbers and underscore allowed</span>
+                            <span>
+                                {{errorMessageSignupUsername}}</span>
                         </div>
                     </div>
                     <div class="input">
-                        <div class="input-field">
+                        <div class="input-field signup">
                             <i class="fas fa-envelope"></i>
-                            <input type="email" class="form-control" name="email" placeholder="Email"
-                                ng-model="user.email" required />
+                            <input type="text" class="form-control" name="email" placeholder="Email"
+                                ng-model="inputSignUpEmail" required />
                         </div>
-                        <div class="errortext" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                        <div class="errortext" ng-show="isErrorSignUpEmail">
                             <i class="fa-solid fa-circle-exclamation"></i>
-                            <span ng-show="myForm.email.$error.required">Email is required</span>
-                            <span ng-show="myForm.email.$error.email">Invalid email format</span>
+                            <span>{{errorMessageSignupEmail}}</span>
+
                         </div>
                     </div>
                     <div class="input">
-                        <div class="input-field">
+                        <div class="input-field signup">
                             <i class="fas fa-lock"></i>
-                            <input type="password" class="form-control" name="password" placeholder="Password"
-                                ng-model="user.password" required
-                                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{6,}$" required />
+                            <input type="text" class="form-control" name="password" placeholder="Password"
+                                ng-model="inputSignUpPassword" required />
                         </div>
-                        <div class="errortext" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+                        <div class="errortext" ng-show="errorMessageSignupPassword">
                             <i class="fa-solid fa-circle-exclamation"></i>
-                            <span ng-show="myForm.password.$error.required">Password is required</span>
-                            <span ng-show="myForm.password.$error.pattern">Password must contain at least 6
-                                characters, including upper and lowercase letters, numbers and not including
-                                space</span>
+                            <span>{{errorMessageSignupPassword}}</span>
                         </div>
                     </div>
-                    <input type="submit" class="btn" value="Sign up" />
-                    <p class="social-text">Or Sign up with social platforms</p>
+
+                    <div class="input">
+                        <div class="input-field signup">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" class="form-control" name="confirmPassword"
+                                placeholder="Confirm password" ng-model="inputSignUpConfirmPassword" required />
+                        </div>
+                        <div class="errortext" ng-show="isErrorSignUpConfirmPassword">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <span>{{errorMessageSignupConfirmPassword}}</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn" ng-click="handleSubmitSignUp()">SIGN UP</button>
+                    <!-- <p class="social-text">Or Sign up with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
                             <i class="fab fa-facebook-f"></i>
@@ -128,7 +129,7 @@
                         <a href="#" class="social-icon">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                    </div>
+                    </div> -->
                 </form>
             </div>
         </div>
@@ -147,7 +148,7 @@
                 <img src="./public/images/signup.svg" class="image" alt="" />
             </div>
             <div class="panel right-panel">
-                <div class="content">
+                <div class="content signup-text">
                     <h3>One of us ?</h3>
                     <p>
                         Connecting Minds, Enhancing Communication.
